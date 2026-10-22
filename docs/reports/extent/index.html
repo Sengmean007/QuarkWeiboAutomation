@@ -1,0 +1,4309 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Quark weibo</title>
+<link rel="apple-touch-icon" href="spark/logo.png">
+<link rel="shortcut icon" href="spark/logo.png">
+<link rel="stylesheet" href="spark/spark-style.css">
+<link rel="stylesheet" href="spark/font-awesome.min.css">
+<script src="spark/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('spark/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Quark Dynasty - Playwright run</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">2026-10-22 11:50:53</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">UX-004</a><a class="dropdown-item" href="#">UX-005</a><a class="dropdown-item" href="#">UI-020</a><a class="dropdown-item" href="#">UI-013</a><a class="dropdown-item" href="#">UI-017</a><a class="dropdown-item" href="#">UI-006</a><a class="dropdown-item" href="#">UI-009</a><a class="dropdown-item" href="#">UI-002</a><a class="dropdown-item" href="#">UI-015</a><a class="dropdown-item" href="#">Layout</a><a class="dropdown-item" href="#">UI-018</a><a class="dropdown-item" href="#">UxJourneyNewUiTest</a><a class="dropdown-item" href="#">UI-016</a><a class="dropdown-item" href="#">UI-004</a><a class="dropdown-item" href="#">UI-019</a><a class="dropdown-item" href="#">Ux</a><a class="dropdown-item" href="#">UX-002</a><a class="dropdown-item" href="#">UI-014</a><a class="dropdown-item" href="#">UI-005</a><a class="dropdown-item" href="#">UI-007</a><a class="dropdown-item" href="#">UI-010</a><a class="dropdown-item" href="#">UI-011</a><a class="dropdown-item" href="#">ResponsiveLayoutNewUiTest</a><a class="dropdown-item" href="#">UI-003</a><a class="dropdown-item" href="#">UI-008</a><a class="dropdown-item" href="#">UI-012</a><a class="dropdown-item" href="#">UX-001</a><a class="dropdown-item" href="#">UX-003</a><a class="dropdown-item" href="#">UI-001</a><a class="dropdown-item" href="#">ResponsiveLayoutClassicUiTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Layout - last run 2026-10-22 11:02</p>
+            <p class="text-sm">
+              <span>11:50:53 AM</span> / <span>00:00:00:027</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Layout - last run 2026-10-22 11:02</h5>
+<span class='badge badge-success'>10.22.2026 11:50:53 AM</span>
+<span class='badge badge-danger'>10.22.2026 11:50:53 AM</span>
+<span class='badge badge-default'>00:00:00:027</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:016</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:008</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="3"><span>UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-011</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Passed in 2.7s.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="4"><span>UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-012</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Passed in 2.5s.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-013</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Passed in 1.3s.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="6"><span>UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-014</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Passed in 1.2s.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-015</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Passed in 2.0s.
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:002</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="8"><span>UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-016</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     17 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     17 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.submit(LoginPage.java:57)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:66)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberLayoutHolds(ResponsiveLayoutClassicUiTest.java:132)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberOnPc(ResponsiveLayoutClassicUiTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     17 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:002</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-017</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     4 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     4 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.submit(LoginPage.java:57)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:66)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberLayoutHolds(ResponsiveLayoutClassicUiTest.java:132)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberOnMac(ResponsiveLayoutClassicUiTest.java:87)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     4 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="10"><span>UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-018</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     6 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     6 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.submit(LoginPage.java:57)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:66)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberLayoutHolds(ResponsiveLayoutClassicUiTest.java:132)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberOnIpad(ResponsiveLayoutClassicUiTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-9135875178808717408\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     6 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-     - retrying click action
+-       - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-019</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected the header to still show the signed-in state on iPhone 14 (iOS, Safari) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected the header to still show the signed-in state on iPhone 14 (iOS, Safari) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberLayoutHolds(ResponsiveLayoutClassicUiTest.java:140)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberOnIphone(ResponsiveLayoutClassicUiTest.java:99)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="12"><span>UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-020</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutClassicUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 10:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected the header to still show the signed-in state on Android (Pixel 7, Chrome) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected the header to still show the signed-in state on Android (Pixel 7, Chrome) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberLayoutHolds(ResponsiveLayoutClassicUiTest.java:140)
+	at org.sengmean.tests.layout.ResponsiveLayoutClassicUiTest.memberOnAndroid(ResponsiveLayoutClassicUiTest.java:105)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:008</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="14"><span>UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-001</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          The hero banner should render under the nav on PC (Windows, Chrome) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: The hero banner should render under the nav on PC (Windows, Chrome) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.assertLayoutHolds(ResponsiveLayoutNewUiTest.java:169)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.layoutHolds(ResponsiveLayoutNewUiTest.java:133)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.onPc(ResponsiveLayoutNewUiTest.java:60)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-002</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          The hero banner should render under the nav on Mac (macOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: The hero banner should render under the nav on Mac (macOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.assertLayoutHolds(ResponsiveLayoutNewUiTest.java:169)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.layoutHolds(ResponsiveLayoutNewUiTest.java:133)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.onMac(ResponsiveLayoutNewUiTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="16"><span>UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-003</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          The hero banner should render under the nav on iPad (iPadOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: The hero banner should render under the nav on iPad (iPadOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.assertLayoutHolds(ResponsiveLayoutNewUiTest.java:169)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.layoutHolds(ResponsiveLayoutNewUiTest.java:133)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.onIpad(ResponsiveLayoutNewUiTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="17"><span>UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-004</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          The hero banner should render under the nav on iPhone 14 (iOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: The hero banner should render under the nav on iPhone 14 (iOS, Safari) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.assertLayoutHolds(ResponsiveLayoutNewUiTest.java:169)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.layoutHolds(ResponsiveLayoutNewUiTest.java:133)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.onIphone(ResponsiveLayoutNewUiTest.java:78)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="18"><span>UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-005</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          The hero banner should render under the nav on Android (Pixel 7, Chrome) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: The hero banner should render under the nav on Android (Pixel 7, Chrome) (New UI) ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.assertLayoutHolds(ResponsiveLayoutNewUiTest.java:169)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.layoutHolds(ResponsiveLayoutNewUiTest.java:133)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.onAndroid(ResponsiveLayoutNewUiTest.java:84)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="19"><span>UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-006</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//*[normalize-space(text())='Username']/following::input[1]")
+-     2 × waiting for" https://test-v2.138hk.vip/en/" navigation to finish...
+-       - navigated to "https://test-v2.138hk.vip/en/"
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//*[normalize-space(text())='Username']/following::input[1]")
+-     2 × waiting for" https://test-v2.138hk.vip/en/" navigation to finish...
+-       - navigated to "https://test-v2.138hk.vip/en/"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
+	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
+	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
+	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:40)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:63)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberLayoutHolds(ResponsiveLayoutNewUiTest.java:141)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberOnPc(ResponsiveLayoutNewUiTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator("//*[normalize-space(text())='Username']/following::input[1]")
+-     2 × waiting for" https://test-v2.138hk.vip/en/" navigation to finish...
+-       - navigated to "https://test-v2.138hk.vip/en/"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="20"><span>UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-007</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   4 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to &lt;button class="Header_btn___TpsQ Header_btn-login__yN7Rz"&gt;…&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   4 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to &lt;button class="Header_btn___TpsQ Header_btn-login__yN7Rz"&gt;…&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.submit(LoginPage.java:57)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:66)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberLayoutHolds(ResponsiveLayoutNewUiTest.java:141)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberOnMac(ResponsiveLayoutNewUiTest.java:96)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   - retrying click action
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+-     - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   4 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-   - element was detached from the DOM, retrying
+-     - locator resolved to &lt;button class="Header_btn___TpsQ Header_btn-login__yN7Rz"&gt;…&lt;/button&gt;
+-   - attempting click action
+-     - waiting for element to be visible, enabled and stable
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:003</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="21"><span>UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-008</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <b>Error</b> - Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   2 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   5 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   2 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   5 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.submit(LoginPage.java:57)
+	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:66)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
+	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberLayoutHolds(ResponsiveLayoutNewUiTest.java:141)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberOnIpad(ResponsiveLayoutNewUiTest.java:102)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-15152548128073696242\package\lib\server\dispatchers\dispatcher.js:325:39)
+    at runNextTicks (node:internal/process/task_queues:64:5)
+    at process.processImmediate (node:internal/timers:472:9)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(Pattern.compile("log\\s*in", Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class="Header_btn__iqmzL Header_desktop__H1sbG"&gt;Log In&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is not stable
+-   2 × retrying click action
+-       - waiting 100ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   2 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto"&gt;…&lt;/div&gt; intercepts pointer events
+-   5 × retrying click action
+-       - waiting 500ms
+-       - waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;div class="Modal_layer__psDHp"&gt;&lt;/div&gt; from &lt;div id="main-modal" class=" Modal_modal__yDLSi "&gt;…&lt;/div&gt; subtree intercepts pointer events
+-   - retrying click action
+-     - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 14 more
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="22"><span>UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>
+<span class="badge badge-pill badge-default">UI-009</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected the header to still show the signed-in state on iPhone 14 (iOS, Safari) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected the header to still show the signed-in state on iPhone 14 (iOS, Safari) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberLayoutHolds(ResponsiveLayoutNewUiTest.java:149)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberOnIphone(ResponsiveLayoutNewUiTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="23"><span>UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UI-010</span>
+<span class="badge badge-pill badge-default">ResponsiveLayoutNewUiTest</span>
+<span class="badge badge-pill badge-default">Layout</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:02.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected the header to still show the signed-in state on Android (Pixel 7, Chrome) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected the header to still show the signed-in state on Android (Pixel 7, Chrome) after returning to the home page. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberLayoutHolds(ResponsiveLayoutNewUiTest.java:149)
+	at org.sengmean.tests.layout.ResponsiveLayoutNewUiTest.memberOnAndroid(ResponsiveLayoutNewUiTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Ux - last run 2026-10-22 11:50</p>
+            <p class="text-sm">
+              <span>11:50:53 AM</span> / <span>00:00:00:002</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Ux - last run 2026-10-22 11:50</h5>
+<span class='badge badge-success'>10.22.2026 11:50:53 AM</span>
+<span class='badge badge-danger'>10.22.2026 11:50:53 AM</span>
+<span class='badge badge-default'>00:00:00:002</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="25"><span>UxJourneyNewUiTest - last run 2026-10-22 11:50</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="26"><span>UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UX-001</span>
+<span class="badge badge-pill badge-default">Ux</span>
+<span class="badge badge-pill badge-default">UxJourneyNewUiTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected New Interface to be the chosen UI version on PC (Windows, Chrome) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version on PC (Windows, Chrome) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.journey(UxJourneyNewUiTest.java:136)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.onPc(UxJourneyNewUiTest.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="27"><span>UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UX-002</span>
+<span class="badge badge-pill badge-default">Ux</span>
+<span class="badge badge-pill badge-default">UxJourneyNewUiTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected New Interface to be the chosen UI version on Mac (macOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version on Mac (macOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.journey(UxJourneyNewUiTest.java:136)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.onMac(UxJourneyNewUiTest.java:100)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:001</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="28"><span>UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UX-003</span>
+<span class="badge badge-pill badge-default">Ux</span>
+<span class="badge badge-pill badge-default">UxJourneyNewUiTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected New Interface to be the chosen UI version on iPad (iPadOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version on iPad (iPadOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.journey(UxJourneyNewUiTest.java:136)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.onIpad(UxJourneyNewUiTest.java:106)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="29"><span>UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">UX-004</span>
+<span class="badge badge-pill badge-default">Ux</span>
+<span class="badge badge-pill badge-default">UxJourneyNewUiTest</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected New Interface to be the chosen UI version on iPhone 14 (iOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version on iPhone 14 (iOS, Safari) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.journey(UxJourneyNewUiTest.java:136)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.onIphone(UxJourneyNewUiTest.java:112)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>00:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="30"><span>UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">Ux</span>
+<span class="badge badge-pill badge-default">UxJourneyNewUiTest</span>
+<span class="badge badge-pill badge-default">UX-005</span>            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Last run 2026-10-22 11:50.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          Expected New Interface to be the chosen UI version on Android (Pixel 7, Chrome) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:50:53 AM</td>
+        <td>
+          <pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version on Android (Pixel 7, Chrome) - ui-version is "" ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.journey(UxJourneyNewUiTest.java:136)
+	at org.sengmean.tests.ux.UxJourneyNewUiTest.onAndroid(UxJourneyNewUiTest.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre>
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">30</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UX-004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UX-004</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='29'>UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UX-005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UX-005</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='30'>UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-020</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-020</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI-013</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-013</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-017</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-017</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-006</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-006</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-009</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-009</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-002</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI-015</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-015</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>15</span>
+</span>
+<p class="name">Layout</p>
+<p class="duration text-sm">20 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Layout</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>15 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-018</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-018</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">UxJourneyNewUiTest</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UxJourneyNewUiTest</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='26'>UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='27'>UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='28'>UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='29'>UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='30'>UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-016</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-016</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-004</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-004</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-019</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-019</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">Ux</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Ux</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='26'>UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='27'>UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='28'>UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='29'>UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-004: New UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='30'>UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-005: New UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UX-002</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UX-002</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='27'>UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-002: New UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI-014</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-014</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-005</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-005</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-007</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-007</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-010</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-010</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI-011</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-011</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>10</span>
+</span>
+<p class="name">ResponsiveLayoutNewUiTest</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ResponsiveLayoutNewUiTest</h4>
+<span status="fail" class='badge log badge-danger'>10 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-002: New UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-004: New UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-005: New UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='19'>UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-006: New UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-007: New UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-009: New UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-010: New UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-003</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-003: New UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-008</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-008</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-008: New UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">UI-012</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-012</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UX-001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UX-001</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='26'>UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-001: New UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UX-003</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UX-003</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='28'>UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Ux - last run 2026-10-22 11:50.UxJourneyNewUiTest - last run 2026-10-22 11:50.UX-003: New UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">UI-001</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>UI-001</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='14'>UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutNewUiTest - last run 2026-10-22 11:02.UI-001: New UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">ResponsiveLayoutClassicUiTest</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>ResponsiveLayoutClassicUiTest</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-011: Classic UI home page layout is responsive on PC, as a visitor (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-012: Classic UI home page layout is responsive on Mac, as a visitor (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'>UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-013: Classic UI home page layout is responsive on iPad, as a visitor (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-014: Classic UI home page layout is responsive on iPhone, as a visitor (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-015: Classic UI home page layout is responsive on Android, as a visitor (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-016: Classic UI home page layout is responsive on PC, signed in (Windows, Chrome, 1920x1080)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-017: Classic UI home page layout is responsive on Mac, signed in (macOS, Safari/WebKit, 1440x900)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-018: Classic UI home page layout is responsive on iPad, signed in (iPadOS, Safari/WebKit, 820x1180, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-019: Classic UI home page layout is responsive on iPhone, signed in (iOS, Safari/WebKit, 390x844, touch)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:50:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</a>
+<div class="">
+<span class="badge badge-default">Layout - last run 2026-10-22 11:02.ResponsiveLayoutClassicUiTest - last run 2026-10-22 10:50.UI-020: Classic UI home page layout is responsive on Android, signed in (Pixel 7, Chrome, 412x915, touch)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>2026-10-22 11:50:53</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>2026-10-22 11:50:53</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='100%'><b>3</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title"></h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='20%'><b>5</b> passed</small></div>
+<div>
+<small data-tooltip='80%'><b>20</b> failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='7%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='57%'><b>40</b> events failed,
+<b data-tooltip='%'>25</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Layout - last run 2026-10-22 11:02":0.027,"Ux - last run 2026-10-22 11:50":0.002
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>UX-004</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UX-005</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-020</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-013</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>UI-017</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-006</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-009</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-002</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-015</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Layout</td>
+<td>5</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+<td>25%</td>
+</tr>
+<tr>
+<td>UI-018</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UxJourneyNewUiTest</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-016</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-004</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-019</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Ux</td>
+<td>0</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UX-002</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-014</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>UI-005</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-007</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-010</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-011</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>ResponsiveLayoutNewUiTest</td>
+<td>0</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-003</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-008</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-012</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>UX-001</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UX-003</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>UI-001</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>ResponsiveLayoutClassicUiTest</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>base.url</td>
+<td>https://test-v2.138hk.vip</td>
+</tr>
+<tr>
+<td>test.username</td>
+<td>qa00002</td>
+</tr>
+<tr>
+<td>headless</td>
+<td>false</td>
+</tr>
+<tr>
+<td>slowMo</td>
+<td>0</td>
+</tr>
+<tr>
+<td>java.version</td>
+<td>25.0.1</td>
+</tr>
+<tr>
+<td>os.name</td>
+<td>Windows 11 10.0</td>
+</tr>
+<tr>
+<td>run.duration</td>
+<td>24.7s</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 3,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 5,
+failGrandChild: 20,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 40,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 25
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="spark/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

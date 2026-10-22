@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.sengmean</groupId>
+    <artifactId>QuarkWeiboAutomation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!--
+        Declared rather than left to Maven's default, which is jar anyway. Stated explicitly
+        because the spring-boot-maven-plugin below could plausibly make this a Boot fat jar,
+        and a reader checking what `mvn package` produces should find the answer in the POM
+        rather than have to know the default. Matches the sibling NewWeibo_automation /
+        Admin_weibo POMs' own note.
+    -->
+    <packaging>jar</packaging>
+
+    <name>Quark Weibo Automation</name>
+    <description>
+        Playwright/JUnit 5 UI test suites for the Quark Dynasty member site
+        (https://test-v2.138hk.vip), the page objects they drive, and the generators that turn a
+        run into the Excel and HTML test case reports under docs/reports, the same way the
+        sibling NewWeibo_automation and Admin_weibo projects do - trimmed to this project's own
+        layout and dropping anything coupled to their client test-case workbook, which this
+        project does not have.
+
+        This POM deliberately mirrors NewWeibo_automation's structure and dependency stack in
+        full, including one piece this project does not use yet (the Swagger docs app) - see the
+        inline notes below for which class is not yet written and which goal is therefore a no-op
+        until it is.
+    </description>
+
+    <properties>
+        <!--
+            release rather than the source/target pair: source/target will happily compile
+            against a newer JDK's APIs and still emit 17 bytecode, so the mistake surfaces as
+            a NoSuchMethodError at runtime instead of an error at compile time. That is a live
+            risk here, where the machine has JDK 25 installed alongside the 17 in JAVA_HOME.
+        -->
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Plugin versions, pinned so a build cannot change behaviour under us. -->
+        <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
+        <exec-maven-plugin.version>3.2.0</exec-maven-plugin.version>
+
+        <!-- Dependency versions, pinned to the same releases the sibling projects use so one
+             local repository serves all three and a problem means the same thing everywhere. -->
+        <spring-boot.version>3.4.1</spring-boot.version>
+        <springdoc.version>2.8.3</springdoc.version>
+        <playwright.version>1.58.0</playwright.version>
+        <!-- One version for the whole JUnit family; the junit-bom import below spreads it. -->
+        <junit.version>5.11.4</junit.version>
+        <poi.version>5.2.5</poi.version>
+        <extentreports.version>5.1.1</extentreports.version>
+
+        <!-- Emailing the run's report, read by org.sengmean.report.ReportMailer. -->
+        <jakarta.mail.version>2.0.1</jakarta.mail.version>
+        <jakarta.activation.version>2.0.1</jakarta.activation.version>
+
+        <!--
+            Which classes a run scans. The default is every *Test class, i.e. the whole
+            project; override it with -Dsuite=AuthSuite to run one area. See the Surefire
+            includes block below for why a suite cannot be selected with -Dtest.
+        -->
+        <suite>*Test</suite>
+
+        <!--
+            Which cases within that scan actually run, by case id, e.g. -Dcase=UI-001.
+            Empty means no filtering. Mirrors NewWeibo_automation's property, read from the
+            forked test JVM (see systemPropertyVariables below) by
+            org.sengmean.support.CaseIdFilter, which this project now has.
+        -->
+        <case></case>
+
+        <!--
+            Test run defaults, overridable per run with -D. These must be POM properties and
+            referenced as ${...} in the Surefire configuration below: a literal value there is
+            planted straight into the forked test JVM and cannot be overridden from the command
+            line, which is what made -Dheadless=false do nothing at all on the sibling projects
+            before this was fixed there. Left commented out, as on the sibling projects: they
+            must still be DECLARED (see the <case> comment above for why an undefined property
+            is worse than a declared empty one), but a literal value here would silently win over
+            Config/config.properties, which is where these actually live for this project.
+        -->
+<!--        <headless>false</headless>-->
+<!--        <slowMo>0</slowMo>-->
+    </properties>
+
+    <!--
+        Spring Boot's BOM is imported rather than made the parent POM on purpose. Taking
+        spring-boot-starter-parent would also inherit its plugin management and overwrite the
+        Surefire configuration below, which carries the test environment settings.
+    -->
+    <dependencyManagement>
+        <dependencies>
+            <!--
+                The JUnit BOM, imported FIRST so that it wins - the first import to manage an
+                artifact is the one that governs it. Without this, Spring Boot's BOM would
+                quietly manage every JUnit transitive to its own version instead, which is what
+                broke the suite engine on the sibling projects; see their POMs for the full story
+                (junit-platform-suite-commons landing a release ahead of the suite-api it needs).
+            -->
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>${junit.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+
+        <!--
+            Serves the Swagger UI documentation app, once org.sengmean.api.ApiDocsApplication is
+            written. Not yet present in this project - `mvn test` never starts a Spring context
+            either way, so the Playwright suites are unaffected by that.
+        -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>${springdoc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.microsoft.playwright</groupId>
+            <artifactId>playwright</artifactId>
+            <version>${playwright.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--
+            Compile-time home of TestExecutionListener, read by HtmlReportListener and
+            ExtentReportListener. Surefire already puts the launcher on the runtime classpath;
+            this declaration is what lets those listeners compile against it. Version comes from
+            the junit-bom import above.
+        -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--
+            Runs the per-area suites in org.sengmean.suites (AuthSuite, WalletSuite,
+            ResponsiveSuite) - @Suite
+            classes rather than test classes, needing an engine of their own. Both halves are
+            needed and for different reasons: the -api artifact is what @Suite and @SelectClasses
+            compile against, and the -engine artifact is what actually executes one at run time.
+            With only the api on the classpath a suite compiles, Surefire finds the class, and the
+            run reports "0 tests" with no error at all, because no engine claimed it.
+        -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--
+            Writes the .xlsx test report from the Surefire XML results, read by
+            org.sengmean.report.ExcelReportGenerator. Both poi artifacts declared up front
+            as on the sibling projects, because that generator imports from both
+            org.apache.poi.ss.usermodel/util (poi) and XSSFWorkbook (poi-ooxml); poi-ooxml does
+            pull poi in transitively, but a direct import resting on a transitive is a build that
+            breaks on someone else's upgrade.
+        -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi.version}</version>
+        </dependency>
+        <!--
+            The Extent Spark report, read by ExtentReportListener. test scope, unlike poi
+            above: an Excel generator belongs in src/main because `mvn exec:java` would run it as
+            an ordinary program, while an Extent report is only ever produced from inside a run by
+            a listener under src/test.
+        -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+            <scope>test</scope>
+            <exclusions>
+                <!--
+                    ExtentReports leaks Lombok as a transitive dependency. Lombok is a
+                    compile-time annotation processor that nothing in this project uses, and on a
+                    machine with more than one JDK installed (this one has 17 and 25) it is
+                    actively harmful rather than merely unused - see the sibling projects' POMs
+                    for the exact failure (java.lang.ExceptionInInitializerError reaching into
+                    javac internals under IntelliJ's own annotation processing). Excluded here for
+                    the same reason before it is ever hit for real.
+                -->
+                <exclusion>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--
+            Emailing the run's result when it finishes, read by org.sengmean.report.ReportMailer.
+            Three artifacts: jakarta.mail is the API and the SMTP provider,
+            jakarta.activation-api is the DataHandler interface an attachment goes through, and
+            com.sun.activation is the implementation behind it.
+        -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>jakarta.mail</artifactId>
+            <version>${jakarta.mail.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>${jakarta.activation.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
+            <version>${jakarta.activation.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+            </plugin>
+            <!--
+                Would run the Swagger UI app: mvn spring-boot:run - once
+                org.sengmean.api.ApiDocsApplication is written; not yet present in this project.
+                Declared without <executions> deliberately, matching the sibling POMs: that keeps
+                the repackage goal off the package phase, so `mvn package` still produces the
+                ordinary jar this test project expects rather than a Boot fat jar.
+            -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <mainClass>org.sengmean.api.ApiDocsApplication</mainClass>
+                </configuration>
+            </plugin>
+            <!--
+                Builds the reports from target/surefire-reports:
+                  mvn exec:java              -> the Excel workbook (org.sengmean.report.ExcelReportGenerator)
+                  mvn exec:java@html-report  -> the HTML test case reports (org.sengmean.report.HtmlReportGenerator)
+
+                Both classes exist, ported from the sibling NewWeibo_automation / Admin_weibo
+                projects and trimmed to this project's own layout. The sibling NewWeibo_automation
+                project has several more executions for its client workbook (split-cases,
+                trim-cases, case-results, case-page, fast-login-sheet, case-runners) that are
+                deliberately NOT mirrored here: this project has no client workbook, and those
+                executions name classes that are specific to that workbook's shape rather than
+                generic reporting infrastructure. Add them back, pointed at this project's own
+                workbook, if one is adopted later.
+            -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>${exec-maven-plugin.version}</version>
+                <configuration>
+                    <mainClass>org.sengmean.report.ExcelReportGenerator</mainClass>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>html-report</id>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.sengmean.report.HtmlReportGenerator</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Required for Surefire to discover and run the JUnit 5 tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <!--
+                        Which classes Surefire scans, and the whole reason the per-area suites in
+                        org.sengmean.suites are runnable at all.
+
+                        `-Dtest=AuthSuite` does NOT work for a @Suite, and fails in the most
+                        misleading way available: Surefire turns -Dtest into a *method* filter
+                        applied to everything discovered, so the suite is found, its member
+                        classes are resolved, and then every one of their cases is filtered out
+                        for not being called AuthSuite. The run reports success with
+                        "Tests run: 0" and the member classes listed as skipped, which reads as a
+                        suite that selected nothing.
+
+                        An include pattern is applied at scanning instead, so the suite engine is
+                        left to resolve the suite's children itself. Hence -Dsuite:
+
+                            ./mvnw test                     - every *Test class, as before
+                            ./mvnw test -Dsuite=AuthSuite    - one area
+                            ./mvnw test -Dtest=LoginTest     - one class, still works
+
+                        Do not "simplify" this back to -Dtest for the suites.
+                    -->
+                    <includes>
+                        <include>**/${suite}.java</include>
+                    </includes>
+                    <!--
+                        The environment, the account, the captcha, the browser window and the
+                        settle timeouts are NOT literals here - they are in Config/config.properties,
+                        read by org.sengmean.config.ConfigDataProvider. A literal here would plant
+                        itself into the forked JVM after Maven has parsed the command line and win
+                        silently over both a -D override and the config file; see the sibling
+                        projects' POMs for exactly that bug, found and fixed there first.
+
+                        This is how -Dcase reaches org.sengmean.support.CaseIdFilter, which reads
+                        it from inside the forked JVM (see the <case> property above); ${case} is
+                        declared in <properties> above so an unset one arrives as blank rather
+                        than as the literal text "${case}".
+                    -->
+                    <systemPropertyVariables>
+                        <case>${case}</case>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
