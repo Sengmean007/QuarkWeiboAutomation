@@ -163,7 +163,10 @@ public class LoginNewUiTest extends BaseTest {
         Page page = openAsVisitorChoosingNewUi();
         signIn(page);
         page.navigate(org.sengmean.base.BasePage.url("/en/"));
-        page.waitForLoadState();
+        // Not a bare page.waitForLoadState(): that defaults to `load`, which this site's own
+        // slow third parties (chat widget, analytics) can miss well past a sane timeout - see
+        // BasePage.awaitReady()'s Javadoc. awaitReady() waits for it best-effort instead.
+        org.sengmean.base.BasePage.awaitReady(page);
         LoginPage login = new LoginPage(page);
         login.dismissOverlays();
         assertSignedInAndNewUiChosen(page, login, "reloading");

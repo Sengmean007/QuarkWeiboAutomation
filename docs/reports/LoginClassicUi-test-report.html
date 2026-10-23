@@ -302,9 +302,9 @@
   <details class="rpt-sum" open>
     <summary>
       <span class="rpt-line"><span class="chev" aria-hidden="true"></span><h1>Login classic ui test</h1><span class="rpt-toggle-hint">click to minimise / expand</span></span>
-      <span class="rpt-counts"><span class="cnt pass"><i>&#10003;</i>7 passed</span><span class="cnt fail"><i>&#10007;</i>3 failed</span><span class="cnt skip"><i>&#8856;</i>2 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">12 cases</span></span>
-<span class="bar">      <span class="seg pass" style="width:58.3333%" title="7 passed"></span>
-      <span class="seg fail" style="width:25.0000%" title="3 failed"></span>
+      <span class="rpt-counts"><span class="cnt pass"><i>&#10003;</i>9 passed</span><span class="cnt fail"><i>&#10007;</i>1 failed</span><span class="cnt skip"><i>&#8856;</i>2 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">12 cases</span></span>
+<span class="bar">      <span class="seg pass" style="width:75.0000%" title="9 passed"></span>
+      <span class="seg fail" style="width:8.3333%" title="1 failed"></span>
       <span class="seg skip" style="width:16.6667%" title="2 skipped"></span>
 </span>
     </summary>
@@ -312,38 +312,38 @@
     <div class="meta">
       <div><b>Target:</b> https://test-v2.138hk.vip</div>
       <div><b>Account:</b> qa00002</div>
-      <div><b>Run:</b> 2026-10-23 10:54</div>
-      <div><b>Elapsed:</b> 188.2s</div>
-      <div><b>Scope:</b> 1 of 18 suites executed</div>
+      <div><b>Run:</b> 2026-10-23 17:29</div>
+      <div><b>Elapsed:</b> 568.7s</div>
+      <div><b>Scope:</b> 3 of 18 suites executed</div>
       <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
-      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Runner:</b> JUnit 5 on Java 17.0.18</div>
       <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
     <h2 class="rpt-h">Statistics</h2>
     <div class="tiles">
         <div class="tile "><b>12</b><span>cases</span></div>
-        <div class="tile pass"><b><i>&#10003;</i>7</b><span>passed</span></div>
-        <div class="tile fail"><b><i>&#10007;</i>3</b><span>failed</span></div>
+        <div class="tile pass"><b><i>&#10003;</i>9</b><span>passed</span></div>
+        <div class="tile fail"><b><i>&#10007;</i>1</b><span>failed</span></div>
         <div class="tile skip"><b><i>&#8856;</i>2</b><span>skipped</span></div>
         <div class="tile notrun"><b><i>&#9675;</i>0</b><span>not run</span></div>
-        <div class="tile"><b>58%</b><span>pass rate of the cases that ran</span></div>
-        <div class="tile"><b>165.8s</b><span>browser time</span></div>
+        <div class="tile"><b>75%</b><span>pass rate of the cases that ran</span></div>
+        <div class="tile"><b>130.8s</b><span>browser time</span></div>
     </div>
-      <div class="chart" role="img" aria-label="Login classic ui test: 7 passed, 3 failed, 2 skipped, 0 not run">
-        <div class="stack big"><span class="seg pass" style="flex-grow:7" tabindex="0" data-tip="Login classic ui test - 7 passed (58%)"><em>7</em></span><span class="seg fail" style="flex-grow:3" tabindex="0" data-tip="Login classic ui test - 3 failed (25%)"><em>3</em></span><span class="seg skip" style="flex-grow:2" tabindex="0" data-tip="Login classic ui test - 2 skipped (17%)"><em>2</em></span></div>
+      <div class="chart" role="img" aria-label="Login classic ui test: 9 passed, 1 failed, 2 skipped, 0 not run">
+        <div class="stack big"><span class="seg pass" style="flex-grow:9" tabindex="0" data-tip="Login classic ui test - 9 passed (75%)"><em>9</em></span><span class="seg fail" style="flex-grow:1" tabindex="0" data-tip="Login classic ui test - 1 failed (8%)"><em>1</em></span><span class="seg skip" style="flex-grow:2" tabindex="0" data-tip="Login classic ui test - 2 skipped (17%)"><em>2</em></span></div>
         <div class="chart-legend"><span><i class="sw pass"></i>Passed</span><span><i class="sw fail"></i>Failed</span><span><i class="sw skip"></i>Skipped</span><span><i class="sw notrun"></i>Not run</span></div>
       </div>
     <h2 class="rpt-h">Cases by result</h2>
     <div class="case-lists">
-      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(3)</span></summary>
+      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(1)</span></summary>
         <ol>
-          <li><a href="#case-LoginClassicUiTest-emptyForm_showsNoFeedback">LOGIN-013</a> empty form shows no validation message (known gap) (Classic UI)<div class="why">Expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
-          <li><a href="#case-LoginClassicUiTest-usernameTooLong_showsLengthError">LOGIN-014</a> username outside 6-12 characters is rejected inline (Classic UI)<div class="why">Expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
           <li><a href="#case-LoginClassicUiTest-session_persistsAcrossReload">LOGIN-018</a> session persists across a page reload (Classic UI)<div class="why">Expected the header to show the signed-in state after reloading. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
         </ol>
       </details>
-      <details class="cl pass"><summary><i>&#10003;</i>Passed <span class="n">(7)</span></summary>
+      <details class="cl pass"><summary><i>&#10003;</i>Passed <span class="n">(9)</span></summary>
         <ol>
+          <li><a href="#case-LoginClassicUiTest-emptyForm_showsNoFeedback">LOGIN-013</a> empty form shows no validation message (known gap) (Classic UI)</li>
+          <li><a href="#case-LoginClassicUiTest-usernameTooLong_showsLengthError">LOGIN-014</a> username outside 6-12 characters is rejected inline (Classic UI)</li>
           <li><a href="#case-LoginClassicUiTest-wrongCredentials_showsGenericError">LOGIN-015</a> wrong username/password shows 'Wrong username/password, please re-enter.' (Classic UI)</li>
           <li><a href="#case-LoginClassicUiTest-wrongCaptcha_isRejected">LOGIN-016</a> wrong verification code is rejected even with correct credentials (Classic UI)</li>
           <li><a href="#case-LoginClassicUiTest-validCredentials_signIn">LOGIN-017</a> valid credentials sign the member in (Classic UI)</li>
@@ -365,10 +365,8 @@
 
   <div class="nav"><a href="index.html">&larr; All suites</a></div>
   <div class="callout bad">
-    <h2>3 cases need attention</h2>
+    <h2>1 case needs attention</h2>
     <ol class="findings">
-      <li><a href="#case-LoginClassicUiTest-emptyForm_showsNoFeedback">LOGIN-013</a> empty form shows no validation message (known gap) (Classic UI)<div class="why">Expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
-      <li><a href="#case-LoginClassicUiTest-usernameTooLong_showsLengthError">LOGIN-014</a> username outside 6-12 characters is rejected inline (Classic UI)<div class="why">Expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
       <li><a href="#case-LoginClassicUiTest-session_persistsAcrossReload">LOGIN-018</a> session persists across a page reload (Classic UI)<div class="why">Expected the header to show the signed-in state after reloading. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
     </ol>
     <p>A case tagged <code>known-defect</code> is red on purpose: it asserts the behaviour the application <i>should</i> have and stays red until the finding is fixed. The rest are this run's news.</p>
@@ -391,18 +389,18 @@
   <table class="cases">
     <thead><tr><th>ID</th><th>Test case</th><th>Test steps</th><th>Test data</th><th>Expected result</th><th>Actual result</th><th>Status</th><th>Remark / cause</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr class="case" id="case-LoginClassicUiTest-emptyForm_showsNoFeedback" data-status="Fail" data-search="login-013 emptyform_showsnofeedback empty form shows no validation message (known gap) (classic ui) expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;">
+      <tr class="case" id="case-LoginClassicUiTest-emptyForm_showsNoFeedback" data-status="Pass" data-search="login-013 emptyform_showsnofeedback empty form shows no validation message (known gap) (classic ui)">
         <td class="id" id="LOGIN-013">LOGIN-013</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>emptyForm_showsNoFeedback</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>empty form shows no validation message (known gap) (Classic UI)</td>
-        <td><div class="why">Expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></td>
-        <td><span class="st fail">Fail</span><div class="secs">26.38s</div></td>
-        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginClassicUiTest.emptyForm_showsNoFeedback(LoginClassicUiTest.java:48)</code></td>
-        <td><span class="muted">No screenshot captured.</span></td>
+        <td>The application behaved as expected.</td>
+        <td><span class="st pass">Pass</span><div class="secs">17.01s</div></td>
+        <td><span class="muted">&mdash;</span></td>
+        <td><span class="muted">&mdash;</span></td>
       </tr>
-      <tr class="detail hide" data-status="Fail">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -412,46 +410,34 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#emptyForm_showsNoFeedback</dd>
                 <dt>Expected result</dt><dd>empty form shows no validation message (known gap) (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Fail in 26.38s</dd>
+                <dt>Outcome</dt><dd>Pass in 17.01s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The failure</h3>
+              <h3>The result</h3>
               <dl>
-                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
-                <dt>Message</dt><dd>Expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</dd>
-                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>false</code></div><div><span>actual</span><code>true</code></div></div></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginClassicUiTest.emptyForm_showsNoFeedback(LoginClassicUiTest.java:48)</code></div></dd>
-                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>empty form shows no validation message (known gap) (Classic UI)</dd>
+                <dt>Duration</dt><dd>17.01 seconds</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected no board message for an empty submit (none is shown today) - if this now fails, the site has started validating empty fields, which is the fix this case exists to catch. ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
-	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
-	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
-	at org.sengmean.tests.auth.LoginClassicUiTest.emptyForm_showsNoFeedback(LoginClassicUiTest.java:48)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre></details>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginClassicUiTest-usernameTooLong_showsLengthError" data-status="Fail" data-search="login-014 usernametoolong_showslengtherror username outside 6-12 characters is rejected inline (classic ui) expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
+      <tr class="case" id="case-LoginClassicUiTest-usernameTooLong_showsLengthError" data-status="Pass" data-search="login-014 usernametoolong_showslengtherror username outside 6-12 characters is rejected inline (classic ui)">
         <td class="id" id="LOGIN-014">LOGIN-014</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>usernameTooLong_showsLengthError</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>username outside 6-12 characters is rejected inline (Classic UI)</td>
-        <td><div class="why">Expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
-        <td><span class="st fail">Fail</span><div class="secs">13.90s</div></td>
-        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginClassicUiTest.usernameTooLong_showsLengthError(LoginClassicUiTest.java:65)</code></td>
-        <td><span class="muted">No screenshot captured.</span></td>
+        <td>The application behaved as expected.</td>
+        <td><span class="st pass">Pass</span><div class="secs">15.71s</div></td>
+        <td><span class="muted">&mdash;</span></td>
+        <td><span class="muted">&mdash;</span></td>
       </tr>
-      <tr class="detail hide" data-status="Fail">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -461,29 +447,17 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#usernameTooLong_showsLengthError</dd>
                 <dt>Expected result</dt><dd>username outside 6-12 characters is rejected inline (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Fail in 13.90s</dd>
+                <dt>Outcome</dt><dd>Pass in 15.71s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The failure</h3>
+              <h3>The result</h3>
               <dl>
-                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
-                <dt>Message</dt><dd>Expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
-                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginClassicUiTest.usernameTooLong_showsLengthError(LoginClassicUiTest.java:65)</code></div></dd>
-                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>username outside 6-12 characters is rejected inline (Classic UI)</dd>
+                <dt>Duration</dt><dd>15.71 seconds</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected the 6-12 character rule to show for a 16-character username. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
-	at org.sengmean.tests.auth.LoginClassicUiTest.usernameTooLong_showsLengthError(LoginClassicUiTest.java:65)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-</pre></details>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
@@ -496,7 +470,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>wrong username/password shows 'Wrong username/password, please re-enter.' (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">12.54s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">16.56s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -510,7 +484,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#wrongCredentials_showsGenericError</dd>
                 <dt>Expected result</dt><dd>wrong username/password shows 'Wrong username/password, please re-enter.' (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 12.54s</dd>
+                <dt>Outcome</dt><dd>Pass in 16.56s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -518,7 +492,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>wrong username/password shows 'Wrong username/password, please re-enter.' (Classic UI)</dd>
-                <dt>Duration</dt><dd>12.54 seconds</dd>
+                <dt>Duration</dt><dd>16.56 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -533,7 +507,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>wrong verification code is rejected even with correct credentials (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">21.07s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">6.69s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -547,7 +521,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#wrongCaptcha_isRejected</dd>
                 <dt>Expected result</dt><dd>wrong verification code is rejected even with correct credentials (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 21.07s</dd>
+                <dt>Outcome</dt><dd>Pass in 6.69s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -555,7 +529,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>wrong verification code is rejected even with correct credentials (Classic UI)</dd>
-                <dt>Duration</dt><dd>21.07 seconds</dd>
+                <dt>Duration</dt><dd>6.69 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -570,7 +544,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>valid credentials sign the member in (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">33.84s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">21.19s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -584,7 +558,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#validCredentials_signIn</dd>
                 <dt>Expected result</dt><dd>valid credentials sign the member in (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 33.84s</dd>
+                <dt>Outcome</dt><dd>Pass in 21.19s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -592,7 +566,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>valid credentials sign the member in (Classic UI)</dd>
-                <dt>Duration</dt><dd>33.84 seconds</dd>
+                <dt>Duration</dt><dd>21.19 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -607,7 +581,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>session persists across a page reload (Classic UI)</td>
         <td><div class="why">Expected the header to show the signed-in state after reloading. ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
-        <td><span class="st fail">Fail</span><div class="secs">14.63s</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">17.34s</div></td>
         <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginClassicUiTest.assertSignedInAndClassicUiChosen(LoginClassicUiTest.java:317)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
@@ -621,7 +595,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#session_persistsAcrossReload</dd>
                 <dt>Expected result</dt><dd>session persists across a page reload (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Fail in 14.63s</dd>
+                <dt>Outcome</dt><dd>Fail in 17.34s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -641,9 +615,9 @@
 	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
 	at org.sengmean.tests.auth.LoginClassicUiTest.assertSignedInAndClassicUiChosen(LoginClassicUiTest.java:317)
 	at org.sengmean.tests.auth.LoginClassicUiTest.session_persistsAcrossReload(LoginClassicUiTest.java:134)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
@@ -657,7 +631,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a login without a verification code cannot be submitted (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">10.28s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">5.54s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -671,7 +645,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#missingVerificationCode_cannotSignIn</dd>
                 <dt>Expected result</dt><dd>a login without a verification code cannot be submitted (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 10.28s</dd>
+                <dt>Outcome</dt><dd>Pass in 5.54s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -679,7 +653,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>a login without a verification code cannot be submitted (Classic UI)</dd>
-                <dt>Duration</dt><dd>10.28 seconds</dd>
+                <dt>Duration</dt><dd>5.54 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -694,7 +668,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a username on its own cannot be submitted (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">10.39s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">5.29s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -708,7 +682,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#usernameOnly_cannotSignIn</dd>
                 <dt>Expected result</dt><dd>a username on its own cannot be submitted (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 10.39s</dd>
+                <dt>Outcome</dt><dd>Pass in 5.29s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -716,7 +690,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>a username on its own cannot be submitted (Classic UI)</dd>
-                <dt>Duration</dt><dd>10.39 seconds</dd>
+                <dt>Duration</dt><dd>5.29 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -731,7 +705,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a username with special characters is refused (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">10.48s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">13.17s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -745,7 +719,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#specialCharacterUsername_isRefused</dd>
                 <dt>Expected result</dt><dd>a username with special characters is refused (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 10.48s</dd>
+                <dt>Outcome</dt><dd>Pass in 13.17s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -753,7 +727,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>a username with special characters is refused (Classic UI)</dd>
-                <dt>Duration</dt><dd>10.48 seconds</dd>
+                <dt>Duration</dt><dd>13.17 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
@@ -838,7 +812,7 @@
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a valid sign-in leaves no credentials in cookies (Classic UI)</td>
         <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">12.31s</div></td>
+        <td><span class="st pass">Pass</span><div class="secs">12.23s</div></td>
         <td><span class="muted">&mdash;</span></td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -852,7 +826,7 @@
                 <dt>Method</dt><dd>LoginClassicUiTest#validSignIn_leavesNoCredentialsInCookies</dd>
                 <dt>Expected result</dt><dd>a valid sign-in leaves no credentials in cookies (Classic UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 12.31s</dd>
+                <dt>Outcome</dt><dd>Pass in 12.23s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -860,7 +834,7 @@
               <dl>
                 <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
                 <dt>Verified</dt><dd>a valid sign-in leaves no credentials in cookies (Classic UI)</dd>
-                <dt>Duration</dt><dd>12.31 seconds</dd>
+                <dt>Duration</dt><dd>12.23 seconds</dd>
               </dl>
               <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>

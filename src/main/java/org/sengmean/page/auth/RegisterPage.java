@@ -17,8 +17,17 @@ public class RegisterPage extends BasePage {
         super(page);
     }
 
+    /** Navigates to the register route and clears the welcome banner and the Daily Mission panel
+     *  if either is up - a check-and-close each time: closed when one is up, left alone when it
+     *  is not. Never the full {@link #dismissOverlays()}: confirmed live (2026-10-23) this form
+     *  shares the same generic {@code LoginModal_container__<hash>} wrapper and
+     *  {@code Modal_close__<hash>} close button {@link LoginPage} does, so the VIP-popup sweep
+     *  would close this modal by its own X the same way it closed the login form - see
+     *  {@code LoginPage.navigateTo()}'s Javadoc for the full story of that bug. */
     public void navigateTo() {
         open("/en/register/");
+        dismissWelcomeBanner();
+        dismissDailyMission();
     }
 
     private Locator fieldNear(String label) {
@@ -52,12 +61,33 @@ public class RegisterPage extends BasePage {
         fieldNear("Verification Code").fill(code);
     }
 
+    /**
+     * The form's own REGISTER control - <b>not</b> the header's "Register" opener, which stays on
+     * screen underneath the modal and matches a plain {@code getByRole(BUTTON, name="register")}
+     * lookup just as well as the real submit button does. Confirmed live (2026-10-23): both are
+     * real, visible, accessible-name "Register"/"REGISTER" buttons at once, the header's one
+     * first in DOM order - the exact same ambiguity {@link LoginPage#submitButton()} was fixed
+     * for, ported the same way: scope the search to the nearest ancestor of the Username field
+     * that itself contains a "register" button, falling back to the old page-wide lookup only if
+     * that scoped search finds nothing.
+     */
     private Locator submitButton() {
-        return page.getByRole(AriaRole.BUTTON,
-                new Page.GetByRoleOptions().setName(Pattern.compile("register", Pattern.CASE_INSENSITIVE)));
+        Pattern register = Pattern.compile("register", Pattern.CASE_INSENSITIVE);
+        Locator scoped = fieldNear("Username")
+                .locator("xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)),"
+                        + " 'REGISTER', 'register'), 'register')]][1]")
+                .getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(register));
+        if (scoped.count() > 0) {
+            return scoped;
+        }
+        return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(register));
     }
 
+    /** Clears the welcome banner and the Daily Mission panel if either is up before clicking -
+     *  never the full {@link #dismissOverlays()}; see {@link #navigateTo()}'s Javadoc for why. */
     public void submit() {
+        dismissWelcomeBanner();
+        dismissDailyMission();
         submitButton().first().click();
     }
 

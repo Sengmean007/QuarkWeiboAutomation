@@ -302,9 +302,8 @@
   <details class="rpt-sum" open>
     <summary>
       <span class="rpt-line"><span class="chev" aria-hidden="true"></span><h1>Login new ui test</h1><span class="rpt-toggle-hint">click to minimise / expand</span></span>
-      <span class="rpt-counts"><span class="cnt pass"><i>&#10003;</i>1 passed</span><span class="cnt fail"><i>&#10007;</i>9 failed</span><span class="cnt skip"><i>&#8856;</i>2 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">12 cases</span></span>
-<span class="bar">      <span class="seg pass" style="width:8.3333%" title="1 passed"></span>
-      <span class="seg fail" style="width:75.0000%" title="9 failed"></span>
+      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail"><i>&#10007;</i>10 failed</span><span class="cnt skip"><i>&#8856;</i>2 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">12 cases</span></span>
+<span class="bar">      <span class="seg fail" style="width:83.3333%" title="10 failed"></span>
       <span class="seg skip" style="width:16.6667%" title="2 skipped"></span>
 </span>
     </summary>
@@ -312,45 +311,41 @@
     <div class="meta">
       <div><b>Target:</b> https://test-v2.138hk.vip</div>
       <div><b>Account:</b> qa00002</div>
-      <div><b>Run:</b> 2026-10-23 10:01</div>
-      <div><b>Elapsed:</b> 355.1s</div>
-      <div><b>Scope:</b> 1 of 17 suites executed</div>
+      <div><b>Run:</b> 2026-10-23 17:29</div>
+      <div><b>Elapsed:</b> 568.7s</div>
+      <div><b>Scope:</b> 3 of 18 suites executed</div>
       <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
-      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Runner:</b> JUnit 5 on Java 17.0.18</div>
       <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
     <h2 class="rpt-h">Statistics</h2>
     <div class="tiles">
         <div class="tile "><b>12</b><span>cases</span></div>
-        <div class="tile pass"><b><i>&#10003;</i>1</b><span>passed</span></div>
-        <div class="tile fail"><b><i>&#10007;</i>9</b><span>failed</span></div>
+        <div class="tile pass"><b><i>&#10003;</i>0</b><span>passed</span></div>
+        <div class="tile fail"><b><i>&#10007;</i>10</b><span>failed</span></div>
         <div class="tile skip"><b><i>&#8856;</i>2</b><span>skipped</span></div>
         <div class="tile notrun"><b><i>&#9675;</i>0</b><span>not run</span></div>
-        <div class="tile"><b>8%</b><span>pass rate of the cases that ran</span></div>
-        <div class="tile"><b>331.4s</b><span>browser time</span></div>
+        <div class="tile"><b>0%</b><span>pass rate of the cases that ran</span></div>
+        <div class="tile"><b>53.2s</b><span>browser time</span></div>
     </div>
-      <div class="chart" role="img" aria-label="Login new ui test: 1 passed, 9 failed, 2 skipped, 0 not run">
-        <div class="stack big"><span class="seg pass" style="flex-grow:1" tabindex="0" data-tip="Login new ui test - 1 passed (8%)"><em>1</em></span><span class="seg fail" style="flex-grow:9" tabindex="0" data-tip="Login new ui test - 9 failed (75%)"><em>9</em></span><span class="seg skip" style="flex-grow:2" tabindex="0" data-tip="Login new ui test - 2 skipped (17%)"><em>2</em></span></div>
+      <div class="chart" role="img" aria-label="Login new ui test: 0 passed, 10 failed, 2 skipped, 0 not run">
+        <div class="stack big"><span class="seg fail" style="flex-grow:10" tabindex="0" data-tip="Login new ui test - 10 failed (83%)"><em>10</em></span><span class="seg skip" style="flex-grow:2" tabindex="0" data-tip="Login new ui test - 2 skipped (17%)"><em>2</em></span></div>
         <div class="chart-legend"><span><i class="sw pass"></i>Passed</span><span><i class="sw fail"></i>Failed</span><span><i class="sw skip"></i>Skipped</span><span><i class="sw notrun"></i>Not run</span></div>
       </div>
     <h2 class="rpt-h">Cases by result</h2>
     <div class="case-lists">
-      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(9)</span></summary>
+      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(10)</span></summary>
         <ol>
-          <li><a href="#case-LoginNewUiTest-usernameTooLong_showsLengthError">LOGIN-002</a> username outside 6-12 characters is rejected inline (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-wrongCredentials_showsGenericError">LOGIN-003</a> wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-wrongCaptcha_isRejected">LOGIN-004</a> wrong verification code is rejected even with correct credentials (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-validCredentials_signIn">LOGIN-005</a> valid credentials sign the member in (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-session_persistsAcrossReload">LOGIN-006</a> session persists across a page reload (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-missingVerificationCode_cannotSignIn">LOGIN-007</a> a login without a verification code cannot be submitted (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-usernameOnly_cannotSignIn">LOGIN-008</a> a username on its own cannot be submitted (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-specialCharacterUsername_isRefused">LOGIN-009</a> a username with special characters is refused (New UI)<div class="why">Error {</div></li>
-          <li><a href="#case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies">LOGIN-012</a> a valid sign-in leaves no credentials in cookies (New UI)<div class="why">Error {</div></li>
-        </ol>
-      </details>
-      <details class="cl pass"><summary><i>&#10003;</i>Passed <span class="n">(1)</span></summary>
-        <ol>
-          <li><a href="#case-LoginNewUiTest-emptyForm_showsNoFeedback">LOGIN-001</a> empty form shows no validation message (known gap) (New UI)</li>
+          <li><a href="#case-LoginNewUiTest-emptyForm_showsNoFeedback">LOGIN-001</a> empty form shows no validation message (known gap) (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-usernameTooLong_showsLengthError">LOGIN-002</a> username outside 6-12 characters is rejected inline (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-wrongCredentials_showsGenericError">LOGIN-003</a> wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-wrongCaptcha_isRejected">LOGIN-004</a> wrong verification code is rejected even with correct credentials (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-validCredentials_signIn">LOGIN-005</a> valid credentials sign the member in (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-session_persistsAcrossReload">LOGIN-006</a> session persists across a page reload (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-missingVerificationCode_cannotSignIn">LOGIN-007</a> a login without a verification code cannot be submitted (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-usernameOnly_cannotSignIn">LOGIN-008</a> a username on its own cannot be submitted (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-specialCharacterUsername_isRefused">LOGIN-009</a> a username with special characters is refused (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+          <li><a href="#case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies">LOGIN-012</a> a valid sign-in leaves no credentials in cookies (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
         </ol>
       </details>
       <details class="cl skip"><summary><i>&#8856;</i>Skipped <span class="n">(2)</span></summary>
@@ -365,17 +360,18 @@
 
   <div class="nav"><a href="index.html">&larr; All suites</a></div>
   <div class="callout bad">
-    <h2>9 cases need attention</h2>
+    <h2>10 cases need attention</h2>
     <ol class="findings">
-      <li><a href="#case-LoginNewUiTest-usernameTooLong_showsLengthError">LOGIN-002</a> username outside 6-12 characters is rejected inline (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-wrongCredentials_showsGenericError">LOGIN-003</a> wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-wrongCaptcha_isRejected">LOGIN-004</a> wrong verification code is rejected even with correct credentials (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-validCredentials_signIn">LOGIN-005</a> valid credentials sign the member in (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-session_persistsAcrossReload">LOGIN-006</a> session persists across a page reload (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-missingVerificationCode_cannotSignIn">LOGIN-007</a> a login without a verification code cannot be submitted (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-usernameOnly_cannotSignIn">LOGIN-008</a> a username on its own cannot be submitted (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-specialCharacterUsername_isRefused">LOGIN-009</a> a username with special characters is refused (New UI)<div class="why">Error {</div></li>
-      <li><a href="#case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies">LOGIN-012</a> a valid sign-in leaves no credentials in cookies (New UI)<div class="why">Error {</div></li>
+      <li><a href="#case-LoginNewUiTest-emptyForm_showsNoFeedback">LOGIN-001</a> empty form shows no validation message (known gap) (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-usernameTooLong_showsLengthError">LOGIN-002</a> username outside 6-12 characters is rejected inline (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-wrongCredentials_showsGenericError">LOGIN-003</a> wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-wrongCaptcha_isRejected">LOGIN-004</a> wrong verification code is rejected even with correct credentials (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-validCredentials_signIn">LOGIN-005</a> valid credentials sign the member in (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-session_persistsAcrossReload">LOGIN-006</a> session persists across a page reload (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-missingVerificationCode_cannotSignIn">LOGIN-007</a> a login without a verification code cannot be submitted (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-usernameOnly_cannotSignIn">LOGIN-008</a> a username on its own cannot be submitted (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-specialCharacterUsername_isRefused">LOGIN-009</a> a username with special characters is refused (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
+      <li><a href="#case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies">LOGIN-012</a> a valid sign-in leaves no credentials in cookies (New UI)<div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></li>
     </ol>
     <p>A case tagged <code>known-defect</code> is red on purpose: it asserts the behaviour the application <i>should</i> have and stays red until the finding is fixed. The rest are this run's news.</p>
   </div>
@@ -397,18 +393,18 @@
   <table class="cases">
     <thead><tr><th>ID</th><th>Test case</th><th>Test steps</th><th>Test data</th><th>Expected result</th><th>Actual result</th><th>Status</th><th>Remark / cause</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr class="case" id="case-LoginNewUiTest-emptyForm_showsNoFeedback" data-status="Pass" data-search="login-001 emptyform_showsnofeedback empty form shows no validation message (known gap) (new ui)">
+      <tr class="case" id="case-LoginNewUiTest-emptyForm_showsNoFeedback" data-status="Fail" data-search="login-001 emptyform_showsnofeedback empty form shows no validation message (known gap) (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-001">LOGIN-001</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>emptyForm_showsNoFeedback</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>empty form shows no validation message (known gap) (New UI)</td>
-        <td>The application behaved as expected.</td>
-        <td><span class="st pass">Pass</span><div class="secs">13.34s</div></td>
-        <td><span class="muted">&mdash;</span></td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.77s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Pass">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -418,39 +414,47 @@
                 <dt>Method</dt><dd>LoginNewUiTest#emptyForm_showsNoFeedback</dd>
                 <dt>Expected result</dt><dd>empty form shows no validation message (known gap) (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Pass in 13.34s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.77s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
+              <h3>The failure</h3>
               <dl>
-                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
-                <dt>Verified</dt><dd>empty form shows no validation message (known gap) (New UI)</dd>
-                <dt>Duration</dt><dd>13.34 seconds</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.emptyForm_showsNoFeedback(LoginNewUiTest.java:76)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.emptyForm_showsNoFeedback(LoginNewUiTest.java:76)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-usernameTooLong_showsLengthError" data-status="Error" data-search="login-002 usernametoolong_showslengtherror username outside 6-12 characters is rejected inline (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-usernameTooLong_showsLengthError" data-status="Fail" data-search="login-002 usernametoolong_showslengtherror username outside 6-12 characters is rejected inline (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-002">LOGIN-002</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>usernameTooLong_showsLengthError</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>username outside 6-12 characters is rejected inline (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">31.24s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.79s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -460,89 +464,47 @@
                 <dt>Method</dt><dd>LoginNewUiTest#usernameTooLong_showsLengthError</dd>
                 <dt>Expected result</dt><dd>username outside 6-12 characters is rejected inline (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 31.24s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.79s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.tests.auth.LoginNewUiTest.usernameTooLong_showsLengthError(LoginNewUiTest.java:96)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.usernameTooLong_showsLengthError(LoginNewUiTest.java:93)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.tests.auth.LoginNewUiTest.usernameTooLong_showsLengthError(LoginNewUiTest.java:96)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 10 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.usernameTooLong_showsLengthError(LoginNewUiTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-wrongCredentials_showsGenericError" data-status="Error" data-search="login-003 wrongcredentials_showsgenericerror wrong username/password shows 'wrong username/password, please re-enter.' (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-wrongCredentials_showsGenericError" data-status="Fail" data-search="login-003 wrongcredentials_showsgenericerror wrong username/password shows 'wrong username/password, please re-enter.' (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-003">LOGIN-003</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>wrongCredentials_showsGenericError</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">34.14s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.85s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -552,90 +514,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#wrongCredentials_showsGenericError</dd>
                 <dt>Expected result</dt><dd>wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 34.14s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.85s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.tests.auth.LoginNewUiTest.wrongCredentials_showsGenericError(LoginNewUiTest.java:110)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.wrongCredentials_showsGenericError(LoginNewUiTest.java:108)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.tests.auth.LoginNewUiTest.wrongCredentials_showsGenericError(LoginNewUiTest.java:110)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.wrongCredentials_showsGenericError(LoginNewUiTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-wrongCaptcha_isRejected" data-status="Error" data-search="login-004 wrongcaptcha_isrejected wrong verification code is rejected even with correct credentials (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-wrongCaptcha_isRejected" data-status="Fail" data-search="login-004 wrongcaptcha_isrejected wrong verification code is rejected even with correct credentials (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-004">LOGIN-004</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>wrongCaptcha_isRejected</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>wrong verification code is rejected even with correct credentials (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">34.01s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">3.77s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -645,90 +564,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#wrongCaptcha_isRejected</dd>
                 <dt>Expected result</dt><dd>wrong verification code is rejected even with correct credentials (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 34.01s</dd>
+                <dt>Outcome</dt><dd>Fail in 3.77s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.tests.auth.LoginNewUiTest.wrongCaptcha_isRejected(LoginNewUiTest.java:126)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.wrongCaptcha_isRejected(LoginNewUiTest.java:124)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.tests.auth.LoginNewUiTest.wrongCaptcha_isRejected(LoginNewUiTest.java:126)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.wrongCaptcha_isRejected(LoginNewUiTest.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-validCredentials_signIn" data-status="Error" data-search="login-005 validcredentials_signin valid credentials sign the member in (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-validCredentials_signIn" data-status="Fail" data-search="login-005 validcredentials_signin valid credentials sign the member in (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-005">LOGIN-005</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>validCredentials_signIn</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>valid credentials sign the member in (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">29.50s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.62s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -738,90 +614,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#validCredentials_signIn</dd>
                 <dt>Expected result</dt><dd>valid credentials sign the member in (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 29.50s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.62s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.tests.auth.LoginNewUiTest.validCredentials_signIn(LoginNewUiTest.java:139)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.validCredentials_signIn(LoginNewUiTest.java:145)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.tests.auth.LoginNewUiTest.validCredentials_signIn(LoginNewUiTest.java:139)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.validCredentials_signIn(LoginNewUiTest.java:145)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-session_persistsAcrossReload" data-status="Error" data-search="login-006 session_persistsacrossreload session persists across a page reload (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-session_persistsAcrossReload" data-status="Fail" data-search="login-006 session_persistsacrossreload session persists across a page reload (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-006">LOGIN-006</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>session_persistsAcrossReload</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>session persists across a page reload (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">54.67s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">15.51s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -831,92 +664,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#session_persistsAcrossReload</dd>
                 <dt>Expected result</dt><dd>session persists across a page reload (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 54.67s</dd>
+                <dt>Outcome</dt><dd>Fail in 15.51s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.base.BaseTest.signIn(BaseTest.java:148)</code><code>org.sengmean.base.BaseTest.signIn(BaseTest.java:144)</code><code>org.sengmean.tests.auth.LoginNewUiTest.session_persistsAcrossReload(LoginNewUiTest.java:149)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.session_persistsAcrossReload(LoginNewUiTest.java:163)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.base.BaseTest.signIn(BaseTest.java:148)
-	at org.sengmean.base.BaseTest.signIn(BaseTest.java:144)
-	at org.sengmean.tests.auth.LoginNewUiTest.session_persistsAcrossReload(LoginNewUiTest.java:149)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 13 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.session_persistsAcrossReload(LoginNewUiTest.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-missingVerificationCode_cannotSignIn" data-status="Error" data-search="login-007 missingverificationcode_cannotsignin a login without a verification code cannot be submitted (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-missingVerificationCode_cannotSignIn" data-status="Fail" data-search="login-007 missingverificationcode_cannotsignin a login without a verification code cannot be submitted (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-007">LOGIN-007</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>missingVerificationCode_cannotSignIn</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a login without a verification code cannot be submitted (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">44.37s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">14.69s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -926,90 +714,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#missingVerificationCode_cannotSignIn</dd>
                 <dt>Expected result</dt><dd>a login without a verification code cannot be submitted (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 44.37s</dd>
+                <dt>Outcome</dt><dd>Fail in 14.69s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithoutVerificationCode(LoginPage.java:133)</code><code>org.sengmean.tests.auth.LoginNewUiTest.missingVerificationCode_cannotSignIn(LoginNewUiTest.java:165)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.missingVerificationCode_cannotSignIn(LoginNewUiTest.java:179)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithoutVerificationCode(LoginPage.java:133)
-	at org.sengmean.tests.auth.LoginNewUiTest.missingVerificationCode_cannotSignIn(LoginNewUiTest.java:165)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.missingVerificationCode_cannotSignIn(LoginNewUiTest.java:179)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-usernameOnly_cannotSignIn" data-status="Error" data-search="login-008 usernameonly_cannotsignin a username on its own cannot be submitted (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-usernameOnly_cannotSignIn" data-status="Fail" data-search="login-008 usernameonly_cannotsignin a username on its own cannot be submitted (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-008">LOGIN-008</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>usernameOnly_cannotSignIn</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a username on its own cannot be submitted (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">29.63s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.70s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -1019,90 +764,47 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#usernameOnly_cannotSignIn</dd>
                 <dt>Expected result</dt><dd>a username on its own cannot be submitted (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 29.63s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.70s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithUsernameOnly(LoginPage.java:141)</code><code>org.sengmean.tests.auth.LoginNewUiTest.usernameOnly_cannotSignIn(LoginNewUiTest.java:181)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.usernameOnly_cannotSignIn(LoginNewUiTest.java:195)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithUsernameOnly(LoginPage.java:141)
-	at org.sengmean.tests.auth.LoginNewUiTest.usernameOnly_cannotSignIn(LoginNewUiTest.java:181)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.usernameOnly_cannotSignIn(LoginNewUiTest.java:195)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-specialCharacterUsername_isRefused" data-status="Error" data-search="login-009 specialcharacterusername_isrefused a username with special characters is refused (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-specialCharacterUsername_isRefused" data-status="Fail" data-search="login-009 specialcharacterusername_isrefused a username with special characters is refused (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-009">LOGIN-009</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>specialCharacterUsername_isRefused</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a username with special characters is refused (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">29.66s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">3.01s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -1112,67 +814,29 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#specialCharacterUsername_isRefused</dd>
                 <dt>Expected result</dt><dd>a username with special characters is refused (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 29.66s</dd>
+                <dt>Outcome</dt><dd>Fail in 3.01s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.tests.auth.LoginNewUiTest.specialCharacterUsername_isRefused(LoginNewUiTest.java:205)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.specialCharacterUsername_isRefused(LoginNewUiTest.java:219)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.tests.auth.LoginNewUiTest.specialCharacterUsername_isRefused(LoginNewUiTest.java:205)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.specialCharacterUsername_isRefused(LoginNewUiTest.java:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>
@@ -1186,7 +850,7 @@ Call log:
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>repeated wrong passwords never eventually let a brute-force in (New UI)</td>
         <td>Assumption failed: Needs a real account this case may lock out: -Dtest.wrongpass.username=&lt;username&gt;. There is no default, because repeated wrong passwords may lock the account and the shared qa00002 account must stay usable for every other suite.</td>
-        <td><span class="st partial">Skipped</span><div class="secs">0.03s</div></td>
+        <td><span class="st partial">Skipped</span><div class="secs">0.01s</div></td>
         <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.<br><b>Skipped.</b> An assumption the case depends on did not hold, so it stopped rather than report a defect it could not have proved. Open <i>Details</i> for how far it got.</td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -1200,7 +864,7 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#repeatedWrongPasswords_neverSignIn</dd>
                 <dt>Expected result</dt><dd>repeated wrong passwords never eventually let a brute-force in (New UI)</dd>
                 <dt>Tags</dt><dd>creates-data</dd>
-                <dt>Outcome</dt><dd>Skipped in 0.03s</dd>
+                <dt>Outcome</dt><dd>Skipped in 0.01s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -1221,7 +885,7 @@ Call log:
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>an account that was never activated is refused (New UI)</td>
         <td>Assumption failed: Needs a real never-activated account: -Dtest.unactivated.username=&lt;username&gt;. No default - this project has no such account confirmed in this environment.</td>
-        <td><span class="st partial">Skipped</span><div class="secs">0.01s</div></td>
+        <td><span class="st partial">Skipped</span><div class="secs">0.00s</div></td>
         <td><b>Skipped.</b> An assumption the case depends on did not hold, so it stopped rather than report a defect it could not have proved. Open <i>Details</i> for how far it got.</td>
         <td><span class="muted">&mdash;</span></td>
       </tr>
@@ -1235,7 +899,7 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#unactivatedAccount_isRefused</dd>
                 <dt>Expected result</dt><dd>an account that was never activated is refused (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Skipped in 0.01s</dd>
+                <dt>Outcome</dt><dd>Skipped in 0.00s</dd>
               </dl>
             </div>
             <div class="panel">
@@ -1249,23 +913,18 @@ Call log:
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies" data-status="Error" data-search="login-012 validsignin_leavesnocredentialsincookies a valid sign-in leaves no credentials in cookies (new ui) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;)">
+      <tr class="case" id="case-LoginNewUiTest-validSignIn_leavesNoCredentialsInCookies" data-status="Fail" data-search="login-012 validsignin_leavesnocredentialsincookies a valid sign-in leaves no credentials in cookies (new ui) expected new interface to be the chosen ui version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;">
         <td class="id" id="LOGIN-012">LOGIN-012</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>validSignIn_leavesNoCredentialsInCookies</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>a valid sign-in leaves no credentials in cookies (New UI)</td>
-        <td><div class="why">Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatche ...</div></td>
-        <td><span class="st fail">Error</span><div class="secs">30.83s</div></td>
-        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code></td>
+        <td><div class="why">Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">2.49s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code></td>
         <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Error">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -1275,67 +934,29 @@ Call log:
                 <dt>Method</dt><dd>LoginNewUiTest#validSignIn_leavesNoCredentialsInCookies</dd>
                 <dt>Expected result</dt><dd>a valid sign-in leaves no credentials in cookies (New UI)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Error in 30.83s</dd>
+                <dt>Outcome</dt><dd>Fail in 2.49s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The failure</h3>
               <dl>
-                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
-                <dt>Message</dt><dd>Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-</dd>
-                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
-                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)</code><code>org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)</code><code>org.sengmean.tests.auth.LoginNewUiTest.validSignIn_leavesNoCredentialsInCookies(LoginNewUiTest.java:304)</code></div></dd>
-                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>true</code></div><div><span>actual</span><code>false</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)</code><code>org.sengmean.tests.auth.LoginNewUiTest.validSignIn_leavesNoCredentialsInCookies(LoginNewUiTest.java:318)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
               </dl>
-              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
-	at com.microsoft.playwright.impl.FrameImpl.fill(FrameImpl.java:310)
-	at com.microsoft.playwright.impl.LocatorImpl.fill(LocatorImpl.java:265)
-	at com.microsoft.playwright.Locator.fill(Locator.java:3164)
-	at org.sengmean.page.auth.LoginPage.fillUsername(LoginPage.java:45)
-	at org.sengmean.page.auth.LoginPage.loginWithAllFields(LoginPage.java:101)
-	at org.sengmean.tests.auth.LoginNewUiTest.validSignIn_leavesNoCredentialsInCookies(LoginNewUiTest.java:304)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 20000ms exceeded.
-  name='TimeoutError
-  stack='TimeoutError: Timeout 20000ms exceeded.
-    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\progress.js:86:28)
-    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:91:31)
-    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-13577813261930105760\package\lib\server\dispatchers\dispatcher.js:325:39)
-}
-Call log:
--   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;)
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
-	... 11 more
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Expected New Interface to be the chosen UI version - ui-version is &quot;old&quot; ==&gt; expected: &lt;true&gt; but was: &lt;false&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at org.sengmean.tests.auth.LoginNewUiTest.openAsVisitorChoosingNewUi(LoginNewUiTest.java:374)
+	at org.sengmean.tests.auth.LoginNewUiTest.validSignIn_leavesNoCredentialsInCookies(LoginNewUiTest.java:318)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 </pre></details>
             </div>
           </div>

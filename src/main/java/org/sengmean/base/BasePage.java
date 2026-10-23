@@ -457,14 +457,54 @@ public class BasePage {
         return "old".equalsIgnoreCase(uiVersion());
     }
 
-    /** Answers the picker with New Interface when it is up; harmless otherwise. */
+    /**
+     * Answers the picker with New Interface when it is up, then falls back to the header's own
+     * UI toggle if the wrong version is still showing afterward - see {@link #ensureUiVersion}.
+     */
     public void chooseNewUi() {
         answerUiVersionPicker("Choose New");
+        ensureUiVersion(true);
     }
 
-    /** Answers the picker with Classic Interface when it is up; harmless otherwise. */
+    /** As {@link #chooseNewUi()}, for Classic Interface. */
     public void chooseClassicUi() {
         answerUiVersionPicker("Choose Classic");
+        ensureUiVersion(false);
+    }
+
+    /**
+     * Falls back to the header's own New UI / Classic UI toggle - confirmed live (2026-10-23) to
+     * exist on every page, independent of the first-visit picker - for when the picker never
+     * appeared at all.
+     *
+     * <h2>Why this was needed</h2>
+     * Confirmed live: {@code isUiVersionPickerUp()} can be false from the very first check on
+     * what Playwright considers a brand-new, cookie-less context - the picker simply never shows.
+     * {@code answerUiVersionPicker}'s retry loop only re-clicks while the picker <i>is</i> up, so
+     * when it is never up to begin with, nothing is ever clicked and the page is left on whatever
+     * version the site defaults a seemingly-returning visitor to - which broke every case in
+     * {@code LoginNewUiTest} in one real run (every failure landing in 2-4s, far too fast for the
+     * picker-retry loop to have run at all, confirming it skipped straight past). The site
+     * evidently recognises "has visited before" by something other than cookies/localStorage - an
+     * IP or device fingerprint is the likely candidate, not confirmed further than that.
+     *
+     * <p>The toggle's own text names the <b>other</b> option, confirmed live - it reads "New UI"
+     * while Classic Interface is active, "Classic UI" while New Interface is active - so wanting
+     * New Interface means looking for a control that says "New UI", not "Classic UI".
+     */
+    private void ensureUiVersion(boolean wantNew) {
+        if (wantNew ? isNewUiChosen() : isClassicUiChosen()) {
+            return;
+        }
+        String toggleLabel = wantNew ? "New UI" : "Classic UI";
+        Locator toggle = page.getByText(toggleLabel, new Page.GetByTextOptions().setExact(true))
+                .filter(new Locator.FilterOptions().setVisible(true));
+        if (toggle.count() == 0) {
+            return;
+        }
+        toggle.first().click();
+        page.waitForTimeout(2_000);
+        awaitReady();
     }
 
     private void answerUiVersionPicker(String buttonName) {
@@ -528,8 +568,23 @@ public class BasePage {
         }
     }
 
-    /** Every language row currently listed, in whatever script each one prints its own name. */
-    private static final String LANGUAGE_ROW = "[class*='HeaderTop_title' i]";
+    /**
+     * Every language row currently listed, in whatever script each one prints its own name.
+     *
+     * <h2>Two classes, not one</h2>
+     * Confirmed live (2026-10-23), on the same page, minutes apart, with nothing else changed:
+     * the row's class was {@code HeaderTop_title__<hash>} in one load and
+     * {@code HeaderTop_language-name__<hash>} in the next - not a selector-confidence guess that
+     * turned out wrong once, but the site itself rendering this row under two different classes
+     * across loads. Matching only the first is exactly what made every case in
+     * {@code LoginMultiLanguageTest} this unreliable: whichever class that particular run's page
+     * happened not to use, the row search timed out, and every step downstream of it (the login
+     * form never opening, {@code fillUsername} waiting on a field that was never going to appear)
+     * failed as a consequence - not because any of those later steps were themselves broken.
+     * Matching both is the fix, not a third guess at "the real one".
+     */
+    private static final String LANGUAGE_ROW =
+            "[class*='HeaderTop_title' i], [class*='HeaderTop_language-name' i]";
 
     /**
      * Opens the language menu and chooses a row by its English name (e.g. "Traditional Chinese"),
