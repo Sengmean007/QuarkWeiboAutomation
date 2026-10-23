@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.sengmean.base.BaseTest;
 import org.sengmean.page.auth.LoginPage;
+import org.sengmean.page.wallet.HomePage;
 
 import java.util.List;
 
@@ -15,8 +16,30 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 /**
- * The Log In form on https://test-v2.138hk.vip, covering the cases run manually on 2026-10-16
- * against qa00002 / password / captcha 1111.
+ * The Log In form on https://test-v2.138hk.vip, under <b>New UI</b> - covering the cases run
+ * manually on 2026-10-16 against qa00002 / password / captcha 1111.
+ *
+ * <h2>Why this exists alongside {@link LoginClassicUiTest}</h2>
+ * This project's README used to carry Login and Register as the two exceptions to the New UI /
+ * Classic UI split, on the grounds that "the login/register forms are reached independently of
+ * the home page's UI-version picker, with no evidence either form differs by UI version" - which
+ * was true as far as it went, but was never actually confirmed either way for Login. This class
+ * and {@link LoginClassicUiTest} close that gap for Login specifically: each one answers the
+ * home page's picker first ({@link #openAsVisitorChoosingNewUi()} / that class's Classic Interface
+ * twin) before ever touching the login form, the same shape {@code DepositNewUiTest} /
+ * {@code ClassicUiTest} and the rest of the UI-split suites already use. Register is left as the
+ * README's one remaining exception; nothing here changes that.
+ *
+ * <h2>Welcome banner and Daily Mission - closed if up, ignored if not</h2>
+ * Every entry point into the login form now clears both unprompted overlays rather than assuming
+ * neither is up: {@link org.sengmean.base.BasePage#dismissOverlays()} - called on the home page
+ * before and after answering the picker, and again by {@link LoginPage#navigateTo()} right after
+ * it lands on the login route - closes the welcome banner and the Daily Mission panel when either
+ * is covering the page, and does nothing (not even a log line beyond "none on the page") when
+ * neither is. {@code LoginPage.submit()}/{@code attemptSubmit()} clear them once more immediately
+ * before clicking, since either can still be the reason a click never reaches the real LOG IN
+ * button - see {@code LoginPage.submitButton()}'s own Javadoc for the other reason a click could
+ * silently miss it (the header's own "Log In" control matching the same lookup).
  *
  * <h2>LOGIN-007 onward - ported from the sibling NewWeibo_automation project</h2>
  * NewWeibo_automation's own {@code LoginTest} (14 cases, a different client site) was read in
@@ -41,14 +64,16 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
  * never activated is refused. A sixth, LOGIN-012, is new coverage this project's own LOGIN-005
  * never checked: that a successful sign-in does not leave the member's own credentials sitting in
  * a cookie.
+ *
+ * <h2>Case ids: LOGIN-001 - LOGIN-012 here, continuing at LOGIN-013 in {@link LoginClassicUiTest}</h2>
  */
-public class LoginTest extends BaseTest {
+public class LoginNewUiTest extends BaseTest {
 
     /** LOGIN-001 - submitting with every field empty shows no feedback at all. Known UX gap. */
     @Test
-    @DisplayName("LOGIN-001: empty form shows no validation message (known gap)")
+    @DisplayName("LOGIN-001: empty form shows no validation message (known gap) (New UI)")
     void emptyForm_showsNoFeedback() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.navigateTo();
         login.submit();
@@ -63,9 +88,9 @@ public class LoginTest extends BaseTest {
 
     /** LOGIN-002 - a username outside 6-12 chars shows the length rule inline. */
     @Test
-    @DisplayName("LOGIN-002: username outside 6-12 characters is rejected inline")
+    @DisplayName("LOGIN-002: username outside 6-12 characters is rejected inline (New UI)")
     void usernameTooLong_showsLengthError() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.navigateTo();
         login.fillUsername("notarealuser999");
@@ -78,9 +103,9 @@ public class LoginTest extends BaseTest {
 
     /** LOGIN-003 - a valid-length wrong username or wrong password both show the same board. */
     @Test
-    @DisplayName("LOGIN-003: wrong username/password shows 'Wrong username/password, please re-enter.'")
+    @DisplayName("LOGIN-003: wrong username/password shows 'Wrong username/password, please re-enter.' (New UI)")
     void wrongCredentials_showsGenericError() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields("wronguser1", "wrongpass", CAPTCHA);
         page.waitForTimeout(1_000);
@@ -94,9 +119,9 @@ public class LoginTest extends BaseTest {
      * a dedicated QA bypass rather than the environment reading the captcha image.
      */
     @Test
-    @DisplayName("LOGIN-004: wrong verification code is rejected even with correct credentials")
+    @DisplayName("LOGIN-004: wrong verification code is rejected even with correct credentials (New UI)")
     void wrongCaptcha_isRejected() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields(USERNAME, PASSWORD, "9999");
         page.waitForTimeout(1_000);
@@ -105,27 +130,43 @@ public class LoginTest extends BaseTest {
                 "Expected the verification-code wording, got: " + login.errorMessage());
     }
 
-    /** LOGIN-005 - valid credentials sign the member in. */
+    /**
+     * LOGIN-005 - valid credentials sign the member in, <b>and</b> New Interface is still the
+     * chosen UI version afterward - sign-in is itself a navigation, and this site's UI-version
+     * picker is documented ({@link org.sengmean.base.BasePage#chooseNewUi()}) to sometimes
+     * re-ask after one. Every other UI-split suite in this project ({@code DepositNewUiTest}'s
+     * {@code openDeposit()}, {@code ResponsiveLayoutNewUiTest}'s {@code memberLayoutHolds()})
+     * re-checks this after signing in; the login suite should not be the one place that assumes
+     * it instead.
+     */
     @Test
-    @DisplayName("LOGIN-005: valid credentials sign the member in")
+    @DisplayName("LOGIN-005: valid credentials sign the member in (New UI)")
     void validCredentials_signIn() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields(USERNAME, PASSWORD, CAPTCHA);
         page.waitForTimeout(2_000);
-        assertTrue(login.isSignedIn(), "Expected the header to show the signed-in state.");
+        assertSignedInAndNewUiChosen(page, login, "signing in");
     }
 
-    /** LOGIN-006 - the session survives a full page reload. */
+    /**
+     * LOGIN-006 - the session survives a full page reload, <b>and</b> the reload did not
+     * silently revert the UI choice either - same reasoning as LOGIN-005's own fix. A plain
+     * {@code page.navigate()} like this one is exactly the kind of navigation the picker can
+     * re-ask on; this case used to check only {@code isSignedIn()}, which would have stayed
+     * green even if the picker had come back over the page, since
+     * {@code LoginPage.isSignedIn()} matches "Log out" by text without checking visibility.
+     */
     @Test
-    @DisplayName("LOGIN-006: session persists across a page reload")
+    @DisplayName("LOGIN-006: session persists across a page reload (New UI)")
     void session_persistsAcrossReload() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         signIn(page);
         page.navigate(org.sengmean.base.BasePage.url("/en/"));
         page.waitForLoadState();
-        assertTrue(new LoginPage(page).isSignedIn(),
-                "Expected to still be signed in after a reload.");
+        LoginPage login = new LoginPage(page);
+        login.dismissOverlays();
+        assertSignedInAndNewUiChosen(page, login, "reloading");
     }
 
     /**
@@ -133,9 +174,9 @@ public class LoginTest extends BaseTest {
      * verification code must not be accepted as if it were a complete, valid submission.
      */
     @Test
-    @DisplayName("LOGIN-007: a login without a verification code cannot be submitted")
+    @DisplayName("LOGIN-007: a login without a verification code cannot be submitted (New UI)")
     void missingVerificationCode_cannotSignIn() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         boolean clicked = login.loginWithoutVerificationCode(USERNAME, PASSWORD);
         page.waitForTimeout(1_000);
@@ -149,9 +190,9 @@ public class LoginTest extends BaseTest {
      * password and no verification code, must not be accepted.
      */
     @Test
-    @DisplayName("LOGIN-008: a username on its own cannot be submitted")
+    @DisplayName("LOGIN-008: a username on its own cannot be submitted (New UI)")
     void usernameOnly_cannotSignIn() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         boolean clicked = login.loginWithUsernameOnly(USERNAME);
         page.waitForTimeout(1_000);
@@ -173,9 +214,9 @@ public class LoginTest extends BaseTest {
      * character-set guard on this site.
      */
     @Test
-    @DisplayName("LOGIN-009: a username with special characters is refused")
+    @DisplayName("LOGIN-009: a username with special characters is refused (New UI)")
     void specialCharacterUsername_isRefused() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields(SPECIAL_CHARACTER_USERNAME, PASSWORD, CAPTCHA);
         page.waitForTimeout(1_000);
@@ -216,10 +257,10 @@ public class LoginTest extends BaseTest {
      */
     @Test
     @Tag("creates-data")
-    @DisplayName("LOGIN-010: repeated wrong passwords never eventually let a brute-force in")
+    @DisplayName("LOGIN-010: repeated wrong passwords never eventually let a brute-force in (New UI)")
     void repeatedWrongPasswords_neverSignIn() {
         requireExpendableAccount();
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         String lastMessage = "";
         for (int attempt = 1; attempt <= 4; attempt++) {
@@ -248,13 +289,13 @@ public class LoginTest extends BaseTest {
      * and reports whatever board message the site actually showed.
      */
     @Test
-    @DisplayName("LOGIN-011: an account that was never activated is refused")
+    @DisplayName("LOGIN-011: an account that was never activated is refused (New UI)")
     void unactivatedAccount_isRefused() {
         assumeTrue(!UNACTIVATED_ACCOUNT.isBlank(),
                 "Needs a real never-activated account: -Dtest.unactivated.username=<username>. "
                         + "No default - this project has no such account confirmed in this "
                         + "environment.");
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields(UNACTIVATED_ACCOUNT, PASSWORD, CAPTCHA);
         page.waitForTimeout(1_000);
@@ -272,13 +313,13 @@ public class LoginTest extends BaseTest {
      * name or value, which would let anyone reading the jar sign in as this member.
      */
     @Test
-    @DisplayName("LOGIN-012: a valid sign-in leaves no credentials in cookies")
+    @DisplayName("LOGIN-012: a valid sign-in leaves no credentials in cookies (New UI)")
     void validSignIn_leavesNoCredentialsInCookies() {
-        Page page = page();
+        Page page = openAsVisitorChoosingNewUi();
         LoginPage login = new LoginPage(page);
         login.loginWithAllFields(USERNAME, PASSWORD, CAPTCHA);
         page.waitForTimeout(2_000);
-        assertTrue(login.isSignedIn(), "Expected the sign-in to succeed before checking cookies.");
+        assertSignedInAndNewUiChosen(page, login, "signing in");
 
         List<Cookie> cookies = context().cookies();
         List<String> leaking = cookies.stream()
@@ -298,5 +339,41 @@ public class LoginTest extends BaseTest {
         }
         String haystack = text.toLowerCase();
         return haystack.contains(USERNAME.toLowerCase()) || haystack.contains(PASSWORD.toLowerCase());
+    }
+
+    // ----------------------------------------------------------------- helpers
+
+    /**
+     * Confirms a sign-in actually landed both ways that matter: the header shows the signed-in
+     * state, <b>and</b> New Interface is still the chosen UI version - see LOGIN-005's own
+     * Javadoc for why the second half is not redundant.
+     */
+    private void assertSignedInAndNewUiChosen(Page page, LoginPage login, String after) {
+        assertTrue(login.isSignedIn(),
+                "Expected the header to show the signed-in state after " + after + ".");
+        HomePage home = new HomePage(page);
+        assertTrue(home.isNewUiChosen(),
+                "Expected New Interface to still be the chosen UI version after " + after
+                        + " - ui-version is \"" + home.uiVersion() + "\"");
+    }
+
+    /**
+     * Opens the home page as a fresh visitor, clears the welcome banner and the Daily Mission
+     * panel if either is up (a no-op when neither is), answers the picker with New Interface,
+     * clears both again (the picker's own overlay can outlive the click by a moment), and asserts
+     * the choice actually stuck before any login case touches the form.
+     */
+    private Page openAsVisitorChoosingNewUi() {
+        Page on = page();
+        HomePage home = new HomePage(on);
+        home.navigateTo();
+        home.dismissOverlays();
+        home.chooseNewUi();
+        home.dismissOverlays();
+
+        assertTrue(home.isNewUiChosen(),
+                "Expected New Interface to be the chosen UI version - ui-version is \""
+                        + home.uiVersion() + "\"");
+        return on;
     }
 }

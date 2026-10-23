@@ -302,42 +302,44 @@
   <details class="rpt-sum" open>
     <summary>
       <span class="rpt-line"><span class="chev" aria-hidden="true"></span><h1>Ux journey classic ui test</h1><span class="rpt-toggle-hint">click to minimise / expand</span></span>
-      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail zero"><i>&#10007;</i>0 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun"><i>&#9675;</i>5 not run</span><span class="cnt">5 cases</span></span>
-<span class="bar">      <span class="seg notrun" style="width:100.0000%" title="5 not run"></span>
+      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail"><i>&#10007;</i>5 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">5 cases</span></span>
+<span class="bar">      <span class="seg fail" style="width:100.0000%" title="5 failed"></span>
 </span>
     </summary>
     <div class="sub">Test case report &mdash; <code>org.sengmean.tests.ux.UxJourneyClassicUiTest</code></div>
     <div class="meta">
-      <div><b>Target:</b> not recorded</div>
-      <div><b>Account:</b> not recorded</div>
-      <div><b>Run:</b> not recorded</div>
-      <div><b>Scope:</b> 0 of 16 suites executed</div>
-      <div><b>Browser:</b> Chromium via Playwright 1.58.0</div>
-      <div><b>Runner:</b> JUnit 5</div>
+      <div><b>Target:</b> https://test-v2.138hk.vip</div>
+      <div><b>Account:</b> qa00002</div>
+      <div><b>Run:</b> 2026-10-23 09:27</div>
+      <div><b>Elapsed:</b> 182.4s</div>
+      <div><b>Scope:</b> 1 of 16 suites executed</div>
+      <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
+      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
     <h2 class="rpt-h">Statistics</h2>
     <div class="tiles">
         <div class="tile "><b>5</b><span>cases</span></div>
         <div class="tile pass"><b><i>&#10003;</i>0</b><span>passed</span></div>
-        <div class="tile fail"><b><i>&#10007;</i>0</b><span>failed</span></div>
+        <div class="tile fail"><b><i>&#10007;</i>5</b><span>failed</span></div>
         <div class="tile skip"><b><i>&#8856;</i>0</b><span>skipped</span></div>
-        <div class="tile notrun"><b><i>&#9675;</i>5</b><span>not run</span></div>
-        <div class="tile"><b>&ndash;</b><span>pass rate of the cases that ran</span></div>
-        <div class="tile"><b>0.0s</b><span>browser time</span></div>
+        <div class="tile notrun"><b><i>&#9675;</i>0</b><span>not run</span></div>
+        <div class="tile"><b>0%</b><span>pass rate of the cases that ran</span></div>
+        <div class="tile"><b>160.8s</b><span>browser time</span></div>
     </div>
-      <div class="chart" role="img" aria-label="Ux journey classic ui test: 0 passed, 0 failed, 0 skipped, 5 not run">
-        <div class="stack big"><span class="seg notrun" style="flex-grow:5" tabindex="0" data-tip="Ux journey classic ui test - 5 not run (100%)"><em>5</em></span></div>
+      <div class="chart" role="img" aria-label="Ux journey classic ui test: 0 passed, 5 failed, 0 skipped, 0 not run">
+        <div class="stack big"><span class="seg fail" style="flex-grow:5" tabindex="0" data-tip="Ux journey classic ui test - 5 failed (100%)"><em>5</em></span></div>
         <div class="chart-legend"><span><i class="sw pass"></i>Passed</span><span><i class="sw fail"></i>Failed</span><span><i class="sw skip"></i>Skipped</span><span><i class="sw notrun"></i>Not run</span></div>
       </div>
     <h2 class="rpt-h">Cases by result</h2>
     <div class="case-lists">
-      <details class="cl notrun"><summary><i>&#9675;</i>Not run <span class="n">(5)</span></summary>
+      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(5)</span></summary>
         <ol>
-          <li><a href="#case-UxJourneyClassicUiTest-onPc">UX-006</a> Classic UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</li>
-          <li><a href="#case-UxJourneyClassicUiTest-onMac">UX-007</a> Classic UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</li>
-          <li><a href="#case-UxJourneyClassicUiTest-onIpad">UX-008</a> Classic UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</li>
-          <li><a href="#case-UxJourneyClassicUiTest-onIphone">UX-009</a> Classic UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</li>
-          <li><a href="#case-UxJourneyClassicUiTest-onAndroid">UX-010</a> Classic UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</li>
+          <li><a href="#case-UxJourneyClassicUiTest-onPc">UX-006</a> Classic UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)<div class="why">Following a link on PC (Windows, Chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+          <li><a href="#case-UxJourneyClassicUiTest-onMac">UX-007</a> Classic UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)<div class="why">Following a link on Mac (macOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+          <li><a href="#case-UxJourneyClassicUiTest-onIpad">UX-008</a> Classic UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)<div class="why">Following a link on iPad (iPadOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+          <li><a href="#case-UxJourneyClassicUiTest-onIphone">UX-009</a> Classic UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)<div class="why">Following a link on iPhone 14 (iOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+          <li><a href="#case-UxJourneyClassicUiTest-onAndroid">UX-010</a> Classic UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)<div class="why">Error {</div></li>
         </ol>
       </details>
     </div>
@@ -345,6 +347,17 @@
   </header>
 
   <div class="nav"><a href="index.html">&larr; All suites</a></div>
+  <div class="callout bad">
+    <h2>5 cases need attention</h2>
+    <ol class="findings">
+      <li><a href="#case-UxJourneyClassicUiTest-onPc">UX-006</a> Classic UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)<div class="why">Following a link on PC (Windows, Chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+      <li><a href="#case-UxJourneyClassicUiTest-onMac">UX-007</a> Classic UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)<div class="why">Following a link on Mac (macOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+      <li><a href="#case-UxJourneyClassicUiTest-onIpad">UX-008</a> Classic UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)<div class="why">Following a link on iPad (iPadOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+      <li><a href="#case-UxJourneyClassicUiTest-onIphone">UX-009</a> Classic UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)<div class="why">Following a link on iPhone 14 (iOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></li>
+      <li><a href="#case-UxJourneyClassicUiTest-onAndroid">UX-010</a> Classic UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)<div class="why">Error {</div></li>
+    </ol>
+    <p>A case tagged <code>known-defect</code> is red on purpose: it asserts the behaviour the application <i>should</i> have and stays red until the finding is fixed. The rest are this run's news.</p>
+  </div>
   <div class="toolbar">
     <div class="filters" role="group" aria-label="Filter cases by status">
       <button type="button" class="flt on" data-filter="all">All</button>
@@ -363,18 +376,18 @@
   <table class="cases">
     <thead><tr><th>ID</th><th>Test case</th><th>Test steps</th><th>Test data</th><th>Expected result</th><th>Actual result</th><th>Status</th><th>Remark / cause</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr class="case" id="case-UxJourneyClassicUiTest-onPc" data-status="Not run" data-search="ux-006 onpc classic ui end-to-end member journey on pc (windows, chrome, 1920x1080)">
+      <tr class="case" id="case-UxJourneyClassicUiTest-onPc" data-status="Fail" data-search="ux-006 onpc classic ui end-to-end member journey on pc (windows, chrome, 1920x1080) following a link on pc (windows, chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;">
         <td class="id" id="UX-006">UX-006</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>onPc</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>Classic UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Following a link on PC (Windows, Chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">24.74s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -384,29 +397,47 @@
                 <dt>Method</dt><dd>UxJourneyClassicUiTest#onPc</dd>
                 <dt>Expected result</dt><dd>Classic UI end-to-end member journey on PC (Windows, Chrome, 1920x1080)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Fail in 24.74s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Following a link on PC (Windows, Chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>false</code></div><div><span>actual</span><code>true</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.onPc(UxJourneyClassicUiTest.java:50)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Following a link on PC (Windows, Chrome) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.onPc(UxJourneyClassicUiTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-UxJourneyClassicUiTest-onMac" data-status="Not run" data-search="ux-007 onmac classic ui end-to-end member journey on mac (macos, safari/webkit, 1440x900)">
+      <tr class="case" id="case-UxJourneyClassicUiTest-onMac" data-status="Fail" data-search="ux-007 onmac classic ui end-to-end member journey on mac (macos, safari/webkit, 1440x900) following a link on mac (macos, safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;">
         <td class="id" id="UX-007">UX-007</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>onMac</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>Classic UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Following a link on Mac (macOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">22.81s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -416,29 +447,47 @@
                 <dt>Method</dt><dd>UxJourneyClassicUiTest#onMac</dd>
                 <dt>Expected result</dt><dd>Classic UI end-to-end member journey on Mac (macOS, Safari/WebKit, 1440x900)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Fail in 22.81s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Following a link on Mac (macOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>false</code></div><div><span>actual</span><code>true</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.onMac(UxJourneyClassicUiTest.java:56)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Following a link on Mac (macOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.onMac(UxJourneyClassicUiTest.java:56)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-UxJourneyClassicUiTest-onIpad" data-status="Not run" data-search="ux-008 onipad classic ui end-to-end member journey on ipad (ipados, safari/webkit, 820x1180, touch)">
+      <tr class="case" id="case-UxJourneyClassicUiTest-onIpad" data-status="Fail" data-search="ux-008 onipad classic ui end-to-end member journey on ipad (ipados, safari/webkit, 820x1180, touch) following a link on ipad (ipados, safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;">
         <td class="id" id="UX-008">UX-008</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>onIpad</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>Classic UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Following a link on iPad (iPadOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">23.54s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -448,29 +497,47 @@
                 <dt>Method</dt><dd>UxJourneyClassicUiTest#onIpad</dd>
                 <dt>Expected result</dt><dd>Classic UI end-to-end member journey on iPad (iPadOS, Safari/WebKit, 820x1180, touch)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Fail in 23.54s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Following a link on iPad (iPadOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>false</code></div><div><span>actual</span><code>true</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.onIpad(UxJourneyClassicUiTest.java:62)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Following a link on iPad (iPadOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.onIpad(UxJourneyClassicUiTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-UxJourneyClassicUiTest-onIphone" data-status="Not run" data-search="ux-009 oniphone classic ui end-to-end member journey on iphone (ios, safari/webkit, 390x844, touch)">
+      <tr class="case" id="case-UxJourneyClassicUiTest-onIphone" data-status="Fail" data-search="ux-009 oniphone classic ui end-to-end member journey on iphone (ios, safari/webkit, 390x844, touch) following a link on iphone 14 (ios, safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;">
         <td class="id" id="UX-009">UX-009</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>onIphone</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>Classic UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Following a link on iPhone 14 (iOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</div></td>
+        <td><span class="st fail">Fail</span><div class="secs">16.75s</div></td>
+        <td><b>Cause:</b> The application produced a different result from the one the case asserts.<br><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Fail">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -480,29 +547,52 @@
                 <dt>Method</dt><dd>UxJourneyClassicUiTest#onIphone</dd>
                 <dt>Expected result</dt><dd>Classic UI end-to-end member journey on iPhone (iOS, Safari/WebKit, 390x844, touch)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Fail in 16.75s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>org.opentest4j.AssertionFailedError</dd>
+                <dt>Message</dt><dd>Following a link on iPhone 14 (iOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;</dd>
+                <dt>Asserted</dt><dd><div class="cmp"><div><span>expected</span><code>false</code></div><div><span>actual</span><code>true</code></div></div></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.onIphone(UxJourneyClassicUiTest.java:68)</code></div></dd>
+                <dt>Reading</dt><dd>The application produced a different result from the one the case asserts.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>org.opentest4j.AssertionFailedError: Following a link on iPhone 14 (iOS, Safari) left the browser at the same address, https://test-v2.138hk.vip/en/ ==&gt; expected: &lt;false&gt; but was: &lt;true&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:106)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.onIphone(UxJourneyClassicUiTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-UxJourneyClassicUiTest-onAndroid" data-status="Not run" data-search="ux-010 onandroid classic ui end-to-end member journey on android (pixel 7, chrome, 412x915, touch)">
+      <tr class="case" id="case-UxJourneyClassicUiTest-onAndroid" data-status="Error" data-search="ux-010 onandroid classic ui end-to-end member journey on android (pixel 7, chrome, 412x915, touch) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-16433250857036495563\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for getbytext(&quot;log out&quot;, new page.getbytextoptions().setexact(true)).first() - - locator resolved to &lt;div aria-hidden=&quot;true&quot; class=&quot;header_logout__w5r9w&quot;&gt;log out&lt;/div&gt; - - attempting click action - 2 × waiting for element to be visible, enabled and stable - - element is not visible - - retrying click action - - waiting 20ms - 2 × waiting for element to be visible, enabled and stable - - element is not visible - - retrying click action - - waiting 100ms - 37 × waiting for element to be visible, enabled and stable - - element is not visible - - retrying click action - - waiting 500ms">
         <td class="id" id="UX-010">UX-010</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>onAndroid</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>Classic UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatche ...</div></td>
+        <td><span class="st fail">Error</span><div class="secs">72.98s</div></td>
+        <td><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.LoginPage.signOut(LoginPage.java:176)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Error">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -512,12 +602,110 @@
                 <dt>Method</dt><dd>UxJourneyClassicUiTest#onAndroid</dd>
                 <dt>Expected result</dt><dd>Classic UI end-to-end member journey on Android (Pixel 7, Chrome, 412x915, touch)</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Error in 72.98s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
+                <dt>Message</dt><dd>Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByText(&quot;Log out&quot;, new Page.GetByTextOptions().setExact(true)).first()
+-     - locator resolved to &lt;div aria-hidden=&quot;true&quot; class=&quot;Header_logout__W5r9w&quot;&gt;Log out&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     37 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+</dd>
+                <dt>Element</dt><dd><code>getByText(&quot;Log out&quot;, new Page.GetByTextOptions()</code></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.LoginPage.signOut(LoginPage.java:176)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:140)</code><code>org.sengmean.tests.ux.UxJourneyClassicUiTest.onAndroid(UxJourneyClassicUiTest.java:74)</code></div></dd>
+                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByText(&quot;Log out&quot;, new Page.GetByTextOptions().setExact(true)).first()
+-     - locator resolved to &lt;div aria-hidden=&quot;true&quot; class=&quot;Header_logout__W5r9w&quot;&gt;Log out&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     37 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.LoginPage.signOut(LoginPage.java:176)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.journey(UxJourneyClassicUiTest.java:140)
+	at org.sengmean.tests.ux.UxJourneyClassicUiTest.onAndroid(UxJourneyClassicUiTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-16433250857036495563\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for getByText(&quot;Log out&quot;, new Page.GetByTextOptions().setExact(true)).first()
+-     - locator resolved to &lt;div aria-hidden=&quot;true&quot; class=&quot;Header_logout__W5r9w&quot;&gt;Log out&lt;/div&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is not visible
+-     - retrying click action
+-       - waiting 100ms
+-     37 × waiting for element to be visible, enabled and stable
+-        - element is not visible
+-      - retrying click action
+-        - waiting 500ms
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 11 more
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>

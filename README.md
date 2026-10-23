@@ -26,7 +26,7 @@ Always through the committed wrapper, never a bare `mvn` (see `use-committed-mav
 ./mvnw test -Dsuite=TransferSuite     # wallet-to-wallet transfer checks, both UI versions (unconfirmed - see below)
 ./mvnw test -Dsuite=WinWinCitySuite   # live-casino game checks, both UI versions (unconfirmed - see below)
 ./mvnw test -Dsuite=UxJourneySuite    # one end-to-end journey per device, both UI versions
-./mvnw test -Dtest=LoginTest          # one class
+./mvnw test -Dtest=LoginNewUiTest     # one class
 ```
 
 Each of those seven area suites also comes split by UI version, for running just one side of an
@@ -136,13 +136,31 @@ confirmed against this exact site by the sibling Admin_weibo project, not guesse
   value does not clear its error text until the next submit attempt.
 - **Raw backend error code** (`RegisterTest.invalidContactNumber_showsRawBackendErrorCode`): an
   invalid contact number surfaces "Status error -201" verbatim instead of a readable message.
-- Responsive layout on *this* site is now automated, split by UI version and by visitor vs.
-  signed-in member (`ResponsiveLayoutNewUiTest`, `UI-001`-`UI-010`; `ResponsiveLayoutClassicUiTest`,
-  `UI-011`-`UI-020` - see the note below). The earlier finding on the sibling site
-  test-v2.1083int.co - a cropped WELIVE promo banner and a Lucky-Spin-over-footer overlap at
-  tablet/phone widths - is unrelated and this project still does not cover that site.
-- Classic UI's own hero banner is unconfirmed (`ResponsiveLayoutClassicUiTest` logs what it finds
-  rather than asserting on it - see that class's Javadoc).
+- Responsive layout is now automated for every page this project could confirm a URL for, split
+  by UI version into exactly two classes - `ResponsiveLayoutNewUiTest` and
+  `ResponsiveLayoutClassicUiTest` - each covering four page groups as a fresh visitor (or signed
+  in, where the page requires it), across all five devices:
+  - **The home page** (`UI-001`-`UI-010` / `UI-011`-`UI-020`), as a visitor and as a signed-in
+    member. The earlier finding on the sibling site test-v2.1083int.co - a cropped WELIVE promo
+    banner and a Lucky-Spin-over-footer overlap at tablet/phone widths - is unrelated and this
+    project still does not cover that site.
+  - **The nine top-level game-category pages** - Slots, Horse Race, Lives Casino, E-Sport, Fish
+    Game, Lotteries, Sport, Card Game, 真人直播 (`CATEGORY-001`-`CATEGORY-045` /
+    `CATEGORY-046`-`CATEGORY-090`). Classic UI's own tenth nav entry, Promotions, has no New UI
+    counterpart and is deliberately not covered - see `ResponsiveLayoutNewUiTest`'s Javadoc.
+  - **The eight static content pages** - About Us, Responsible Gaming, Banking Options, Terms of
+    Use, Privacy Policy, and the three How-to guides (`STATIC-001`-`STATIC-040` /
+    `STATIC-041`-`STATIC-080`). None of these are linked from New UI's own home page (it renders
+    no footer at all) but every path still renders correctly there when opened directly.
+  - **The ten signed-in member-area pages** - Personal Information, Password, Wallet, Deposit,
+    Withdrawal, Rebate claim, Referral link, Referral bonus, Membership program, Records
+    (`MEMBER-001`-`MEMBER-050` / `MEMBER-051`-`MEMBER-100`). The header's own "Transfer" shortcut
+    opens the Wallet page, not an eleventh page - see `MemberPage`'s Javadoc. These sign in as the
+    shared QA account, so the two classes should not be run alongside each other, or alongside
+    another run that is also signed in.
+
+  Classic UI's own hero banner is unconfirmed (`ResponsiveLayoutClassicUiTest` logs what it finds
+  for the home page rather than asserting on it - see that class's Javadoc).
 
 ## A note on case ids
 
@@ -154,9 +172,12 @@ a case's report row carries no id.
 
 | Prefix | Area | New UI ids | Classic UI ids |
 |---|---|---|---|
-| `LOGIN-` | `LoginTest` (no UI split - see below) | `001`-`012` | - |
+| `LOGIN-` | `LoginNewUiTest`/`ClassicUiTest` | `001`-`012` | `013`-`024` |
 | `REGISTER-` | `RegisterTest` (no UI split) | `001`-`005` | - |
-| `UI-` | `ResponsiveLayoutNewUiTest`/`ClassicUiTest` | `001`-`010` | `011`-`020` |
+| `UI-` | `ResponsiveLayoutNewUiTest`/`ClassicUiTest` (home page) | `001`-`010` | `011`-`020` |
+| `CATEGORY-` | `ResponsiveLayoutNewUiTest`/`ClassicUiTest` (game categories) | `001`-`045` | `046`-`090` |
+| `STATIC-` | `ResponsiveLayoutNewUiTest`/`ClassicUiTest` (static pages) | `001`-`040` | `041`-`080` |
+| `MEMBER-` | `ResponsiveLayoutNewUiTest`/`ClassicUiTest` (member area) | `001`-`050` | `051`-`100` |
 | `HOME-` | `HomePageNewUiTest`/`ClassicUiTest` | `001`-`007` | `008`-`014` |
 | `DEPOSIT-` | `DepositNewUiTest`/`ClassicUiTest` | `001`-`010` | `011`-`020` |
 | `WITHDRAWAL-` | `WithdrawalNewUiTest`/`ClassicUiTest` | `001`-`012` | `013`-`024` |
@@ -166,9 +187,11 @@ a case's report row carries no id.
 
 All of these prefixes are invented: this project has no client test-case workbook to take an id
 from, unlike those sibling projects, so there is no established convention to follow instead.
-Login and Register are the two exceptions to the New UI / Classic UI split - the login/register
-forms are reached independently of the home page's UI-version picker, with no evidence either
-form differs by UI version.
+Register remains the one exception to the New UI / Classic UI split - the registration form is
+reached independently of the home page's UI-version picker, with no evidence it differs by UI
+version. Login used to be the other exception on the same reasoning, until `LoginNewUiTest` /
+`LoginClassicUiTest` replaced the single `LoginTest` to actually confirm that for the login form,
+rather than assume it the way the unsplit form still does for Register.
 
 ## The New UI / Classic UI picker
 

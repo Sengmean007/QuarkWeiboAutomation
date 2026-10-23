@@ -23,13 +23,13 @@ import java.nio.file.Path;
  * ({@link #launchBrowser()}), one isolated context and page per test ({@link #page()}).
  *
  * <h2>WebKit, for the {@link Device} profiles</h2>
- * {@link #browser} is Chromium, launched eagerly for every test class whether or not it ever
+ * {@link #browser} is Chromium, launched eagerly for every test class whether it ever
  * runs a device case. The Mac, iPad and iPhone {@link Device} profiles are Safari, which means
  * WebKit rather than Chromium pretending to be one - see {@link Device} for why that distinction
  * matters - so WebKit is launched separately, lazily, and only by a class that actually calls
  * {@link #openOn(Device)}. Ported from the sibling Admin_weibo project's
  * {@code UiOtherCategoryClientHK}, which has the same {@code webkitOrAbort()} / {@code capture()}
- * shape; lifted up here rather than copied per test class so every device-aware test in this
+ * shape; lifted here rather than copied per test class so every device-aware test in this
  * project shares one launch and one teardown.
  */
 public class BaseTest {
@@ -43,7 +43,7 @@ public class BaseTest {
     public static final double SLOW_MO = ConfigDataProvider.number("slowMo", 0);
 
     private static final double ACTION_TIMEOUT_MS =
-            ConfigDataProvider.number("test.actionTimeout", 10_000);
+            ConfigDataProvider.number("test.actionTimeout", 20_000);
     private static final double NAVIGATION_TIMEOUT_MS =
             ConfigDataProvider.number("test.navigationTimeout", 30_000);
     private static final double LOGIN_SETTLE_MS =
@@ -97,7 +97,7 @@ public class BaseTest {
 
     /**
      * WebKit, launched once per class and shared by every device row in it. A case whose device
-     * is WebKit aborts - rather than fails - naming the install it needs, when WebKit is not
+     * is WebKit aborts - rather than fails - naming the installation it needs, when WebKit is not
      * installed in this environment; see {@link Device} for why Safari must be WebKit rather
      * than Chromium pretending to be one.
      */

@@ -328,7 +328,7 @@
 
                             ./mvnw test                     - every *Test class, as before
                             ./mvnw test -Dsuite=AuthSuite    - one area
-                            ./mvnw test -Dtest=LoginTest     - one class, still works
+                            ./mvnw test -Dtest=LoginNewUiTest - one class, still works
 
                         Do not "simplify" this back to -Dtest for the suites.
                     -->
