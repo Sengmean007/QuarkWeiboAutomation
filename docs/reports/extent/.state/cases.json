@@ -558,6 +558,1107 @@
   "trail" : [ ],
   "shots" : [ ]
 }, {
+  "key" : "ManualTransferClassicUiTest#aGameWalletTransfersBackToTheMainWallet",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-025: a funded game wallet transfers its balance back to the main wallet",
+  "tags" : [ "creates-data" ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 12.1922106,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1707,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5411,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $1.00'"
+  }, {
+    "millis" : 6610,
+    "kind" : "STEP",
+    "text" : "Choosing 'Main wallet $364.37'"
+  }, {
+    "millis" : 7522,
+    "kind" : "DATA",
+    "text" : "amount typed = 1.0"
+  }, {
+    "millis" : 7522,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 9181,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 12187,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 12187,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.aGameWalletTransfersBackToTheMainWallet.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#amountAboveTheMainWalletIsRefused",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-022: an amount above the main wallet cannot be submitted",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 7.3098746,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1671,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4394,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5270,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 5645,
+    "kind" : "DATA",
+    "text" : "amount typed = 1365"
+  }, {
+    "millis" : 5659,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 7296,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 7296,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.amountAboveTheMainWalletIsRefused.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#defaultFromIsTheMainWallet",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-015: \"From\" defaults to the main wallet and shows its balance",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 11.3736838,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1695,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 2717,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 11299,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 11300,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.defaultFromIsTheMainWallet.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#defaultToIsPleaseSelect",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-017: \"To\" defaults to \"Please select\"",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 7.2476638,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1707,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 2719,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 7241,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 7242,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.defaultToIsPleaseSelect.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#fromListLeadsWithTheMainWallet",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-016: the \"From\" list leads with the main wallet, then the other wallets",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 13.2575924,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1745,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4686,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 13254,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 13254,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.fromListLeadsWithTheMainWallet.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#mainWalletToAGameWalletTransfers",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-024: a nominal amount from the main wallet into a game wallet succeeds",
+  "tags" : [ "creates-data" ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 10.9734683,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1678,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4460,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5350,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 5361,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 7671,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 10970,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 10970,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.mainWalletToAGameWalletTransfers.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#mainWalletToEveryGameWalletTransfers",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-028: a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck",
+  "tags" : [ "creates-data" ],
+  "status" : "Error",
+  "message" : "Error {\n  message='Error: Node is not an HTMLElement\n  name='Error\n  stack='Error: Error: Node is not an HTMLElement\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\chromium\\crExecutionContext.js:80:13)\n    at async LongStandingScope._race (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\utils\\isomorphic\\manualPromise.js:94:14)\n    at async evaluateExpression (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\javascript.js:217:12)\n    at async C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:1345:39\n    at async Frame.retryWithProgressAndTimeouts (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:888:24)\n    at async FrameDispatcher.innerText (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\frameDispatcher.js:142:21)\n    at async ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\progress.js:98:22)\n    at async FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:91:14)\n    at async DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:325:22)\n}\nCall log:\n-   - waiting for locator(\"[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]\").nth(3)\n",
+  "detail" : "com.microsoft.playwright.PlaywrightException: Error {\n  message='Error: Node is not an HTMLElement\n  name='Error\n  stack='Error: Error: Node is not an HTMLElement\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\chromium\\crExecutionContext.js:80:13)\n    at async LongStandingScope._race (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\utils\\isomorphic\\manualPromise.js:94:14)\n    at async evaluateExpression (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\javascript.js:217:12)\n    at async C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:1345:39\n    at async Frame.retryWithProgressAndTimeouts (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:888:24)\n    at async FrameDispatcher.innerText (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\frameDispatcher.js:142:21)\n    at async ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\progress.js:98:22)\n    at async FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:91:14)\n    at async DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:325:22)\n}\nCall log:\n-   - waiting for locator(\"[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]\").nth(3)\n\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)\r\n\tat com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)\r\n\tat com.microsoft.playwright.Locator.innerText(Locator.java:3934)\r\n\tat org.sengmean.page.payment.TransferPage.alertText(TransferPage.java:719)\r\n\tat org.sengmean.page.payment.TransferPage.waitForMessage(TransferPage.java:697)\r\n\tat org.sengmean.tests.payment.ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferClassicUiTest.java:467)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1604)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1604)\r\nCaused by: com.microsoft.playwright.impl.DriverException: Error {\n  message='Error: Node is not an HTMLElement\n  name='Error\n  stack='Error: Error: Node is not an HTMLElement\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\chromium\\crExecutionContext.js:80:13)\n    at async LongStandingScope._race (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\utils\\isomorphic\\manualPromise.js:94:14)\n    at async evaluateExpression (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\javascript.js:217:12)\n    at async C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:1345:39\n    at async Frame.retryWithProgressAndTimeouts (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:888:24)\n    at async FrameDispatcher.innerText (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\frameDispatcher.js:142:21)\n    at async ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\progress.js:98:22)\n    at async FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:91:14)\n    at async DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:325:22)\n}\nCall log:\n-   - waiting for locator(\"[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]\").nth(3)\n\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)\r\n\t... 12 more\r\n",
+  "seconds" : 72.4959509,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1687,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5191,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 6096,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 6111,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 9542,
+    "kind" : "STEP",
+    "text" : "Choosing 'BBIN $0.00'"
+  }, {
+    "millis" : 10461,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 10474,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 13587,
+    "kind" : "STEP",
+    "text" : "Choosing 'BOLE GAMING $0.00'"
+  }, {
+    "millis" : 14476,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 14487,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 17317,
+    "kind" : "STEP",
+    "text" : "Choosing 'WORLD ENTERTAINMENT $0.00'"
+  }, {
+    "millis" : 18212,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 18223,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 50674,
+    "kind" : "STEP",
+    "text" : "Choosing 'AWC68 SEXY b $0.00'"
+  }, {
+    "millis" : 51587,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 51604,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 54778,
+    "kind" : "STEP",
+    "text" : "Choosing 'DG EN $0.00'"
+  }, {
+    "millis" : 55709,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 55720,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 60168,
+    "kind" : "STEP",
+    "text" : "Choosing 'AWC RCB988 Horse Racing $0.00'"
+  }, {
+    "millis" : 61072,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 61089,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 65058,
+    "kind" : "STEP",
+    "text" : "Choosing '3SING $0.00'"
+  }, {
+    "millis" : 65977,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 66002,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 68588,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 72472,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 72473,
+    "kind" : "STEP",
+    "text" : "ERROR: Error {   message='Error: Node is not an HTMLElement   name='Error   stack='Error: Error: Node is not an HTMLElement     at CRExecutionContext.evaluateWithArguments (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\chromium\\crExecutionContext.js:80:13)     at async LongStandingScope._race (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\utils\\isomorphic\\manualPromise.js:94:14)     at async evaluateExpression (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\javascript.js:217:12)     at async C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:1345:39     at async Frame.retryWithProgressAndTimeouts (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\frames.js:888:24)     at async FrameDispatcher.innerText (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\frameDispatcher.js:142:21)     at async ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\progress.js:98:22)     at async FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:91:14)     at async DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-2409697969746989612\\package\\lib\\server\\dispatchers\\dispatcher.js:325:22) } Call log: -   - waiting for locator(\"[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]\").nth(3)"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#moreThanTheWalletBalanceIsRefused",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-026: transferring more than a game wallet's balance is refused",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 9.2930192,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1696,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5491,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 6689,
+    "kind" : "STEP",
+    "text" : "Choosing 'Main wallet $365.37'"
+  }, {
+    "millis" : 7618,
+    "kind" : "DATA",
+    "text" : "amount typed = 1000"
+  }, {
+    "millis" : 7641,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 9287,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 9287,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.moreThanTheWalletBalanceIsRefused.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#moreThanTwoDecimalsCannotBeEntered",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-020: more than two decimal places cannot be entered",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 6.9156142,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1683,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4380,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5289,
+    "kind" : "DATA",
+    "text" : "amount typed = 1.3949"
+  }, {
+    "millis" : 5295,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 6912,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 6912,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.moreThanTwoDecimalsCannotBeEntered.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#negativeAmountCannotBeTyped",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-019: a negative amount cannot be typed",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 6.9608738,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1659,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4405,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5339,
+    "kind" : "DATA",
+    "text" : "amount typed = -10"
+  }, {
+    "millis" : 5348,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 6957,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 6958,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.negativeAmountCannotBeTyped.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#theSameWalletCannotBeBothEnds",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-023: the same wallet cannot be both \"From\" and \"To\"",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 7.2471638,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1678,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4390,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5633,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 7243,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 7243,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.theSameWalletCannotBeBothEnds.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#toListOffersTheEnabledWallets",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-018: the \"To\" list offers the wallets admin has enabled",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 6.1275908,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1736,
+    "kind" : "STEP",
+    "text" : "Welcome banner: 1 found; closing it."
+  }, {
+    "millis" : 4460,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 6122,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 6122,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.toListOffersTheEnabledWallets.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#transferAllOutSweepsEveryWallet",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-027: a \"Transfer All Out\" sweep, if present, empties every game wallet back to the main wallet",
+  "tags" : [ "creates-data" ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 23.3023095,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1742,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4111,
+    "kind" : "STEP",
+    "text" : "Pressing 'Transfer All Out'"
+  }, {
+    "millis" : 21647,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 23299,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 23299,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.transferAllOutSweepsEveryWallet.png" ]
+}, {
+  "key" : "ManualTransferClassicUiTest#zeroAmountIsRefused",
+  "suite" : "ManualTransferClassicUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-021: a zero amount is refused",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 8.3852207,
+  "ranAt" : "2026-10-24 17:50",
+  "trail" : [ {
+    "millis" : 1697,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4431,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO $0.00'"
+  }, {
+    "millis" : 5343,
+    "kind" : "DATA",
+    "text" : "amount typed = 0"
+  }, {
+    "millis" : 5370,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 6666,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 8380,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 8380,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferClassicUiTest.zeroAmountIsRefused.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#aGameWalletTransfersBackToTheMainWallet",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-011: a funded game wallet transfers its balance back to the main wallet",
+  "tags" : [ "creates-data" ],
+  "status" : "Skipped",
+  "message" : "Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one.",
+  "detail" : "org.opentest4j.TestAbortedException: Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one.\r\n\tat org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)\r\n\tat org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.aGameWalletTransfersBackToTheMainWallet(ManualTransferNewUiTest.java:391)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
+  "seconds" : 4.3254816,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1884,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4314,
+    "kind" : "STEP",
+    "text" : "Case aborted by a failed assumption; no closing screenshot is taken."
+  }, {
+    "millis" : 4314,
+    "kind" : "STEP",
+    "text" : "SKIP: Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one."
+  } ],
+  "shots" : [ ]
+}, {
+  "key" : "ManualTransferNewUiTest#amountAboveTheMainWalletIsRefused",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-008: an amount above the main wallet cannot be submitted",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 10.0786993,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1802,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4917,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 5928,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 6411,
+    "kind" : "DATA",
+    "text" : "amount typed = 1160"
+  }, {
+    "millis" : 6461,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 10076,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 10076,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.amountAboveTheMainWalletIsRefused.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#defaultFromIsTheMainWallet",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-001: \"From\" defaults to the main wallet and shows its balance",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 12.4957204,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1916,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 2950,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 12410,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 12411,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.defaultFromIsTheMainWallet.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#defaultToIsPleaseSelect",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-003: \"To\" defaults to \"Please select\"",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 9.3146964,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1769,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 2812,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 9308,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 9308,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.defaultToIsPleaseSelect.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#fromListLeadsWithTheMainWallet",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-002: the \"From\" list leads with the main wallet, then the other wallets",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 13.3781226,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1853,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5031,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 13371,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 13372,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.fromListLeadsWithTheMainWallet.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#mainWalletToAGameWalletTransfers",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-010: a nominal amount from the main wallet into a game wallet succeeds",
+  "tags" : [ "creates-data" ],
+  "status" : "Fail",
+  "message" : "TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>",
+  "detail" : "org.opentest4j.AssertionFailedError: TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\r\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\r\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\r\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.mainWalletToAGameWalletTransfers(ManualTransferNewUiTest.java:373)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
+  "seconds" : 34.9167716,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1772,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5256,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 6246,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 6271,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 22758,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 32850,
+    "kind" : "STEP",
+    "text" : "A loading indicator was still showing after 10s; capturing the page as it is."
+  }, {
+    "millis" : 34888,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 34888,
+    "kind" : "STEP",
+    "text" : "FAIL: TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.mainWalletToAGameWalletTransfers.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#mainWalletToEveryGameWalletTransfers",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-014: a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck",
+  "tags" : [ "creates-data" ],
+  "status" : "Error",
+  "message" : "Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n",
+  "detail" : "com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)\r\n\tat com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)\r\n\tat com.microsoft.playwright.Locator.innerText(Locator.java:3934)\r\n\tat org.sengmean.page.payment.TransferPage.mainBalance(TransferPage.java:671)\r\n\tat org.sengmean.page.payment.TransferPage.mainBalanceValue(TransferPage.java:677)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferNewUiTest.java:561)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)\r\n\t... 12 more\r\n",
+  "seconds" : 40.3072596,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 2157,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 6375,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 7323,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 7345,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 10805,
+    "kind" : "STEP",
+    "text" : "Choosing 'Just Do The Best USDT0.00'"
+  }, {
+    "millis" : 11781,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 11824,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 37830,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/"
+  }, {
+    "millis" : 40297,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 40297,
+    "kind" : "STEP",
+    "text" : "ERROR: Error {   message='Timeout 20000ms exceeded.   name='TimeoutError   stack='TimeoutError: Timeout 20000ms exceeded.     at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)     at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)     at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39) } Call log: -   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#moreThanTheWalletBalanceIsRefused",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-012: transferring more than a game wallet's balance is refused",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 11.7398501,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1765,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 6289,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 7612,
+    "kind" : "STEP",
+    "text" : "Choosing 'Main wallet USDT160.00'"
+  }, {
+    "millis" : 8635,
+    "kind" : "DATA",
+    "text" : "amount typed = 1000"
+  }, {
+    "millis" : 8720,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 11734,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 11734,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.moreThanTheWalletBalanceIsRefused.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#moreThanTwoDecimalsCannotBeEntered",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-006: more than two decimal places cannot be entered",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 12.3177484,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1976,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 4973,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 6078,
+    "kind" : "DATA",
+    "text" : "amount typed = 1.3949"
+  }, {
+    "millis" : 6161,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 12310,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 12310,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.moreThanTwoDecimalsCannotBeEntered.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#negativeAmountCannotBeTyped",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-005: a negative amount cannot be typed",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 11.5747482,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1872,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5984,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 7042,
+    "kind" : "DATA",
+    "text" : "amount typed = -10"
+  }, {
+    "millis" : 7054,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 11571,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 11571,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.negativeAmountCannotBeTyped.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#theSameWalletCannotBeBothEnds",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-009: the same wallet cannot be both \"From\" and \"To\"",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 8.5341568,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1933,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5086,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 6435,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 8530,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 8530,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.theSameWalletCannotBeBothEnds.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#toListOffersTheEnabledWallets",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-004: the \"To\" list offers the wallets admin has enabled",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 7.7823644,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1748,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5333,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 7777,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 7777,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.toListOffersTheEnabledWallets.png" ]
+}, {
+  "key" : "ManualTransferNewUiTest#transferAllOutSweepsEveryWallet",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-013: a \"Transfer All Out\" sweep, if present, empties every game wallet back to the main wallet",
+  "tags" : [ "creates-data" ],
+  "status" : "Skipped",
+  "message" : "Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc.",
+  "detail" : "org.opentest4j.TestAbortedException: Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc.\r\n\tat org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)\r\n\tat org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.transferAllOutSweepsEveryWallet(ManualTransferNewUiTest.java:471)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
+  "seconds" : 18.699735,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 17656,
+    "kind" : "STEP",
+    "text" : "No amount field appeared at /en/member/wallet/ within 15s - this page, or this whole feature, may not exist on Quark. See TransferPage's class Javadoc."
+  }, {
+    "millis" : 17664,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 18693,
+    "kind" : "STEP",
+    "text" : "Case aborted by a failed assumption; no closing screenshot is taken."
+  }, {
+    "millis" : 18693,
+    "kind" : "STEP",
+    "text" : "SKIP: Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc."
+  } ],
+  "shots" : [ ]
+}, {
+  "key" : "ManualTransferNewUiTest#zeroAmountIsRefused",
+  "suite" : "ManualTransferNewUiTest",
+  "group" : "",
+  "displayName" : "TRANSFER-007: a zero amount is refused",
+  "tags" : [ ],
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 11.7411671,
+  "ranAt" : "2026-10-24 17:40",
+  "trail" : [ {
+    "millis" : 1722,
+    "kind" : "STEP",
+    "text" : "Welcome banner: none on the page."
+  }, {
+    "millis" : 5031,
+    "kind" : "STEP",
+    "text" : "Choosing 'WOW Gaming USDT0.00'"
+  }, {
+    "millis" : 5986,
+    "kind" : "DATA",
+    "text" : "amount typed = 0"
+  }, {
+    "millis" : 6022,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 7429,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 11737,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 11737,
+    "kind" : "STEP",
+    "text" : "PASS"
+  } ],
+  "shots" : [ "screenshots/ManualTransferNewUiTest.zeroAmountIsRefused.png" ]
+}, {
+  "key" : "RegisterTest#fullRegistration_activatesWithBypassCode",
+  "suite" : "RegisterTest",
+  "group" : "",
+  "displayName" : "REGISTER-005: full registration and SMS activation (creates a real account)",
+  "tags" : [ ],
+  "status" : "Error",
+  "message" : "Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"//*[normalize-space(text())='Username']/following::input[1]\").locator(\"xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]\").getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(\"register\", Pattern.CASE_INSENSITIVE))).first()\n-     - locator resolved to <button class=\"SubmitButton_submit__luKqw\">…</button>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 100ms\n-     34 × waiting for element to be visible, enabled and stable\n-        - element is visible, enabled and stable\n-        - scrolling into view if needed\n-        - done scrolling\n-        - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-      - retrying click action\n-        - waiting 500ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n",
+  "detail" : "com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"//*[normalize-space(text())='Username']/following::input[1]\").locator(\"xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]\").getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(\"register\", Pattern.CASE_INSENSITIVE))).first()\n-     - locator resolved to <button class=\"SubmitButton_submit__luKqw\">…</button>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 100ms\n-     34 × waiting for element to be visible, enabled and stable\n-        - element is visible, enabled and stable\n-        - scrolling into view if needed\n-        - done scrolling\n-        - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-      - retrying click action\n-        - waiting 500ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)\r\n\tat com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)\r\n\tat com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)\r\n\tat com.microsoft.playwright.Locator.click(Locator.java:2543)\r\n\tat org.sengmean.page.auth.RegisterPage.submit(RegisterPage.java:91)\r\n\tat org.sengmean.page.auth.RegisterPage.registerWithAllFields(RegisterPage.java:103)\r\n\tat org.sengmean.tests.auth.RegisterTest.fullRegistration_activatesWithBypassCode(RegisterTest.java:95)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:565)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1604)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1604)\r\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-12014301413306364961\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"//*[normalize-space(text())='Username']/following::input[1]\").locator(\"xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]\").getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(\"register\", Pattern.CASE_INSENSITIVE))).first()\n-     - locator resolved to <button class=\"SubmitButton_submit__luKqw\">…</button>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 100ms\n-     34 × waiting for element to be visible, enabled and stable\n-        - element is visible, enabled and stable\n-        - scrolling into view if needed\n-        - done scrolling\n-        - <ul class=\"flex flex-col gap-1.5 lg:gap-2\">…</ul> from <div class=\"fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto\">…</div> subtree intercepts pointer events\n-      - retrying click action\n-        - waiting 500ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)\r\n\t... 11 more\r\n",
+  "seconds" : 24.6753594,
+  "ranAt" : "2026-10-24 11:28",
+  "trail" : [ ],
+  "shots" : [ ]
+}, {
   "key" : "ResponsiveLayoutClassicUiTest#memberOnAndroid",
   "suite" : "ResponsiveLayoutClassicUiTest",
   "group" : "",

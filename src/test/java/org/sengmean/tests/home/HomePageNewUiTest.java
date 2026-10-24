@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import org.sengmean.base.BaseTest;
 import org.sengmean.page.auth.LoginPage;
 import org.sengmean.page.home.HomePage;
-import org.sengmean.page.wallet.CurrencySwitcher;
 import org.sengmean.report.CaseLog;
 
 import java.util.List;
@@ -167,7 +166,10 @@ public class HomePageNewUiTest extends BaseTest {
     void walletPanelListsEveryCurrency() {
         HomePage home = openAsMember();
 
-        new CurrencySwitcher(page()).open();
+        // No dropdown needs opening first: confirmed live 2026-10-25 that the header's own
+        // "Account / Balance / Remain T.O" currency panel already lists every wallet the account
+        // holds without the small "▼ HKD ..." badge ever being clicked - see
+        // CurrencySwitcher's own class Javadoc.
         List<String> currencies = home.currencyCodesOnScreen();
 
         // The same five CurrencySwitcher's own Javadoc confirms for qa00002 on 2026-10-16 - this

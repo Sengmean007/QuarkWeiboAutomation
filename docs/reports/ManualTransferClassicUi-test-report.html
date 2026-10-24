@@ -302,50 +302,58 @@
   <details class="rpt-sum" open>
     <summary>
       <span class="rpt-line"><span class="chev" aria-hidden="true"></span><h1>Manual transfer classic ui test</h1><span class="rpt-toggle-hint">click to minimise / expand</span></span>
-      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail zero"><i>&#10007;</i>0 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun"><i>&#9675;</i>13 not run</span><span class="cnt">13 cases</span></span>
-<span class="bar">      <span class="seg notrun" style="width:100.0000%" title="13 not run"></span>
+      <span class="rpt-counts"><span class="cnt pass"><i>&#10003;</i>13 passed</span><span class="cnt fail"><i>&#10007;</i>1 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun zero"><i>&#9675;</i>0 not run</span><span class="cnt">14 cases</span></span>
+<span class="bar">      <span class="seg pass" style="width:92.8571%" title="13 passed"></span>
+      <span class="seg fail" style="width:7.1429%" title="1 failed"></span>
 </span>
     </summary>
     <div class="sub">Test case report &mdash; <code>org.sengmean.tests.payment.ManualTransferClassicUiTest</code></div>
     <div class="meta">
-      <div><b>Target:</b> not recorded</div>
-      <div><b>Account:</b> not recorded</div>
-      <div><b>Run:</b> not recorded</div>
-      <div><b>Scope:</b> 0 of 16 suites executed</div>
-      <div><b>Browser:</b> Chromium via Playwright 1.58.0</div>
-      <div><b>Runner:</b> JUnit 5</div>
+      <div><b>Target:</b> https://test-v2.138hk.vip</div>
+      <div><b>Account:</b> qa00002</div>
+      <div><b>Run:</b> 2026-10-24 17:50</div>
+      <div><b>Elapsed:</b> 240.2s</div>
+      <div><b>Scope:</b> 1 of 20 suites executed</div>
+      <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
+      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
     <h2 class="rpt-h">Statistics</h2>
     <div class="tiles">
-        <div class="tile "><b>13</b><span>cases</span></div>
-        <div class="tile pass"><b><i>&#10003;</i>0</b><span>passed</span></div>
-        <div class="tile fail"><b><i>&#10007;</i>0</b><span>failed</span></div>
+        <div class="tile "><b>14</b><span>cases</span></div>
+        <div class="tile pass"><b><i>&#10003;</i>13</b><span>passed</span></div>
+        <div class="tile fail"><b><i>&#10007;</i>1</b><span>failed</span></div>
         <div class="tile skip"><b><i>&#8856;</i>0</b><span>skipped</span></div>
-        <div class="tile notrun"><b><i>&#9675;</i>13</b><span>not run</span></div>
-        <div class="tile"><b>&ndash;</b><span>pass rate of the cases that ran</span></div>
-        <div class="tile"><b>0.0s</b><span>browser time</span></div>
+        <div class="tile notrun"><b><i>&#9675;</i>0</b><span>not run</span></div>
+        <div class="tile"><b>93%</b><span>pass rate of the cases that ran</span></div>
+        <div class="tile"><b>203.1s</b><span>browser time</span></div>
     </div>
-      <div class="chart" role="img" aria-label="Manual transfer classic ui test: 0 passed, 0 failed, 0 skipped, 13 not run">
-        <div class="stack big"><span class="seg notrun" style="flex-grow:13" tabindex="0" data-tip="Manual transfer classic ui test - 13 not run (100%)"><em>13</em></span></div>
+      <div class="chart" role="img" aria-label="Manual transfer classic ui test: 13 passed, 1 failed, 0 skipped, 0 not run">
+        <div class="stack big"><span class="seg pass" style="flex-grow:13" tabindex="0" data-tip="Manual transfer classic ui test - 13 passed (93%)"><em>13</em></span><span class="seg fail" style="flex-grow:1" tabindex="0" data-tip="Manual transfer classic ui test - 1 failed (7%)"><em>1</em></span></div>
         <div class="chart-legend"><span><i class="sw pass"></i>Passed</span><span><i class="sw fail"></i>Failed</span><span><i class="sw skip"></i>Skipped</span><span><i class="sw notrun"></i>Not run</span></div>
       </div>
     <h2 class="rpt-h">Cases by result</h2>
     <div class="case-lists">
-      <details class="cl notrun"><summary><i>&#9675;</i>Not run <span class="n">(13)</span></summary>
+      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(1)</span></summary>
         <ol>
-          <li><a href="#case-ManualTransferClassicUiTest-defaultFromIsTheMainWallet">TRANSFER-014</a> &quot;From&quot; defaults to the main wallet and shows its balance</li>
-          <li><a href="#case-ManualTransferClassicUiTest-fromListLeadsWithTheMainWallet">TRANSFER-015</a> the &quot;From&quot; list leads with the main wallet, then the other wallets</li>
-          <li><a href="#case-ManualTransferClassicUiTest-defaultToIsPleaseSelect">TRANSFER-016</a> &quot;To&quot; defaults to &quot;Please select&quot;</li>
-          <li><a href="#case-ManualTransferClassicUiTest-toListOffersTheEnabledWallets">TRANSFER-017</a> the &quot;To&quot; list offers the wallets admin has enabled</li>
-          <li><a href="#case-ManualTransferClassicUiTest-negativeAmountCannotBeTyped">TRANSFER-018</a> a negative amount cannot be typed</li>
-          <li><a href="#case-ManualTransferClassicUiTest-moreThanTwoDecimalsCannotBeEntered">TRANSFER-019</a> more than two decimal places cannot be entered</li>
-          <li><a href="#case-ManualTransferClassicUiTest-zeroAmountIsRefused">TRANSFER-020</a> a zero amount is refused</li>
-          <li><a href="#case-ManualTransferClassicUiTest-amountAboveTheMainWalletIsRefused">TRANSFER-021</a> an amount above the main wallet cannot be submitted</li>
-          <li><a href="#case-ManualTransferClassicUiTest-theSameWalletCannotBeBothEnds">TRANSFER-022</a> the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</li>
-          <li><a href="#case-ManualTransferClassicUiTest-mainWalletToAGameWalletTransfers">TRANSFER-023</a> a nominal amount from the main wallet into a game wallet succeeds</li>
-          <li><a href="#case-ManualTransferClassicUiTest-aGameWalletTransfersBackToTheMainWallet">TRANSFER-024</a> a funded game wallet transfers its balance back to the main wallet</li>
-          <li><a href="#case-ManualTransferClassicUiTest-moreThanTheWalletBalanceIsRefused">TRANSFER-025</a> transferring more than a game wallet's balance is refused</li>
-          <li><a href="#case-ManualTransferClassicUiTest-transferAllOutSweepsEveryWallet">TRANSFER-026</a> a &quot;Transfer All Out&quot; sweep, if present, empties every game </li>
+          <li><a href="#case-ManualTransferClassicUiTest-mainWalletToEveryGameWalletTransfers">TRANSFER-028</a> a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck<div class="why">Error {</div></li>
+        </ol>
+      </details>
+      <details class="cl pass"><summary><i>&#10003;</i>Passed <span class="n">(13)</span></summary>
+        <ol>
+          <li><a href="#case-ManualTransferClassicUiTest-defaultFromIsTheMainWallet">TRANSFER-015</a> &quot;From&quot; defaults to the main wallet and shows its balance</li>
+          <li><a href="#case-ManualTransferClassicUiTest-fromListLeadsWithTheMainWallet">TRANSFER-016</a> the &quot;From&quot; list leads with the main wallet, then the other wallets</li>
+          <li><a href="#case-ManualTransferClassicUiTest-defaultToIsPleaseSelect">TRANSFER-017</a> &quot;To&quot; defaults to &quot;Please select&quot;</li>
+          <li><a href="#case-ManualTransferClassicUiTest-toListOffersTheEnabledWallets">TRANSFER-018</a> the &quot;To&quot; list offers the wallets admin has enabled</li>
+          <li><a href="#case-ManualTransferClassicUiTest-negativeAmountCannotBeTyped">TRANSFER-019</a> a negative amount cannot be typed</li>
+          <li><a href="#case-ManualTransferClassicUiTest-moreThanTwoDecimalsCannotBeEntered">TRANSFER-020</a> more than two decimal places cannot be entered</li>
+          <li><a href="#case-ManualTransferClassicUiTest-zeroAmountIsRefused">TRANSFER-021</a> a zero amount is refused</li>
+          <li><a href="#case-ManualTransferClassicUiTest-amountAboveTheMainWalletIsRefused">TRANSFER-022</a> an amount above the main wallet cannot be submitted</li>
+          <li><a href="#case-ManualTransferClassicUiTest-theSameWalletCannotBeBothEnds">TRANSFER-023</a> the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</li>
+          <li><a href="#case-ManualTransferClassicUiTest-mainWalletToAGameWalletTransfers">TRANSFER-024</a> a nominal amount from the main wallet into a game wallet succeeds</li>
+          <li><a href="#case-ManualTransferClassicUiTest-aGameWalletTransfersBackToTheMainWallet">TRANSFER-025</a> a funded game wallet transfers its balance back to the main wallet</li>
+          <li><a href="#case-ManualTransferClassicUiTest-moreThanTheWalletBalanceIsRefused">TRANSFER-026</a> transferring more than a game wallet's balance is refused</li>
+          <li><a href="#case-ManualTransferClassicUiTest-transferAllOutSweepsEveryWallet">TRANSFER-027</a> a &quot;Transfer All Out&quot; sweep, if present, empties every game </li>
         </ol>
       </details>
     </div>
@@ -353,6 +361,13 @@
   </header>
 
   <div class="nav"><a href="index.html">&larr; All suites</a></div>
+  <div class="callout bad">
+    <h2>1 case needs attention</h2>
+    <ol class="findings">
+      <li><a href="#case-ManualTransferClassicUiTest-mainWalletToEveryGameWalletTransfers">TRANSFER-028</a> a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck<div class="why">Error {</div></li>
+    </ol>
+    <p>A case tagged <code>known-defect</code> is red on purpose: it asserts the behaviour the application <i>should</i> have and stays red until the finding is fixed. The rest are this run's news.</p>
+  </div>
   <div class="toolbar">
     <div class="filters" role="group" aria-label="Filter cases by status">
       <button type="button" class="flt on" data-filter="all">All</button>
@@ -363,7 +378,7 @@
     </div>
     <input type="search" id="q" placeholder="Search id, case or message" aria-label="Search cases">
     <button type="button" class="flt" id="expand-all">Expand all details</button>
-    <span class="count" id="shown">13 of 13 cases</span>
+    <span class="count" id="shown">14 of 14 cases</span>
   </div>
   <section class="grp">
   <h2 class="section">1. Test cases</h2>
@@ -371,420 +386,754 @@
   <table class="cases">
     <thead><tr><th>ID</th><th>Test case</th><th>Test steps</th><th>Test data</th><th>Expected result</th><th>Actual result</th><th>Status</th><th>Remark / cause</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr class="case" id="case-ManualTransferClassicUiTest-defaultFromIsTheMainWallet" data-status="Not run" data-search="transfer-014 defaultfromisthemainwallet &quot;from&quot; defaults to the main wallet and shows its balance">
-        <td class="id" id="TRANSFER-014">TRANSFER-014</td>
+      <tr class="case" id="case-ManualTransferClassicUiTest-defaultFromIsTheMainWallet" data-status="Pass" data-search="transfer-015 defaultfromisthemainwallet &quot;from&quot; defaults to the main wallet and shows its balance">
+        <td class="id" id="TRANSFER-015">TRANSFER-015</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>defaultFromIsTheMainWallet</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>&quot;From&quot; defaults to the main wallet and shows its balance</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td>The application behaved as expected.<div class="secs">4 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">11.38s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.defaultFromIsTheMainWallet.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.defaultFromIsTheMainWallet.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
-        <td colspan="9">
-          <div class="panels">
-            <div class="panel">
-              <h3>The case</h3>
-              <dl>
-                <dt>Case id</dt><dd>TRANSFER-014</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#defaultFromIsTheMainWallet</dd>
-                <dt>Expected result</dt><dd>&quot;From&quot; defaults to the main wallet and shows its balance</dd>
-                <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
-              </dl>
-            </div>
-            <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
-            </div>
-          </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
-        </td>
-      </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-fromListLeadsWithTheMainWallet" data-status="Not run" data-search="transfer-015 fromlistleadswiththemainwallet the &quot;from&quot; list leads with the main wallet, then the other wallets">
-        <td class="id" id="TRANSFER-015">TRANSFER-015</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>fromListLeadsWithTheMainWallet</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>the &quot;From&quot; list leads with the main wallet, then the other wallets</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
-      </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-015</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#fromListLeadsWithTheMainWallet</dd>
-                <dt>Expected result</dt><dd>the &quot;From&quot; list leads with the main wallet, then the other wallets</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#defaultFromIsTheMainWallet</dd>
+                <dt>Expected result</dt><dd>&quot;From&quot; defaults to the main wallet and shows its balance</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 11.38s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>&quot;From&quot; defaults to the main wallet and shows its balance</dd>
+                <dt>Duration</dt><dd>11.38 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(4 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.70s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">2.72s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">11.30s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">11.30s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-defaultToIsPleaseSelect" data-status="Not run" data-search="transfer-016 defaulttoispleaseselect &quot;to&quot; defaults to &quot;please select&quot;">
+      <tr class="case" id="case-ManualTransferClassicUiTest-fromListLeadsWithTheMainWallet" data-status="Pass" data-search="transfer-016 fromlistleadswiththemainwallet the &quot;from&quot; list leads with the main wallet, then the other wallets">
         <td class="id" id="TRANSFER-016">TRANSFER-016</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>defaultToIsPleaseSelect</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>fromListLeadsWithTheMainWallet</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>&quot;To&quot; defaults to &quot;Please select&quot;</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td>the &quot;From&quot; list leads with the main wallet, then the other wallets</td>
+        <td>The application behaved as expected.<div class="secs">4 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">13.26s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.fromListLeadsWithTheMainWallet.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.fromListLeadsWithTheMainWallet.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-016</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#defaultToIsPleaseSelect</dd>
-                <dt>Expected result</dt><dd>&quot;To&quot; defaults to &quot;Please select&quot;</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#fromListLeadsWithTheMainWallet</dd>
+                <dt>Expected result</dt><dd>the &quot;From&quot; list leads with the main wallet, then the other wallets</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 13.26s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>the &quot;From&quot; list leads with the main wallet, then the other wallets</dd>
+                <dt>Duration</dt><dd>13.26 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(4 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.75s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.69s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">13.25s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">13.25s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-toListOffersTheEnabledWallets" data-status="Not run" data-search="transfer-017 tolistofferstheenabledwallets the &quot;to&quot; list offers the wallets admin has enabled">
+      <tr class="case" id="case-ManualTransferClassicUiTest-defaultToIsPleaseSelect" data-status="Pass" data-search="transfer-017 defaulttoispleaseselect &quot;to&quot; defaults to &quot;please select&quot;">
         <td class="id" id="TRANSFER-017">TRANSFER-017</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>toListOffersTheEnabledWallets</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>defaultToIsPleaseSelect</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>the &quot;To&quot; list offers the wallets admin has enabled</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td>&quot;To&quot; defaults to &quot;Please select&quot;</td>
+        <td>The application behaved as expected.<div class="secs">4 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">7.25s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.defaultToIsPleaseSelect.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.defaultToIsPleaseSelect.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-017</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#toListOffersTheEnabledWallets</dd>
-                <dt>Expected result</dt><dd>the &quot;To&quot; list offers the wallets admin has enabled</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#defaultToIsPleaseSelect</dd>
+                <dt>Expected result</dt><dd>&quot;To&quot; defaults to &quot;Please select&quot;</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 7.25s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>&quot;To&quot; defaults to &quot;Please select&quot;</dd>
+                <dt>Duration</dt><dd>7.25 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(4 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.71s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">2.72s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">7.24s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">7.24s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-negativeAmountCannotBeTyped" data-status="Not run" data-search="transfer-018 negativeamountcannotbetyped a negative amount cannot be typed">
+      <tr class="case" id="case-ManualTransferClassicUiTest-toListOffersTheEnabledWallets" data-status="Pass" data-search="transfer-018 tolistofferstheenabledwallets the &quot;to&quot; list offers the wallets admin has enabled">
         <td class="id" id="TRANSFER-018">TRANSFER-018</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>negativeAmountCannotBeTyped</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>toListOffersTheEnabledWallets</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: 1 found; closing it.</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>a negative amount cannot be typed</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td>the &quot;To&quot; list offers the wallets admin has enabled</td>
+        <td>The application behaved as expected.<div class="secs">4 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">6.13s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.toListOffersTheEnabledWallets.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.toListOffersTheEnabledWallets.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-018</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#negativeAmountCannotBeTyped</dd>
-                <dt>Expected result</dt><dd>a negative amount cannot be typed</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#toListOffersTheEnabledWallets</dd>
+                <dt>Expected result</dt><dd>the &quot;To&quot; list offers the wallets admin has enabled</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 6.13s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>the &quot;To&quot; list offers the wallets admin has enabled</dd>
+                <dt>Duration</dt><dd>6.13 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(4 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.74s</span><span class="kind">STEP</span><span class="what">Welcome banner: 1 found; closing it.</span></li>
+              <li class="k-step"><span class="at">4.46s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">6.12s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">6.12s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-moreThanTwoDecimalsCannotBeEntered" data-status="Not run" data-search="transfer-019 morethantwodecimalscannotbeentered more than two decimal places cannot be entered">
+      <tr class="case" id="case-ManualTransferClassicUiTest-negativeAmountCannotBeTyped" data-status="Pass" data-search="transfer-019 negativeamountcannotbetyped a negative amount cannot be typed">
         <td class="id" id="TRANSFER-019">TRANSFER-019</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>moreThanTwoDecimalsCannotBeEntered</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>more than two decimal places cannot be entered</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>negativeAmountCannotBeTyped</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = -10</code></li></ul></td>
+        <td>a negative amount cannot be typed</td>
+        <td>The application behaved as expected.<div class="secs">6 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">6.96s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.negativeAmountCannotBeTyped.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.negativeAmountCannotBeTyped.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-019</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#moreThanTwoDecimalsCannotBeEntered</dd>
-                <dt>Expected result</dt><dd>more than two decimal places cannot be entered</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#negativeAmountCannotBeTyped</dd>
+                <dt>Expected result</dt><dd>a negative amount cannot be typed</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 6.96s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>a negative amount cannot be typed</dd>
+                <dt>Duration</dt><dd>6.96 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(6 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.66s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.41s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">5.34s</span><span class="kind">DATA</span><span class="what">amount typed = -10</span></li>
+              <li class="k-step"><span class="at">5.35s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">6.96s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">6.96s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-zeroAmountIsRefused" data-status="Not run" data-search="transfer-020 zeroamountisrefused a zero amount is refused">
+      <tr class="case" id="case-ManualTransferClassicUiTest-moreThanTwoDecimalsCannotBeEntered" data-status="Pass" data-search="transfer-020 morethantwodecimalscannotbeentered more than two decimal places cannot be entered">
         <td class="id" id="TRANSFER-020">TRANSFER-020</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>zeroAmountIsRefused</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>a zero amount is refused</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>moreThanTwoDecimalsCannotBeEntered</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1.3949</code></li></ul></td>
+        <td>more than two decimal places cannot be entered</td>
+        <td>The application behaved as expected.<div class="secs">6 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">6.92s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.moreThanTwoDecimalsCannotBeEntered.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.moreThanTwoDecimalsCannotBeEntered.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-020</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#zeroAmountIsRefused</dd>
-                <dt>Expected result</dt><dd>a zero amount is refused</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#moreThanTwoDecimalsCannotBeEntered</dd>
+                <dt>Expected result</dt><dd>more than two decimal places cannot be entered</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 6.92s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>more than two decimal places cannot be entered</dd>
+                <dt>Duration</dt><dd>6.92 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(6 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.68s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.38s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">5.29s</span><span class="kind">DATA</span><span class="what">amount typed = 1.3949</span></li>
+              <li class="k-step"><span class="at">5.30s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">6.91s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">6.91s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-amountAboveTheMainWalletIsRefused" data-status="Not run" data-search="transfer-021 amountabovethemainwalletisrefused an amount above the main wallet cannot be submitted">
+      <tr class="case" id="case-ManualTransferClassicUiTest-zeroAmountIsRefused" data-status="Pass" data-search="transfer-021 zeroamountisrefused a zero amount is refused">
         <td class="id" id="TRANSFER-021">TRANSFER-021</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>amountAboveTheMainWalletIsRefused</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>an amount above the main wallet cannot be submitted</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>zeroAmountIsRefused</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Submitting the transfer</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 0</code></li></ul></td>
+        <td>a zero amount is refused</td>
+        <td>The application behaved as expected.<div class="secs">7 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">8.39s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.zeroAmountIsRefused.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.zeroAmountIsRefused.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-021</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#amountAboveTheMainWalletIsRefused</dd>
-                <dt>Expected result</dt><dd>an amount above the main wallet cannot be submitted</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#zeroAmountIsRefused</dd>
+                <dt>Expected result</dt><dd>a zero amount is refused</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 8.39s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>a zero amount is refused</dd>
+                <dt>Duration</dt><dd>8.39 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(7 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.70s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.43s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">5.34s</span><span class="kind">DATA</span><span class="what">amount typed = 0</span></li>
+              <li class="k-step"><span class="at">5.37s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">6.67s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">8.38s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">8.38s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-theSameWalletCannotBeBothEnds" data-status="Not run" data-search="transfer-022 thesamewalletcannotbebothends the same wallet cannot be both &quot;from&quot; and &quot;to&quot;">
+      <tr class="case" id="case-ManualTransferClassicUiTest-amountAboveTheMainWalletIsRefused" data-status="Pass" data-search="transfer-022 amountabovethemainwalletisrefused an amount above the main wallet cannot be submitted">
         <td class="id" id="TRANSFER-022">TRANSFER-022</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>theSameWalletCannotBeBothEnds</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>amountAboveTheMainWalletIsRefused</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1</code></li><li><code>amount typed = 1365</code></li></ul></td>
+        <td>an amount above the main wallet cannot be submitted</td>
+        <td>The application behaved as expected.<div class="secs">7 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">7.31s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.amountAboveTheMainWalletIsRefused.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.amountAboveTheMainWalletIsRefused.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-022</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#theSameWalletCannotBeBothEnds</dd>
-                <dt>Expected result</dt><dd>the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#amountAboveTheMainWalletIsRefused</dd>
+                <dt>Expected result</dt><dd>an amount above the main wallet cannot be submitted</dd>
                 <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 7.31s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>an amount above the main wallet cannot be submitted</dd>
+                <dt>Duration</dt><dd>7.31 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(7 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.67s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.39s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">5.27s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-data"><span class="at">5.65s</span><span class="kind">DATA</span><span class="what">amount typed = 1365</span></li>
+              <li class="k-step"><span class="at">5.66s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">7.30s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">7.30s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-mainWalletToAGameWalletTransfers" data-status="Not run" data-search="transfer-023 mainwallettoagamewallettransfers a nominal amount from the main wallet into a game wallet succeeds creates-data">
+      <tr class="case" id="case-ManualTransferClassicUiTest-theSameWalletCannotBeBothEnds" data-status="Pass" data-search="transfer-023 thesamewalletcannotbebothends the same wallet cannot be both &quot;from&quot; and &quot;to&quot;">
         <td class="id" id="TRANSFER-023">TRANSFER-023</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>mainWalletToAGameWalletTransfers</code><div class="tag">creates-data</div></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>theSameWalletCannotBeBothEnds</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>a nominal amount from the main wallet into a game wallet succeeds</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.<br>Filtered out of this run by <code>-DexcludedGroups</code>.</td>
+        <td>the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</td>
+        <td>The application behaved as expected.<div class="secs">5 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">7.25s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.theSameWalletCannotBeBothEnds.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.theSameWalletCannotBeBothEnds.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-023</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#mainWalletToAGameWalletTransfers</dd>
-                <dt>Expected result</dt><dd>a nominal amount from the main wallet into a game wallet succeeds</dd>
-                <dt>Tags</dt><dd>creates-data</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#theSameWalletCannotBeBothEnds</dd>
+                <dt>Expected result</dt><dd>the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</dd>
+                <dt>Tags</dt><dd>none</dd>
+                <dt>Outcome</dt><dd>Pass in 7.25s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>the same wallet cannot be both &quot;From&quot; and &quot;To&quot;</dd>
+                <dt>Duration</dt><dd>7.25 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(5 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.68s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.39s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-step"><span class="at">5.63s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">7.24s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">7.24s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-aGameWalletTransfersBackToTheMainWallet" data-status="Not run" data-search="transfer-024 agamewallettransfersbacktothemainwallet a funded game wallet transfers its balance back to the main wallet creates-data">
+      <tr class="case" id="case-ManualTransferClassicUiTest-mainWalletToAGameWalletTransfers" data-status="Pass" data-search="transfer-024 mainwallettoagamewallettransfers a nominal amount from the main wallet into a game wallet succeeds creates-data">
         <td class="id" id="TRANSFER-024">TRANSFER-024</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>aGameWalletTransfersBackToTheMainWallet</code><div class="tag">creates-data</div></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>a funded game wallet transfers its balance back to the main wallet</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.<br>Filtered out of this run by <code>-DexcludedGroups</code>.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>mainWalletToAGameWalletTransfers</code><div class="tag">creates-data</div></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Submitting the transfer</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1</code></li></ul></td>
+        <td>a nominal amount from the main wallet into a game wallet succeeds</td>
+        <td>The application behaved as expected.<div class="secs">7 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">10.97s</div></td>
+        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.</td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.mainWalletToAGameWalletTransfers.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.mainWalletToAGameWalletTransfers.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-024</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#aGameWalletTransfersBackToTheMainWallet</dd>
-                <dt>Expected result</dt><dd>a funded game wallet transfers its balance back to the main wallet</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#mainWalletToAGameWalletTransfers</dd>
+                <dt>Expected result</dt><dd>a nominal amount from the main wallet into a game wallet succeeds</dd>
                 <dt>Tags</dt><dd>creates-data</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Pass in 10.97s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>a nominal amount from the main wallet into a game wallet succeeds</dd>
+                <dt>Duration</dt><dd>10.97 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(7 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.68s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.46s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">5.35s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">5.36s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">7.67s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">10.97s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">10.97s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-moreThanTheWalletBalanceIsRefused" data-status="Not run" data-search="transfer-025 morethanthewalletbalanceisrefused transferring more than a game wallet's balance is refused">
+      <tr class="case" id="case-ManualTransferClassicUiTest-aGameWalletTransfersBackToTheMainWallet" data-status="Pass" data-search="transfer-025 agamewallettransfersbacktothemainwallet a funded game wallet transfers its balance back to the main wallet creates-data">
         <td class="id" id="TRANSFER-025">TRANSFER-025</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>moreThanTheWalletBalanceIsRefused</code></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>transferring more than a game wallet's balance is refused</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>aGameWalletTransfersBackToTheMainWallet</code><div class="tag">creates-data</div></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $1.00'</li><li>Choosing 'Main wallet $364.37'</li><li>Submitting the transfer</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1.0</code></li></ul></td>
+        <td>a funded game wallet transfers its balance back to the main wallet</td>
+        <td>The application behaved as expected.<div class="secs">8 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">12.19s</div></td>
+        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.</td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.aGameWalletTransfersBackToTheMainWallet.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.aGameWalletTransfersBackToTheMainWallet.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-025</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#moreThanTheWalletBalanceIsRefused</dd>
-                <dt>Expected result</dt><dd>transferring more than a game wallet's balance is refused</dd>
-                <dt>Tags</dt><dd>none</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#aGameWalletTransfersBackToTheMainWallet</dd>
+                <dt>Expected result</dt><dd>a funded game wallet transfers its balance back to the main wallet</dd>
+                <dt>Tags</dt><dd>creates-data</dd>
+                <dt>Outcome</dt><dd>Pass in 12.19s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>a funded game wallet transfers its balance back to the main wallet</dd>
+                <dt>Duration</dt><dd>12.19 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(8 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.71s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">5.41s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $1.00'</span></li>
+              <li class="k-step"><span class="at">6.61s</span><span class="kind">STEP</span><span class="what">Choosing 'Main wallet $364.37'</span></li>
+              <li class="k-data"><span class="at">7.52s</span><span class="kind">DATA</span><span class="what">amount typed = 1.0</span></li>
+              <li class="k-step"><span class="at">7.52s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">9.18s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">12.19s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">12.19s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
-      <tr class="case" id="case-ManualTransferClassicUiTest-transferAllOutSweepsEveryWallet" data-status="Not run" data-search="transfer-026 transferalloutsweepseverywallet a &quot;transfer all out&quot; sweep, if present, empties every game creates-data">
+      <tr class="case" id="case-ManualTransferClassicUiTest-moreThanTheWalletBalanceIsRefused" data-status="Pass" data-search="transfer-026 morethanthewalletbalanceisrefused transferring more than a game wallet's balance is refused">
         <td class="id" id="TRANSFER-026">TRANSFER-026</td>
-        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>transferAllOutSweepsEveryWallet</code><div class="tag">creates-data</div></td>
-        <td class="tsteps"><span class="muted">&mdash;</span></td>
-        <td class="tdata"><span class="muted">&mdash;</span></td>
-        <td>a &quot;Transfer All Out&quot; sweep, if present, empties every game </td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.<br>Filtered out of this run by <code>-DexcludedGroups</code>.</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>moreThanTheWalletBalanceIsRefused</code></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Choosing 'Main wallet $365.37'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1000</code></li></ul></td>
+        <td>transferring more than a game wallet's balance is refused</td>
+        <td>The application behaved as expected.<div class="secs">7 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">9.29s</div></td>
         <td><span class="muted">&mdash;</span></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.moreThanTheWalletBalanceIsRefused.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.moreThanTheWalletBalanceIsRefused.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Pass">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
               <h3>The case</h3>
               <dl>
                 <dt>Case id</dt><dd>TRANSFER-026</dd>
-                <dt>Method</dt><dd>ManualTransferClassicUiTest#transferAllOutSweepsEveryWallet</dd>
-                <dt>Expected result</dt><dd>a &quot;Transfer All Out&quot; sweep, if present, empties every game </dd>
-                <dt>Tags</dt><dd>creates-data</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#moreThanTheWalletBalanceIsRefused</dd>
+                <dt>Expected result</dt><dd>transferring more than a game wallet's balance is refused</dd>
+                <dt>Tags</dt><dd>none</dd>
+                <dt>Outcome</dt><dd>Pass in 9.29s</dd>
               </dl>
             </div>
             <div class="panel">
               <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>transferring more than a game wallet's balance is refused</dd>
+                <dt>Duration</dt><dd>9.29 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
             </div>
           </div>
-          <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(7 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.70s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">5.49s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-step"><span class="at">6.69s</span><span class="kind">STEP</span><span class="what">Choosing 'Main wallet $365.37'</span></li>
+              <li class="k-data"><span class="at">7.62s</span><span class="kind">DATA</span><span class="what">amount typed = 1000</span></li>
+              <li class="k-step"><span class="at">7.64s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">9.29s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">9.29s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
+        </td>
+      </tr>
+      <tr class="case" id="case-ManualTransferClassicUiTest-transferAllOutSweepsEveryWallet" data-status="Pass" data-search="transfer-027 transferalloutsweepseverywallet a &quot;transfer all out&quot; sweep, if present, empties every game creates-data">
+        <td class="id" id="TRANSFER-027">TRANSFER-027</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>transferAllOutSweepsEveryWallet</code><div class="tag">creates-data</div></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Pressing 'Transfer All Out'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>PASS</li></ol></td>
+        <td class="tdata"><span class="muted">&mdash;</span></td>
+        <td>a &quot;Transfer All Out&quot; sweep, if present, empties every game </td>
+        <td>The application behaved as expected.<div class="secs">5 events recorded, ended on <code>https://test-v2.138hk.vip/en/member/wallet/</code></div></td>
+        <td><span class="st pass">Pass</span><div class="secs">23.30s</div></td>
+        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.</td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.transferAllOutSweepsEveryWallet.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.transferAllOutSweepsEveryWallet.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
+      </tr>
+      <tr class="detail hide" data-status="Pass">
+        <td colspan="9">
+          <div class="panels">
+            <div class="panel">
+              <h3>The case</h3>
+              <dl>
+                <dt>Case id</dt><dd>TRANSFER-027</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#transferAllOutSweepsEveryWallet</dd>
+                <dt>Expected result</dt><dd>a &quot;Transfer All Out&quot; sweep, if present, empties every game </dd>
+                <dt>Tags</dt><dd>creates-data</dd>
+                <dt>Outcome</dt><dd>Pass in 23.30s</dd>
+              </dl>
+            </div>
+            <div class="panel">
+              <h3>The result</h3>
+              <dl>
+                <dt>Verdict</dt><dd>Every assertion in the case held.</dd>
+                <dt>Verified</dt><dd>a &quot;Transfer All Out&quot; sweep, if present, empties every game </dd>
+                <dt>Duration</dt><dd>23.30 seconds</dd>
+              </dl>
+              <p class="muted">The steps below are the run's own record of how the case reached that verdict, and the Evidence column shows the page it finished on.</p>
+            </div>
+          </div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(5 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.74s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">4.11s</span><span class="kind">STEP</span><span class="what">Pressing 'Transfer All Out'</span></li>
+              <li class="k-step"><span class="at">21.65s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">23.30s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">23.30s</span><span class="kind">STEP</span><span class="what">PASS</span></li>
+            </ol>
+          </div>
+        </td>
+      </tr>
+      <tr class="case" id="case-ManualTransferClassicUiTest-mainWalletToEveryGameWalletTransfers" data-status="Error" data-search="transfer-028 mainwallettoeverygamewallettransfers a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck creates-data error { message='error: node is not an htmlelement name='error stack='error: error: node is not an htmlelement at crexecutioncontext.evaluatewitharguments (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\chromium\crexecutioncontext.js:80:13) at async longstandingscope._race (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualpromise.js:94:14) at async evaluateexpression (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\javascript.js:217:12) at async c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\frames.js:1345:39 at async frame.retrywithprogressandtimeouts (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\frames.js:888:24) at async framedispatcher.innertext (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\framedispatcher.js:142:21) at async progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\progress.js:98:22) at async framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:91:14) at async dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:325:22) } call log: - - waiting for locator(&quot;[class*='alertboard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;).nth(3)">
+        <td class="id" id="TRANSFER-028">TRANSFER-028</td>
+        <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>mainWalletToEveryGameWalletTransfers</code><div class="tag">creates-data</div></td>
+        <td class="tsteps"><ol class="tc-steps"><li>Welcome banner: none on the page.</li><li>Choosing 'SBO $0.00'</li><li>Submitting the transfer</li><li>Choosing 'BBIN $0.00'</li><li>Choosing 'BOLE GAMING $0.00'</li><li>Choosing 'WORLD ENTERTAINMENT $0.00'</li><li>Choosing 'AWC68 SEXY b $0.00'</li><li>Choosing 'DG EN $0.00'</li><li>Choosing 'AWC RCB988 Horse Racing $0.00'</li><li>Choosing '3SING $0.00'</li><li>Case ended on https://test-v2.138hk.vip/en/member/wallet/</li><li>ERROR: Error {   message='Error: Node is not an HTMLElement   name='Error   stack='Error: Error: Node is not an HTMLElement     at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)     at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualPromise.js:94:14)     at async evaluateExpression (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\javascript.js:217:12)     at async C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:1345:39     at async Frame.retryWithProgressAndTimeouts (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:888:24)     at async FrameDispatcher.innerText (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\frameDispatcher.js:142:21)     at async ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\progress.js:98:22)     at async FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:91:14)     at async DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:325:22) } Call log: -   - waiting for locator(&quot;[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;).nth(3)</li></ol></td>
+        <td class="tdata"><ul class="tc-data"><li><code>amount typed = 1</code></li></ul></td>
+        <td>a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck</td>
+        <td><div class="why">Error {
+  message='Error: Node is not an HTMLElement
+  name='Error
+  stack='Error: Error: Node is not an HTMLElement
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\p ...</div></td>
+        <td><span class="st fail">Error</span><div class="secs">72.50s</div></td>
+        <td><b>Creates data.</b> Side effects reach outside the browser &mdash; a real account, a real SMS, a filed deposit, a withdrawal hold or a staked balance &mdash; so it is kept out of unattended runs and must be run attended.<br><code>org.sengmean.page.payment.TransferPage.alertText(TransferPage.java:719)</code></td>
+        <td><a class="shot" href="screenshots/ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers.png" target="_blank" rel="noopener"><img src="screenshots/ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers.png" alt="Captured the closing screenshot.  (1 of 1)" loading="lazy"></a></td>
+      </tr>
+      <tr class="detail hide" data-status="Error">
+        <td colspan="9">
+          <div class="panels">
+            <div class="panel">
+              <h3>The case</h3>
+              <dl>
+                <dt>Case id</dt><dd>TRANSFER-028</dd>
+                <dt>Method</dt><dd>ManualTransferClassicUiTest#mainWalletToEveryGameWalletTransfers</dd>
+                <dt>Expected result</dt><dd>a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck</dd>
+                <dt>Tags</dt><dd>creates-data</dd>
+                <dt>Outcome</dt><dd>Error in 72.50s</dd>
+              </dl>
+            </div>
+            <div class="panel">
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>com.microsoft.playwright.PlaywrightException</dd>
+                <dt>Message</dt><dd>Error {
+  message='Error: Node is not an HTMLElement
+  name='Error
+  stack='Error: Error: Node is not an HTMLElement
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\javascript.js:217:12)
+    at async C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:1345:39
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:888:24)
+    at async FrameDispatcher.innerText (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\frameDispatcher.js:142:21)
+    at async ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\progress.js:98:22)
+    at async FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:91:14)
+    at async DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:325:22)
+}
+Call log:
+-   - waiting for locator(&quot;[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;).nth(3)
+</dd>
+                <dt>Element</dt><dd><code>locator(&quot;[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;)</code></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.payment.TransferPage.alertText(TransferPage.java:719)</code><code>org.sengmean.page.payment.TransferPage.waitForMessage(TransferPage.java:697)</code><code>org.sengmean.tests.payment.ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferClassicUiTest.java:467)</code></div></dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: Node is not an HTMLElement
+  name='Error
+  stack='Error: Error: Node is not an HTMLElement
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\javascript.js:217:12)
+    at async C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:1345:39
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:888:24)
+    at async FrameDispatcher.innerText (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\frameDispatcher.js:142:21)
+    at async ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\progress.js:98:22)
+    at async FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:91:14)
+    at async DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:325:22)
+}
+Call log:
+-   - waiting for locator(&quot;[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;).nth(3)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)
+	at com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)
+	at com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)
+	at com.microsoft.playwright.Locator.innerText(Locator.java:3934)
+	at org.sengmean.page.payment.TransferPage.alertText(TransferPage.java:719)
+	at org.sengmean.page.payment.TransferPage.waitForMessage(TransferPage.java:697)
+	at org.sengmean.tests.payment.ManualTransferClassicUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferClassicUiTest.java:467)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: Node is not an HTMLElement
+  name='Error
+  stack='Error: Error: Node is not an HTMLElement
+    at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\javascript.js:217:12)
+    at async C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:1345:39
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\frames.js:888:24)
+    at async FrameDispatcher.innerText (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\frameDispatcher.js:142:21)
+    at async ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\progress.js:98:22)
+    at async FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:91:14)
+    at async DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\dispatchers\dispatcher.js:325:22)
+}
+Call log:
+-   - waiting for locator(&quot;[class*='AlertBoard' i], [class*='alert' i], [class*='toast' i], [class*='modal' i][class*='message' i]&quot;).nth(3)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 12 more
+</pre></details>
+            </div>
+          </div>
+          <div class="panel wide">
+            <h3>What the run did <span class="muted">(28 recorded events)</span></h3>
+            <ol class="steps">
+              <li class="k-step"><span class="at">1.69s</span><span class="kind">STEP</span><span class="what">Welcome banner: none on the page.</span></li>
+              <li class="k-step"><span class="at">5.19s</span><span class="kind">STEP</span><span class="what">Choosing 'SBO $0.00'</span></li>
+              <li class="k-data"><span class="at">6.10s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">6.11s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">9.54s</span><span class="kind">STEP</span><span class="what">Choosing 'BBIN $0.00'</span></li>
+              <li class="k-data"><span class="at">10.46s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">10.47s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">13.59s</span><span class="kind">STEP</span><span class="what">Choosing 'BOLE GAMING $0.00'</span></li>
+              <li class="k-data"><span class="at">14.48s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">14.49s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">17.32s</span><span class="kind">STEP</span><span class="what">Choosing 'WORLD ENTERTAINMENT $0.00'</span></li>
+              <li class="k-data"><span class="at">18.21s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">18.22s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">50.67s</span><span class="kind">STEP</span><span class="what">Choosing 'AWC68 SEXY b $0.00'</span></li>
+              <li class="k-data"><span class="at">51.59s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">51.60s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">54.78s</span><span class="kind">STEP</span><span class="what">Choosing 'DG EN $0.00'</span></li>
+              <li class="k-data"><span class="at">55.71s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">55.72s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">60.17s</span><span class="kind">STEP</span><span class="what">Choosing 'AWC RCB988 Horse Racing $0.00'</span></li>
+              <li class="k-data"><span class="at">61.07s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">61.09s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">65.06s</span><span class="kind">STEP</span><span class="what">Choosing '3SING $0.00'</span></li>
+              <li class="k-data"><span class="at">65.98s</span><span class="kind">DATA</span><span class="what">amount typed = 1</span></li>
+              <li class="k-step"><span class="at">66.00s</span><span class="kind">STEP</span><span class="what">Submitting the transfer</span></li>
+              <li class="k-step"><span class="at">68.59s</span><span class="kind">STEP</span><span class="what">Case ended on https://test-v2.138hk.vip/en/member/wallet/</span></li>
+              <li class="k-evidence"><span class="at">72.47s</span><span class="kind">EVIDENCE</span><span class="what">Captured the closing screenshot.</span></li>
+              <li class="k-step"><span class="at">72.47s</span><span class="kind">STEP</span><span class="what">ERROR: Error {   message='Error: Node is not an HTMLElement   name='Error   stack='Error: Error: Node is not an HTMLElement     at CRExecutionContext.evaluateWithArguments (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\server\chromium\crExecutionContext.js:80:13)     at async LongStandingScope._race (C:\Users\Acer\AppData\Local\Temp\playwright-java-2409697969746989612\package\lib\utils\isomorphic\manualPromise.js:94:14)     at async evaluateExpression (C:\Users ...</span></li>
+            </ol>
+          </div>
         </td>
       </tr>
     </tbody>

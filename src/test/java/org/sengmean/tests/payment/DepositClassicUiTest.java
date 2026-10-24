@@ -100,7 +100,6 @@ public class DepositClassicUiTest extends BaseTest {
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
 
         String option = firstOption(view);
-        view.selectPaymentOption(option);
 
         boolean hasControl = view.hasFreeEntryAmount() || view.hasPresetAmount();
         assertTrue(hasControl, "'" + option + "' offered neither a free-entry amount field nor a "
@@ -112,7 +111,7 @@ public class DepositClassicUiTest extends BaseTest {
     void amountFieldAdvertisesItsRangeWhenItHasOne() {
         DepositPage view = openDeposit();
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
-        view.selectPaymentOption(firstOption(view));
+        firstOption(view);
         Assumptions.assumeTrue(view.hasFreeEntryAmount(),
                 "The first offered option has no free-entry amount field to advertise a range on.");
 
@@ -132,7 +131,7 @@ public class DepositClassicUiTest extends BaseTest {
     void emptyAmountIsRejected() {
         DepositPage view = openDeposit();
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
-        view.selectPaymentOption(firstOption(view));
+        firstOption(view);
         Assumptions.assumeTrue(view.hasFreeEntryAmount(),
                 "The first offered option has no free-entry amount field to leave empty.");
 
@@ -152,7 +151,7 @@ public class DepositClassicUiTest extends BaseTest {
     void amountBelowAdvertisedMinimumIsRejected() {
         DepositPage view = openDeposit();
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
-        view.selectPaymentOption(firstOption(view));
+        firstOption(view);
         Assumptions.assumeTrue(view.hasFreeEntryAmount(),
                 "The first offered option has no free-entry amount field to test a minimum on.");
 
@@ -178,7 +177,7 @@ public class DepositClassicUiTest extends BaseTest {
     void amountAboveAdvertisedMaximumIsRejected() {
         DepositPage view = openDeposit();
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
-        view.selectPaymentOption(firstOption(view));
+        firstOption(view);
         Assumptions.assumeTrue(view.hasFreeEntryAmount(),
                 "The first offered option has no free-entry amount field to test a maximum on.");
 
@@ -205,7 +204,7 @@ public class DepositClassicUiTest extends BaseTest {
     void validMinimumReachesConfirmationAndIsCancelled() {
         DepositPage view = openDeposit();
         Assumptions.assumeTrue(view.isLoaded(), notRenderedMessage());
-        view.selectPaymentOption(firstOption(view));
+        firstOption(view);
         Assumptions.assumeTrue(view.hasFreeEntryAmount(),
                 "The first offered option has no free-entry amount field to submit a valid amount on.");
 
@@ -277,12 +276,24 @@ public class DepositClassicUiTest extends BaseTest {
         return deposit;
     }
 
-    /** The first payment option label on the page, or skips when none is offered - see
-     *  DEPOSIT-013. */
+    /**
+     * The first offered option that does not need an unbound account to submit on - selected as
+     * a side effect, so callers must not re-select it - falling back to the first option at all
+     * when every one of them needs one. See {@link DepositPage}'s "first-offered option can
+     * require an unbound account" Javadoc note - confirmed live 2026-10-24: the first row on this
+     * page's own Deposit Options list, UMPAY PP EN, needs a UMPay account this QA account does
+     * not have, while Bank transfer PP/6P already have a bank account bound.
+     */
     private String firstOption(DepositPage view) {
         List<String> options = view.paymentOptionLabels();
         Assumptions.assumeFalse(options.isEmpty(),
                 "No payment option is offered to select - see DEPOSIT-013.");
+        for (String option : options) {
+            view.selectPaymentOption(option);
+            if (!view.currentOptionNeedsBinding()) {
+                return option;
+            }
+        }
         return options.get(0);
     }
 

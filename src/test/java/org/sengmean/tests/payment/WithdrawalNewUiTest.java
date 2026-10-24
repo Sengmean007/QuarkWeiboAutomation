@@ -404,6 +404,27 @@ public class WithdrawalNewUiTest extends BaseTest {
         withdrawal.open();
         assertTrue(withdrawal.isLoaded(), "The withdrawal form did not render for " + USERNAME
                 + ". Current URL: " + on.url());
+        selectUsableOption(withdrawal);
         return withdrawal;
+    }
+
+    /**
+     * Leaves the form on the first offered option that does not need an unbound account to
+     * submit on, falling back to whatever is selected by default when every option needs one.
+     * See {@link WithdrawalPage}'s "first-offered option can require an unbound account" Javadoc
+     * note - confirmed live 2026-10-24: the default-selected option here, UMPAY PP EN, needs a
+     * UMPay account this QA account does not have, while Bank transfer PP/6P already have a bank
+     * account bound.
+     */
+    private void selectUsableOption(WithdrawalPage withdrawal) {
+        if (!withdrawal.currentOptionNeedsBinding()) {
+            return;
+        }
+        for (String option : withdrawal.optionLabels()) {
+            withdrawal.selectOption(option);
+            if (!withdrawal.currentOptionNeedsBinding()) {
+                return;
+            }
+        }
     }
 }

@@ -302,42 +302,49 @@
   <details class="rpt-sum" open>
     <summary>
       <span class="rpt-line"><span class="chev" aria-hidden="true"></span><h1>Register test</h1><span class="rpt-toggle-hint">click to minimise / expand</span></span>
-      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail zero"><i>&#10007;</i>0 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun"><i>&#9675;</i>5 not run</span><span class="cnt">5 cases</span></span>
-<span class="bar">      <span class="seg notrun" style="width:100.0000%" title="5 not run"></span>
+      <span class="rpt-counts"><span class="cnt pass zero"><i>&#10003;</i>0 passed</span><span class="cnt fail"><i>&#10007;</i>1 failed</span><span class="cnt skip zero"><i>&#8856;</i>0 skipped</span><span class="cnt notrun"><i>&#9675;</i>4 not run</span><span class="cnt">5 cases</span></span>
+<span class="bar">      <span class="seg fail" style="width:20.0000%" title="1 failed"></span>
+      <span class="seg notrun" style="width:80.0000%" title="4 not run"></span>
 </span>
     </summary>
     <div class="sub">Test case report &mdash; <code>org.sengmean.tests.auth.RegisterTest</code></div>
     <div class="meta">
-      <div><b>Target:</b> not recorded</div>
-      <div><b>Account:</b> not recorded</div>
-      <div><b>Run:</b> not recorded</div>
-      <div><b>Scope:</b> 0 of 3 suites executed</div>
-      <div><b>Browser:</b> Chromium via Playwright 1.58.0</div>
-      <div><b>Runner:</b> JUnit 5</div>
+      <div><b>Target:</b> https://test-v2.138hk.vip</div>
+      <div><b>Account:</b> qa00002</div>
+      <div><b>Run:</b> 2026-10-24 11:28</div>
+      <div><b>Elapsed:</b> 46.7s</div>
+      <div><b>Scope:</b> 1 of 18 suites executed</div>
+      <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
+      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
     <h2 class="rpt-h">Statistics</h2>
     <div class="tiles">
         <div class="tile "><b>5</b><span>cases</span></div>
         <div class="tile pass"><b><i>&#10003;</i>0</b><span>passed</span></div>
-        <div class="tile fail"><b><i>&#10007;</i>0</b><span>failed</span></div>
+        <div class="tile fail"><b><i>&#10007;</i>1</b><span>failed</span></div>
         <div class="tile skip"><b><i>&#8856;</i>0</b><span>skipped</span></div>
-        <div class="tile notrun"><b><i>&#9675;</i>5</b><span>not run</span></div>
-        <div class="tile"><b>&ndash;</b><span>pass rate of the cases that ran</span></div>
-        <div class="tile"><b>0.0s</b><span>browser time</span></div>
+        <div class="tile notrun"><b><i>&#9675;</i>4</b><span>not run</span></div>
+        <div class="tile"><b>0%</b><span>pass rate of the cases that ran</span></div>
+        <div class="tile"><b>24.7s</b><span>browser time</span></div>
     </div>
-      <div class="chart" role="img" aria-label="Register test: 0 passed, 0 failed, 0 skipped, 5 not run">
-        <div class="stack big"><span class="seg notrun" style="flex-grow:5" tabindex="0" data-tip="Register test - 5 not run (100%)"><em>5</em></span></div>
+      <div class="chart" role="img" aria-label="Register test: 0 passed, 1 failed, 0 skipped, 4 not run">
+        <div class="stack big"><span class="seg fail" style="flex-grow:1" tabindex="0" data-tip="Register test - 1 failed (20%)"><em>1</em></span><span class="seg notrun" style="flex-grow:4" tabindex="0" data-tip="Register test - 4 not run (80%)"><em>4</em></span></div>
         <div class="chart-legend"><span><i class="sw pass"></i>Passed</span><span><i class="sw fail"></i>Failed</span><span><i class="sw skip"></i>Skipped</span><span><i class="sw notrun"></i>Not run</span></div>
       </div>
     <h2 class="rpt-h">Cases by result</h2>
     <div class="case-lists">
-      <details class="cl notrun"><summary><i>&#9675;</i>Not run <span class="n">(5)</span></summary>
+      <details class="cl fail" open><summary><i>&#10007;</i>Failed <span class="n">(1)</span></summary>
+        <ol>
+          <li><a href="#case-RegisterTest-fullRegistration_activatesWithBypassCode">REGISTER-005</a> full registration and SMS activation (creates a real account)<div class="why">Error {</div></li>
+        </ol>
+      </details>
+      <details class="cl notrun"><summary><i>&#9675;</i>Not run <span class="n">(4)</span></summary>
         <ol>
           <li><a href="#case-RegisterTest-usernameTooShort_showsLengthError">REGISTER-001</a> username shorter than 6 characters is rejected inline</li>
           <li><a href="#case-RegisterTest-passwordMismatch_showsError">REGISTER-002</a> mismatched password and repeat password is rejected</li>
           <li><a href="#case-RegisterTest-invalidContactNumber_showsRawBackendErrorCode">REGISTER-003</a> invalid contact number shows raw 'Status error -201' (known defect)</li>
           <li><a href="#case-RegisterTest-duplicateUsername_showsReadableError">REGISTER-004</a> a username already in use is rejected with a readable message</li>
-          <li><a href="#case-RegisterTest-fullRegistration_activatesWithBypassCode">REGISTER-005</a> full registration and SMS activation (creates a real account)</li>
         </ol>
       </details>
     </div>
@@ -345,6 +352,13 @@
   </header>
 
   <div class="nav"><a href="index.html">&larr; All suites</a></div>
+  <div class="callout bad">
+    <h2>1 case needs attention</h2>
+    <ol class="findings">
+      <li><a href="#case-RegisterTest-fullRegistration_activatesWithBypassCode">REGISTER-005</a> full registration and SMS activation (creates a real account)<div class="why">Error {</div></li>
+    </ol>
+    <p>A case tagged <code>known-defect</code> is red on purpose: it asserts the behaviour the application <i>should</i> have and stays red until the finding is fixed. The rest are this run's news.</p>
+  </div>
   <div class="toolbar">
     <div class="filters" role="group" aria-label="Filter cases by status">
       <button type="button" class="flt on" data-filter="all">All</button>
@@ -491,18 +505,23 @@
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>
         </td>
       </tr>
-      <tr class="case" id="case-RegisterTest-fullRegistration_activatesWithBypassCode" data-status="Not run" data-search="register-005 fullregistration_activateswithbypasscode full registration and sms activation (creates a real account)">
+      <tr class="case" id="case-RegisterTest-fullRegistration_activatesWithBypassCode" data-status="Error" data-search="register-005 fullregistration_activateswithbypasscode full registration and sms activation (creates a real account) error { message='timeout 20000ms exceeded. name='timeouterror stack='timeouterror: timeout 20000ms exceeded. at progresscontroller.run (c:\users\acer\appdata\local\temp\playwright-java-12014301413306364961\package\lib\server\progress.js:86:28) at framedispatcher._runcommand (c:\users\acer\appdata\local\temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:91:31) at dispatcherconnection.dispatch (c:\users\acer\appdata\local\temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:325:39) } call log: - - waiting for locator(&quot;//*[normalize-space(text())='username']/following::input[1]&quot;).locator(&quot;xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'register', 'register'), 'register')]][1]&quot;).getbyrole(ariarole.button, new locator.getbyroleoptions().setname(pattern.compile(&quot;register&quot;, pattern.case_insensitive))).first() - - locator resolved to &lt;button class=&quot;submitbutton_submit__lukqw&quot;&gt;…&lt;/button&gt; - - attempting click action - 2 × waiting for element to be visible, enabled and stable - - element is visible, enabled and stable - - scrolling into view if needed - - done scrolling - - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events - - retrying click action - - waiting 20ms - 2 × waiting for element to be visible, enabled and stable - - element is visible, enabled and stable - - scrolling into view if needed - - done scrolling - - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events - - retrying click action - - waiting 100ms - 34 × waiting for element to be visible, enabled and stable - - element is visible, enabled and stable - - scrolling into view if needed - - done scrolling - - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events - - retrying click action - - waiting 500ms - - waiting for element to be visible, enabled and stable - - element is visible, enabled and stable - - scrolling into view if needed - - done scrolling">
         <td class="id" id="REGISTER-005">REGISTER-005</td>
         <td class="tc"><button type="button" class="more" aria-expanded="false">Details</button><code>fullRegistration_activatesWithBypassCode</code></td>
         <td class="tsteps"><span class="muted">&mdash;</span></td>
         <td class="tdata"><span class="muted">&mdash;</span></td>
         <td>full registration and SMS activation (creates a real account)</td>
-        <td><span class="muted">Not executed in this run.</span></td>
-        <td><span class="st info">Not run</span></td>
-        <td><b>Disabled:</b> Creates a real account every run - see class Javadoc<br>Not part of this run &mdash; the suite was not executed, or the case was filtered out.</td>
-        <td><span class="muted">&mdash;</span></td>
+        <td><div class="why">Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatche ...</div></td>
+        <td><span class="st fail">Error</span><div class="secs">24.69s</div></td>
+        <td><b>Disabled:</b> Creates a real account every run - see class Javadoc<br><b>Cause:</b> Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.<br><code>org.sengmean.page.auth.RegisterPage.submit(RegisterPage.java:91)</code></td>
+        <td><span class="muted">No screenshot captured.</span></td>
       </tr>
-      <tr class="detail hide" data-status="Not run">
+      <tr class="detail hide" data-status="Error">
         <td colspan="9">
           <div class="panels">
             <div class="panel">
@@ -513,12 +532,149 @@
                 <dt>Expected result</dt><dd>full registration and SMS activation (creates a real account)</dd>
                 <dt>Tags</dt><dd>none</dd>
                 <dt>Disabled because</dt><dd>Creates a real account every run - see class Javadoc</dd>
-                <dt>Outcome</dt><dd>Not run</dd>
+                <dt>Outcome</dt><dd>Error in 24.69s</dd>
               </dl>
             </div>
             <div class="panel">
-              <h3>The result</h3>
-              <p class="muted">This case produced no result in this run, so there is nothing to report about it. It was either filtered out - normally by <code>-DexcludedGroups=creates-data</code> - or its suite was not part of the run at all.</p>
+              <h3>The failure</h3>
+              <dl>
+                <dt>Exception</dt><dd>com.microsoft.playwright.TimeoutError</dd>
+                <dt>Message</dt><dd>Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;).locator(&quot;xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]&quot;).getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(&quot;register&quot;, Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class=&quot;SubmitButton_submit__luKqw&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     34 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+</dd>
+                <dt>Element</dt><dd><code>locator(&quot;//*[normalize-space(text()</code></dd>
+                <dt>Where in this project</dt><dd><div class="frames"><code>org.sengmean.page.auth.RegisterPage.submit(RegisterPage.java:91)</code><code>org.sengmean.page.auth.RegisterPage.registerWithAllFields(RegisterPage.java:103)</code><code>org.sengmean.tests.auth.RegisterTest.fullRegistration_activatesWithBypassCode(RegisterTest.java:95)</code></div></dd>
+                <dt>Reading</dt><dd>Timed out waiting for an element or a navigation - either the control moved or the environment did not respond in time.</dd>
+              </dl>
+              <details class="trace"><summary>Full stack trace</summary><pre>com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;).locator(&quot;xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]&quot;).getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(&quot;register&quot;, Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class=&quot;SubmitButton_submit__luKqw&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     34 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2543)
+	at org.sengmean.page.auth.RegisterPage.submit(RegisterPage.java:91)
+	at org.sengmean.page.auth.RegisterPage.registerWithAllFields(RegisterPage.java:103)
+	at org.sengmean.tests.auth.RegisterTest.fullRegistration_activatesWithBypassCode(RegisterTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 20000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 20000ms exceeded.
+    at ProgressController.run (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\progress.js:86:28)
+    at FrameDispatcher._runCommand (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:91:31)
+    at DispatcherConnection.dispatch (C:\Users\Acer\AppData\Local\Temp\playwright-java-12014301413306364961\package\lib\server\dispatchers\dispatcher.js:325:39)
+}
+Call log:
+-   - waiting for locator(&quot;//*[normalize-space(text())='Username']/following::input[1]&quot;).locator(&quot;xpath=ancestor::*[.//button[contains(translate(normalize-space(string(.)), 'REGISTER', 'register'), 'register')]][1]&quot;).getByRole(AriaRole.BUTTON, new Locator.GetByRoleOptions().setName(Pattern.compile(&quot;register&quot;, Pattern.CASE_INSENSITIVE))).first()
+-     - locator resolved to &lt;button class=&quot;SubmitButton_submit__luKqw&quot;&gt;…&lt;/button&gt;
+-   - attempting click action
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-     - waiting 20ms
+-     2 × waiting for element to be visible, enabled and stable
+-       - element is visible, enabled and stable
+-       - scrolling into view if needed
+-       - done scrolling
+-       - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-     - retrying click action
+-       - waiting 100ms
+-     34 × waiting for element to be visible, enabled and stable
+-        - element is visible, enabled and stable
+-        - scrolling into view if needed
+-        - done scrolling
+-        - &lt;ul class=&quot;flex flex-col gap-1.5 lg:gap-2&quot;&gt;…&lt;/ul&gt; from &lt;div class=&quot;fixed inset-0 z-[2147483003] flex items-center justify-center p-1 lg:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto&quot;&gt;…&lt;/div&gt; subtree intercepts pointer events
+-      - retrying click action
+-        - waiting 500ms
+-     - waiting for element to be visible, enabled and stable
+-     - element is visible, enabled and stable
+-     - scrolling into view if needed
+-     - done scrolling
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 11 more
+</pre></details>
             </div>
           </div>
           <div class="panel wide"><h3>What the run did</h3><p class="muted">No step trail was recorded for this case. Trails are written while a case runs, so one is missing whenever the case did not run in the run this report describes.</p></div>

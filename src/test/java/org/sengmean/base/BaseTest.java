@@ -10,9 +10,12 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.sengmean.config.ConfigDataProvider;
 import org.sengmean.page.auth.LoginPage;
+import org.sengmean.page.wallet.CurrencySwitcher;
 import org.sengmean.report.CaseLog;
+import org.sengmean.report.CaseTrailExtension;
 import org.sengmean.support.Device;
 
 import java.nio.file.Files;
@@ -32,6 +35,7 @@ import java.nio.file.Path;
  * shape; lifted here rather than copied per test class so every device-aware test in this
  * project shares one launch and one teardown.
  */
+@ExtendWith({CaseTrailExtension.class, ScreenshotOnFinish.class})
 public class BaseTest {
 
     public static final String BASE_URL = BasePage.BASE_URL;
@@ -39,7 +43,31 @@ public class BaseTest {
     public static final String PASSWORD = ConfigDataProvider.get("test.password", "password");
     public static final String CAPTCHA = ConfigDataProvider.get("test.captcha", "1111");
 
-    public static final boolean HEADLESS = ConfigDataProvider.flag("headless", false);
+    /**
+     * A second QA account, given by Si on 2026-10-24, for cases that specifically need an account
+     * in a different state from the shared {@link #USERNAME} - starting with the deposit/withdraw
+     * bank/account-binding validation cases, which need an account with no payment method bound
+     * yet (unlike qa00002, which already has a Bank of China account bound - see
+     * {@code quark-deposit-withdrawal-locators-confirmed}). Mirrors the sibling NewWeibo_automation
+     * project's own {@code ALT_USERNAME}.
+     */
+    public static final String ALT_USERNAME = ConfigDataProvider.get("test.altUsername", "qa000051");
+    public static final String ALT_PASSWORD = ConfigDataProvider.get("test.altPassword", "password");
+
+    /**
+     * The currency every signed-in suite is switched to right after signing in - see
+     * {@link #signIn(Page, String, String)}. Defaults to HKD per Si's direction ("the currency
+     * should be HKD by default whenever run the test"), overridable with {@code -Dtest.currency=}
+     * for a run that specifically wants a different one, the same override shape every other
+     * setting in this class already follows. See {@code quark-currency-defaults-to-hkd}: the
+     * active currency is shared, account-level state, not browser-session state, so a suite that
+     * signs in fresh still inherits whatever a previous suite or run last left the account on -
+     * this exists to make every run start from the same, known currency rather than leaving that
+     * to chance.
+     */
+    public static final String CURRENCY = ConfigDataProvider.get("test.currency", "HKD");
+
+    public static final boolean HEADLESS = ConfigDataProvider.flag("headless", true);
     public static final double SLOW_MO = ConfigDataProvider.number("slowMo", 0);
 
     private static final double ACTION_TIMEOUT_MS =
@@ -137,8 +165,13 @@ public class BaseTest {
     }
 
     /**
-     * Signs the shared QA account in and clears the overlays the site raises after login (the
-     * chat panel; the Daily Mission popup if it appears for this account).
+     * Signs the shared QA account in, clears the overlays the site raises after login (the chat
+     * panel; the Daily Mission popup if it appears for this account), and switches the account to
+     * {@link #CURRENCY}. Centralized here - rather than left to each test class to call
+     * {@code CurrencySwitcher} itself - so every signed-in suite gets it the same way with nothing
+     * to remember at the call site; previously a handful of suites each added their own
+     * {@code new CurrencySwitcher(...).selectCurrency("HKD")} line, which meant a new suite had to
+     * know to do the same.
      */
     public static void signIn(Page page) {
         signIn(page, USERNAME, PASSWORD);
@@ -148,6 +181,7 @@ public class BaseTest {
         new LoginPage(page).loginWithAllFields(username, password, CAPTCHA);
         page.waitForTimeout(LOGIN_SETTLE_MS);
         new LoginPage(page).dismissOverlays();
+        new CurrencySwitcher(page).selectCurrency(CURRENCY);
     }
 
     @BeforeAll

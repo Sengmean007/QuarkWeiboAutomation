@@ -21,13 +21,16 @@ import java.util.List;
  * do about it</i> - so a reader had to open the code, or take the colour on trust.
  *
  * <h2>Recorded without touching the suites</h2>
- * Nothing here has to be called from a test for the trail to exist. {@code BaseTest} attaches
- * Playwright listeners to every context it opens, so navigations, console errors, uncaught page
- * errors and the site's own API traffic are logged as they happen, for every suite at once.
- * {@link #step(String)} is there for a case that wants to narrate something the browser events
- * cannot show - which account it signed in as, which amount it typed - and page objects under
- * {@code org.sengmean.page} can call it too, which is why this class lives in {@code src/main}
- * and deliberately has no Playwright import.
+ * Nothing here has to be called from a test for the trail to exist. {@code BaseTest} is annotated
+ * {@code @ExtendWith(CaseTrailExtension.class)} (confirmed live 2026-10-25 to have been missing
+ * entirely before that date - every {@link #add} call project-wide was a silent no-op, since
+ * {@link #start(String)} was never invoked; see {@code org.sengmean.report.CaseTrailExtension}'s
+ * own class Javadoc for the full story), which opens and closes the trail around every test
+ * method and logs the case's own final verdict into it. {@link #step(String)} is there on top of
+ * that for a case that wants to narrate something the browser events cannot show - which account
+ * it signed in as, which amount it typed - and page objects under {@code org.sengmean.page} can
+ * call it too, which is why this class lives in {@code src/main} and deliberately has no
+ * Playwright import.
  *
  * <h2>Written to disk, not held in memory</h2>
  * Each case's entries land in {@code target/case-logs/<Suite>.<method>.log}, matching how

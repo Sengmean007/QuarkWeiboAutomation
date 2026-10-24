@@ -2,6 +2,7 @@ package org.sengmean.page.payment;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
+import com.microsoft.playwright.PlaywrightException;
 import com.microsoft.playwright.options.AriaRole;
 import org.sengmean.base.BasePage;
 import org.sengmean.report.CaseLog;
@@ -23,35 +24,44 @@ import java.util.regex.Pattern;
  * withdrawal screen, so every locator below is a guess and every limit is read from whatever the
  * page itself says at run time rather than hard-coded.
  *
- * <h2>Selector confidence - everything here is unconfirmed</h2>
+ * <h2>Selector confidence - confirmed live 2026-10-24 against test-v2.138hk.vip</h2>
+ * Driven manually (both New UI and Classic UI, signed in as qa00002):
  * <ul>
- *   <li>{@link #PATH} - the route itself is a guess by analogy with the sibling project and with
- *       this project's own {@code /en/log-in/} and {@code /en/register/} routes. It may not
- *       exist, or may live under a different path.</li>
- *   <li>{@link #AMOUNT_INPUT} - the first {@code input[type='number']} on the page, the same
- *       assumption the sibling project's page object makes. If the withdrawal screen renders more
- *       than one numeric input this will find the wrong one.</li>
- *   <li>{@link #SUBMIT_BUTTON} - a button matched by accessible name against
- *       {@code submit|withdraw}, case-insensitive, mirroring how {@link
- *       org.sengmean.page.auth.LoginPage} matches "log in" and {@link
- *       org.sengmean.page.auth.RegisterPage} matches "register". The real accessible name is
- *       unconfirmed.</li>
- *   <li>{@link #OPTION_TILE} - withdraw-option/channel tiles, guessed as elements whose class
- *       carries "option", "channel" or "method", or that expose an ARIA radio role. Entirely
- *       unconfirmed: Quark's page may not label its channel picker this way at all, may have only
- *       one option with nothing to pick, or may group options under a structure this selector
- *       does not reach.</li>
- *   <li>{@link #BOARD_MESSAGE} - the popup/board that answers SUBMIT, guessed the same way {@link
- *       org.sengmean.page.auth.RegisterPage#boardMessage()} guesses its own board: a tolerant
- *       {@code [class*='AlertBoard'], [class*='Toast'], [role='alert']} match.</li>
- *   <li>{@link #CONFIRM_BUTTON_NAME} / {@link #CANCEL_BUTTON_NAME} - accessible-name guesses for
- *       the two controls a confirmation prompt is expected to offer.</li>
- *   <li>{@link #BALANCE_PATTERN} - a currency-code-plus-number regex run over the whole page's
- *       text, the same technique the sibling project uses for its own wallet line, with no
- *       confirmation Quark's header renders a balance the same way or anywhere at all.</li>
+ *   <li>{@link #PATH} - confirmed correct as guessed: {@code /en/member/withdrawal/} is the real
+ *       route and the top nav's own Withdraw link lands on it.</li>
+ *   <li>{@link #AMOUNT_INPUT} - confirmed correct: the page's one
+ *       {@code input[type='number']} is the "Withdrawal Game Points" field, with a placeholder
+ *       like "Min : 100.00 ~ Max : 100000.00" that {@link #limitFromPlaceholder} already parses.</li>
+ *   <li>{@link #SUBMIT_BUTTON_NAME} - was a guess matched against an accessible name of "submit"
+ *       or "withdraw", confirmed live to be a real bug: the top nav's own "Withdraw" button (New
+ *       UI) / "Withdrawal" link (Classic UI) both match "withdraw" too and sort before the real
+ *       control in DOM order, so {@code .first()} clicked the nav link - which does nothing on a
+ *       page already on {@link #PATH} - instead of ever submitting the form. The real control's
+ *       accessible name is the exact text "SUBMIT"; the pattern below is anchored to match only
+ *       that.</li>
+ *   <li>{@link #OPTION_TILE} - was a guess that matched <b>zero</b> elements live (no class on
+ *       this page names "option", "channel" or "method", and the rows are not ARIA radios). The
+ *       real withdraw options (UMPAY PP EN, Bank transfer PP, Bank transfer 6P, FPS PP, FPS 6P)
+ *       are {@code <li>} rows of the page's one {@code ul.list-none} list, the same structure the
+ *       sibling {@link org.sengmean.page.payment.DepositPage} uses for its own options;
+ *       {@link #OPTION_TILE} now targets that directly.</li>
+ *   <li>{@link #BOARD_MESSAGE} - confirmed correct as guessed: both the "minimum withdrawal"
+ *       refusal and the "Confirm Withdrawal?" prompt render under a class containing
+ *       "AlertBoard".</li>
+ *   <li>{@link #CONFIRM_BUTTON_NAME} / {@link #CANCEL_BUTTON_NAME} - confirmed correct: the
+ *       confirmation prompt's own two buttons are the exact text "Confirm" and "Cancel".</li>
+ *   <li>{@link #BALANCE_PATTERN} - confirmed correct: the header's own wallet line
+ *       ("HKD 365.37") matches it.</li>
  * </ul>
- * <b>Verify every locator here against the live DOM before trusting a red case</b>, exactly as
- * {@link org.sengmean.page.auth.LoginPage} asks for its own screen.
+ *
+ * <h2>Confirmed live: the first-offered option can require an unbound account</h2>
+ * qa00002 has no UMPay account bound, so selecting the Withdraw Options list's first row
+ * (UMPAY PP EN) and submitting a valid amount returns "UMPay Account is required" rather than
+ * reaching a confirmation prompt - not a defect, just this account's own binding state. Bank
+ * transfer PP/6P already have a bank account bound for this account and reach "Confirm
+ * Withdrawal?" cleanly. See {@link #currentOptionNeedsBinding()} and the test classes'
+ * {@code firstUsableOption} helper, which walks the option list for one that does not need a
+ * binding instead of assuming the first option is always submittable.
  *
  * <h2>Validation timing is assumed, not confirmed</h2>
  * The sibling project's form validates on submit rather than on entry - the amount field accepts
@@ -77,13 +87,30 @@ public class WithdrawalPage extends BasePage {
     public static final String PATH = "/en/member/withdrawal/";
 
     private static final String AMOUNT_INPUT = "input[type='number']";
-    private static final String SUBMIT_BUTTON_NAME = "(submit|withdraw)";
-    private static final String OPTION_TILE =
-            "[class*='option' i], [class*='channel' i], [class*='method' i], [role='radio']";
+
+    /** Anchored to match only the exact accessible name "SUBMIT" - see the class Javadoc for why
+     *  the previous unanchored "submit|withdraw" pattern was a real bug, not just unconfirmed. */
+    private static final String SUBMIT_BUTTON_NAME = "^submit$";
+
+    /** The Withdraw Options list's own rows - confirmed live 2026-10-24, see the class Javadoc. */
+    private static final String OPTION_TILE = "ul.list-none > li";
+
     private static final String BOARD_MESSAGE =
             "[class*='AlertBoard' i], [class*='Toast' i], [class*='modal' i], [role='alert'], [role='dialog']";
     private static final String CONFIRM_BUTTON_NAME = "confirm";
     private static final String CANCEL_BUTTON_NAME = "(cancel|close)";
+
+    /** The placeholder text shown in an unbound account field, e.g. "Click [Add] to bind Banking
+     *  details" - confirmed live 2026-10-24, same text as the sibling
+     *  {@link org.sengmean.page.payment.DepositPage}'s own unbound-account hint. */
+    private static final String UNBOUND_ACCOUNT_HINT = "Click [Add] to bind";
+
+    /** The Withdrawal Channel tile grid - same confirmed shape, and the same fixed New-UI-only
+     *  bug, as the sibling {@link org.sengmean.page.payment.DepositPage#CHANNEL_TILE}: a grid of
+     *  {@code role="button"} {@code div}s, one per channel, found on all four combinations of
+     *  Deposit/Withdrawal x New UI/Classic UI by matching on the tiles' parent's plain
+     *  {@code grid} class rather than its (UI-version-specific) column-count class. */
+    private static final String CHANNEL_TILE = "div.grid > div[role='button']";
 
     /** A currency code followed by a figure, e.g. "HKD 365.37" - see the class Javadoc caveat. */
     private static final Pattern BALANCE_PATTERN =
@@ -238,6 +265,52 @@ public class WithdrawalPage extends BasePage {
         page.getByText(label, new Page.GetByTextOptions().setExact(false)).last().click();
         page.waitForTimeout(1_000);
         CaseLog.step("Selected withdraw option '" + label + "'");
+    }
+
+    /** True when the currently selected option shows an unbound-account field that SUBMIT will
+     *  refuse until it is filled in - see the class Javadoc's "first-offered option can require
+     *  an unbound account" note. */
+    public boolean currentOptionNeedsBinding() {
+        return page.getByText(UNBOUND_ACCOUNT_HINT, new Page.GetByTextOptions().setExact(false))
+                .count() > 0;
+    }
+
+    // ------------------------------------------------------------- channels
+
+    /** Every withdrawal channel currently on offer, in whatever order the page renders them - see
+     *  {@link #CHANNEL_TILE}. */
+    public List<String> channelLabels() {
+        Locator tiles = page.locator(CHANNEL_TILE);
+        List<String> labels = new ArrayList<>();
+        int count = tiles.count();
+        for (int i = 0; i < count; i++) {
+            try {
+                String text = tiles.nth(i).innerText();
+                if (text != null && !text.isBlank()) {
+                    labels.add(text.trim());
+                }
+            } catch (RuntimeException unreadable) {
+                // One awkward tile must not stop the walk.
+            }
+        }
+        return labels;
+    }
+
+    /** Selects a withdrawal channel by its exact tile label, re-rendering {@link #OPTION_TILE}
+     *  to that channel's own option list. */
+    public void selectChannel(String label) {
+        CaseLog.step("Selecting withdrawal channel '" + label + "'");
+        Locator tiles = page.locator(CHANNEL_TILE);
+        int count = tiles.count();
+        for (int i = 0; i < count; i++) {
+            if (label.equals(tiles.nth(i).innerText().trim())) {
+                tiles.nth(i).click();
+                page.waitForTimeout(800);
+                return;
+            }
+        }
+        throw new PlaywrightException("No withdrawal channel tile labelled '" + label
+                + "' - offered: " + channelLabels());
     }
 
     // ------------------------------------------------------------- balance

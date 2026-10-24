@@ -27,28 +27,47 @@ import java.util.regex.Pattern;
  * CurrencySwitcher}, {@code HomePage} - and the project's {@code tests-written-ahead-of-ui}
  * convention).
  *
- * <h2>Selector confidence</h2>
- * None of the locators in this class have been confirmed against the live DOM. Specifically:
+ * <h2>Selector confidence - confirmed live 2026-10-24 against test-v2.138hk.vip</h2>
+ * Driven manually (both New UI and Classic UI, signed in as qa00002):
  * <ul>
- *   <li>{@link #amountField()} - tries the labelled field next to visible text "Amount" first
- *       ({@code fieldNear}, this project's house pattern), falling back to the one native
- *       {@code input[type='number']} on the page, mirroring the Weibo original's note that a
- *       deposit form's amount control is often the only native input on an otherwise div-built
- *       form.</li>
- *   <li>{@link #PAYMENT_OPTION} - a tolerant, comma-separated CSS guess at whatever tiles or
- *       tabs list the payment options, since the real channel/option structure (if Quark even
- *       has the Channel/Option split Weibo does) is unknown.</li>
- *   <li>{@link #submitButton()} - a role-based button matched on a name of "submit", "deposit"
- *       or "confirm" (case-insensitive), since the real button's accessible name has not been
- *       read.</li>
- *   <li>{@link #POPUP} - a tolerant guess at whatever dialog/toast/overlay the form raises on
- *       submit, modelled on this project's existing {@code VIP_POPUP_CLOSE} /
- *       {@code CHAT_TOGGLE} guesses in {@code BasePage}.</li>
- *   <li>{@link #PRESET_HINT} - a guess that a preset-amount control (if one exists at all,
- *       mirroring Weibo's dropdown ladder) shows a "Please select"-style placeholder.</li>
+ *   <li>Quark's deposit page <b>does</b> have the same Channel/Option split Weibo has: a row of
+ *       "Deposit Channel" tiles (NEW, AI_PAY, 6pay, Channel, USDT, WPay, USDT(UPAY), UMPay) above
+ *       a "Deposit Options" list (e.g. UMPAY PP EN, Bank transfer PP, Bank transfer 6P, FPS PP,
+ *       FPS 6P) - the options list is what this class treats as "payment option", since selecting
+ *       a row there is what reveals the amount field and any required account-binding field.</li>
+ *   <li>{@link #amountField()} - the page labels this "Game Points", not "Amount", so
+ *       {@code fieldNear("Amount")} correctly finds nothing and every case runs on the
+ *       {@code input[type='number']} fallback. Its placeholder reads e.g.
+ *       "Min : 100.00 ~ Max : 5000000.00", which {@link #advertisedLimit} already parses.</li>
+ *   <li>{@link #PAYMENT_OPTION} - was a guess that matched <b>zero</b> elements live (no class on
+ *       this page names "payment", "option", "deposit", "channel" or "method", and the options
+ *       are not ARIA tabs). The real options are {@code <li>} rows of the page's one
+ *       {@code ul.list-none} list; {@link #PAYMENT_OPTION} now targets that directly.</li>
+ *   <li>{@link #submitButton()} - was a guess matched against an accessible name of "submit",
+ *       "deposit" or "confirm". Confirmed live this was a real bug, not just an unconfirmed
+ *       guess: the top nav's own "Deposit" button and the sidebar's "Deposit" link both match
+ *       "deposit" too and sort before the real control in DOM order, so {@code .first()} clicked
+ *       the nav link - which does nothing on a page already on {@link #PATH} - instead of ever
+ *       submitting the form. The real control's accessible name is the exact text "SUBMIT"; the
+ *       pattern below is anchored to match only that.</li>
+ *   <li>{@link #POPUP} - was a guess that missed the real validation/confirmation popup
+ *       entirely (confirmed live: submitting an empty amount produced no match for this
+ *       selector). The real popup renders under a class containing "AlertBoard" - the same
+ *       pattern {@link org.sengmean.page.payment.WithdrawalPage}'s own {@code BOARD_MESSAGE}
+ *       already guessed correctly; {@link #POPUP} now includes it.</li>
+ *   <li>{@link #PRESET_HINT} - still unconfirmed; every option seen live offered a free-entry
+ *       amount field, never a preset-amount control, so this path has not actually been
+ *       exercised against the live DOM.</li>
  * </ul>
- * <b>Confirm every one of these against the live DOM before trusting a red case built on it</b> -
- * exactly the caveat this project's README already carries for its other guessed locators.
+ *
+ * <h2>Confirmed live: the first-offered option can require an unbound account</h2>
+ * qa00002 has no UMPay account bound, so selecting the Deposit Options list's first row
+ * (UMPAY PP EN) and submitting a valid amount returns "UMPay Account is required" rather than
+ * reaching a confirmation prompt - not a defect, just this account's own binding state. Bank
+ * transfer PP/6P already have a bank account bound for this account and reach "Confirm Deposit?"
+ * cleanly. See {@link #currentOptionNeedsBinding()} and the test classes' {@code firstUsableOption}
+ * helper, which walks the option list for one that does not need a binding instead of assuming
+ * the first option is always submittable.
  *
  * <h2>What was deliberately left out of the port</h2>
  * No method here commits a real deposit by itself: {@link #confirm()} exists only for shape
@@ -61,18 +80,44 @@ public class DepositPage extends BasePage {
 
     public static final String PATH = "/en/member/deposit/";
 
-    /** Tolerant guess at whatever renders the list of payment options/channels/tiles. */
-    private static final String PAYMENT_OPTION =
-            "[class*='payment' i][class*='option' i], [class*='deposit' i][class*='channel' i], "
-                    + "[class*='deposit' i][class*='method' i], [role='tab']";
+    /** The Deposit Options list's own rows - confirmed live 2026-10-24, see the class Javadoc. */
+    private static final String PAYMENT_OPTION = "ul.list-none > li";
 
     /** Tolerant guess at a preset-amount control's own placeholder text, mirroring the Weibo
      *  original's "Please select" dropdown - unconfirmed whether Quark has such a control at all. */
     private static final String PRESET_HINT = "Please select";
 
-    /** Tolerant guess at whatever dialog/overlay the form raises on submit. */
+    /** The dialog/toast the form raises on submit - confirmed live 2026-10-24, see the class
+     *  Javadoc; the tolerant guesses are kept as a fallback in case a different channel/option
+     *  renders its popup under a different component. */
     private static final String POPUP =
-            "[role='dialog'], [class*='modal' i], [class*='popup' i], [class*='alert' i]";
+            "[class*='AlertBoard' i], [role='dialog'], [class*='modal' i], [class*='popup' i], "
+                    + "[class*='alert' i]";
+
+    /** The placeholder text shown in an unbound account field, e.g. "Click [Add] to bind Banking
+     *  details" - confirmed live 2026-10-24 for a UMPay account field, a bank account field and a
+     *  crypto wallet-address field, so this is read as a generic "this option needs binding
+     *  first" signal rather than naming any one field specifically. */
+    private static final String UNBOUND_ACCOUNT_HINT = "Click [Add] to bind";
+
+    /**
+     * The Deposit Channel tile grid - confirmed live 2026-10-24: a grid of {@code role="button"}
+     * {@code div}s, one per channel, the only such group on the page. Eight channels were offered
+     * that day - NEW, AI_PAY, 6pay, Channel, USDT, WPay, USDT(UPAY), UMPay - each with its own,
+     * differently-sized {@link #PAYMENT_OPTION} list (0 for 6pay that day, up to 17 for AI_PAY);
+     * see {@link #channelLabels()} rather than this list for what is actually offered on a given
+     * run.
+     *
+     * <p><b>Was a real bug, caught and fixed 2026-10-24 the same day it was written</b>: the first
+     * version of this selector was {@code div.grid.grid-cols-4 > div}, which matched correctly on
+     * New UI but found <i>zero</i> tiles on Classic UI - its grid container's own class is
+     * {@code grid grid-cols-3 lg:grid-cols-4 gap-2} (a responsive 3-then-4-column grid, not a
+     * literal {@code grid-cols-4}), so the exact-class match missed it entirely. Confirmed live
+     * on all four combinations (Deposit/Withdrawal x New UI/Classic UI) that the tiles' own
+     * parent always carries the plain class {@code grid} regardless of its column-count classes,
+     * which is what the selector below matches on instead.
+     */
+    private static final String CHANNEL_TILE = "div.grid > div[role='button']";
 
     public DepositPage(Page page) {
         super(page);
@@ -146,6 +191,45 @@ public class DepositPage extends BasePage {
         CaseLog.step("Selecting payment option '" + label + "'");
         page.getByText(label, new Page.GetByTextOptions().setExact(false)).first().click();
         page.waitForTimeout(1_000);
+    }
+
+    // ----------------------------------------------------------------- channels
+
+    /** Every deposit channel currently on offer, in whatever order the page renders them - see
+     *  {@link #CHANNEL_TILE}. */
+    public List<String> channelLabels() {
+        Locator tiles = page.locator(CHANNEL_TILE);
+        List<String> labels = new ArrayList<>();
+        int count = tiles.count();
+        for (int i = 0; i < count; i++) {
+            try {
+                String text = tiles.nth(i).innerText();
+                if (text != null && !text.isBlank()) {
+                    labels.add(text.trim());
+                }
+            } catch (PlaywrightException notReadable) {
+                // Skipped rather than failing the whole read - one awkward tile must not hide
+                // what the others have to say.
+            }
+        }
+        return labels;
+    }
+
+    /** Selects a deposit channel by its exact tile label, re-rendering {@link #PAYMENT_OPTION}
+     *  to that channel's own option list. */
+    public void selectChannel(String label) {
+        CaseLog.step("Selecting deposit channel '" + label + "'");
+        Locator tiles = page.locator(CHANNEL_TILE);
+        int count = tiles.count();
+        for (int i = 0; i < count; i++) {
+            if (label.equals(tiles.nth(i).innerText().trim())) {
+                tiles.nth(i).click();
+                page.waitForTimeout(800);
+                return;
+            }
+        }
+        throw new PlaywrightException("No deposit channel tile labelled '" + label
+                + "' - offered: " + channelLabels());
     }
 
     // ----------------------------------------------------------------- amount
@@ -243,7 +327,15 @@ public class DepositPage extends BasePage {
 
     private Locator submitButton() {
         return page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions()
-                .setName(Pattern.compile("submit|deposit|confirm", Pattern.CASE_INSENSITIVE)));
+                .setName(Pattern.compile("^submit$", Pattern.CASE_INSENSITIVE)));
+    }
+
+    /** True when the currently selected option shows an unbound-account field that SUBMIT will
+     *  refuse until it is filled in - see the class Javadoc's "first-offered option can require
+     *  an unbound account" note. */
+    public boolean currentOptionNeedsBinding() {
+        return page.getByText(UNBOUND_ACCOUNT_HINT, new Page.GetByTextOptions().setExact(false))
+                .count() > 0;
     }
 
     /** Presses the submit control. Never commits anything by itself - whatever appears next is

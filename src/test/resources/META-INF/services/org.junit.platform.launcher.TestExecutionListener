@@ -1,2 +1,3 @@
 org.sengmean.report.HtmlReportListener
 org.sengmean.report.ExtentReportListener
+org.sengmean.report.ConsoleResultListener
