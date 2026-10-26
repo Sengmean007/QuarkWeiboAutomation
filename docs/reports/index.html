@@ -304,28 +304,29 @@
     <div class="meta">
       <div><b>Target:</b> https://test-v2.138hk.vip</div>
       <div><b>Account:</b> qa00002</div>
-      <div><b>Run:</b> 2026-10-24 17:50</div>
-      <div><b>Elapsed:</b> 240.2s</div>
+      <div><b>Run:</b> 2026-10-26 08:37</div>
+      <div><b>Elapsed:</b> 428.6s</div>
       <div><b>Scope:</b> 1 of 20 suites executed</div>
       <div><b>Browser:</b> Chromium via Playwright 1.58.0 (headed)</div>
-      <div><b>Runner:</b> JUnit 5 on Java 25.0.1</div>
+      <div><b>Runner:</b> JUnit 5 on Java 17.0.18</div>
       <div><b>Machine:</b> Windows 11 10.0</div>
     </div>
-    <div class="tally">443 cases &middot; 36 passed &middot; 40 failed &middot; 6 skipped &middot; 91 not run &middot; 1381.4s of browser time</div>
-    <div class="bar" role="img" aria-label="36 passed, 40 failed, 6 skipped, 91 not run">
-      <span class="seg pass" style="width:20.8092%" title="36 passed"></span>
+    <div class="tally">443 cases &middot; 38 passed &middot; 40 failed &middot; 4 skipped &middot; 91 not run &middot; 1552.6s of browser time</div>
+    <div class="bar" role="img" aria-label="38 passed, 40 failed, 4 skipped, 91 not run">
+      <span class="seg pass" style="width:21.9653%" title="38 passed"></span>
       <span class="seg fail" style="width:23.1214%" title="40 failed"></span>
-      <span class="seg skip" style="width:3.4682%" title="6 skipped"></span>
+      <span class="seg skip" style="width:2.3121%" title="4 skipped"></span>
       <span class="seg notrun" style="width:52.6012%" title="91 not run"></span>
     </div>
-    <div class="rate">44% of the cases that ran passed</div>
+    <div class="rate">46% of the cases that ran passed</div>
   </header>
 
   <div class="callout bad">
-    <h2>1 case needs attention across the run</h2>
-    <h3 class="pkg-findings"><a href="#pkg-payment">Payment</a> <span class="muted">(1)</span></h3>
+    <h2>2 cases need attention across the run</h2>
+    <h3 class="pkg-findings"><a href="#pkg-payment">Payment</a> <span class="muted">(2)</span></h3>
     <ol class="findings">
-      <li><a href="ManualTransferClassicUi-test-report.html#case-ManualTransferClassicUiTest-mainWalletToEveryGameWalletTransfers">TRANSFER-028</a> <span class="muted">Manual transfer classic ui test</span> &mdash; a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck</li>
+      <li><a href="ManualTransferNewUi-test-report.html#case-ManualTransferNewUiTest-fromListLeadsWithTheMainWallet">TRANSFER-002</a> <span class="muted">Manual transfer new ui test</span> &mdash; the &quot;From&quot; list leads with the main wallet, then the other wallets</li>
+      <li><a href="ManualTransferNewUi-test-report.html#case-ManualTransferNewUiTest-mainWalletToEveryGameWalletTransfers">TRANSFER-014</a> <span class="muted">Manual transfer new ui test</span> &mdash; a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck</li>
     </ol>
     <p>Each links to its row on the suite's own page, where the failure is broken down and the run's record of what the browser did is kept.</p>
   </div>
@@ -510,11 +511,10 @@
   </section>
   <section class="pkg" id="pkg-payment">
   <h2 class="section">Payment <span class="pkg-name">payment</span></h2>
-  <div class="pkg-tally"><span class="bar mini">      <span class="seg pass" style="width:30.2632%" title="23 passed"></span>
+  <div class="pkg-tally"><span class="bar mini">      <span class="seg pass" style="width:32.8947%" title="25 passed"></span>
       <span class="seg fail" style="width:3.9474%" title="3 failed"></span>
-      <span class="seg skip" style="width:2.6316%" title="2 skipped"></span>
       <span class="seg notrun" style="width:63.1579%" title="48 not run"></span>
-</span><span>8 suites &middot; 76 cases &middot; 23 passed &middot; 3 failed &middot; 2 skipped &middot; 48 not run &middot; 410.3s</span></div>
+</span><span>8 suites &middot; 76 cases &middot; 25 passed &middot; 3 failed &middot; 0 skipped &middot; 48 not run &middot; 581.5s</span></div>
   <div class="tbl-scroll">
   <table>
     <thead><tr><th>Suite</th><th>Result</th><th>Cases</th><th>Pass</th><th>Fail</th><th>Skip</th><th>Not run</th><th>Time</th><th>Verdict</th></tr></thead>
@@ -556,7 +556,7 @@
         <td><span class="st info">Not run <span class="muted">(earlier run)</span></span></td>
       </tr>
       <tr>
-        <td class="tc"><a href="ManualTransferClassicUi-test-report.html">Manual transfer classic ui test</a><div class="id">org.sengmean.tests.payment.ManualTransferClassicUiTest</div></td>
+        <td class="tc"><a href="ManualTransferClassicUi-test-report.html">Manual transfer classic ui test</a><div class="id">org.sengmean.tests.payment.ManualTransferClassicUiTest &middot; last run 2026-10-24 17:50</div></td>
         <td class="minibar"><span class="bar mini">      <span class="seg pass" style="width:92.8571%" title="13 passed"></span>
       <span class="seg fail" style="width:7.1429%" title="1 failed"></span>
 </span></td>
@@ -566,21 +566,20 @@
         <td>0</td>
         <td>0</td>
         <td>203.1s</td>
-        <td><span class="st fail">Findings</span></td>
+        <td><span class="st fail">Findings <span class="muted">(earlier run)</span></span></td>
       </tr>
       <tr>
-        <td class="tc"><a href="ManualTransferNewUi-test-report.html">Manual transfer new ui test</a><div class="id">org.sengmean.tests.payment.ManualTransferNewUiTest &middot; last run 2026-10-24 17:40</div></td>
-        <td class="minibar"><span class="bar mini">      <span class="seg pass" style="width:71.4286%" title="10 passed"></span>
+        <td class="tc"><a href="ManualTransferNewUi-test-report.html">Manual transfer new ui test</a><div class="id">org.sengmean.tests.payment.ManualTransferNewUiTest</div></td>
+        <td class="minibar"><span class="bar mini">      <span class="seg pass" style="width:85.7143%" title="12 passed"></span>
       <span class="seg fail" style="width:14.2857%" title="2 failed"></span>
-      <span class="seg skip" style="width:14.2857%" title="2 skipped"></span>
 </span></td>
         <td>14</td>
-        <td>10</td>
-        <td>2</td>
+        <td>12</td>
         <td>2</td>
         <td>0</td>
-        <td>207.2s</td>
-        <td><span class="st fail">Findings <span class="muted">(earlier run)</span></span></td>
+        <td>0</td>
+        <td>378.4s</td>
+        <td><span class="st fail">Findings</span></td>
       </tr>
       <tr>
         <td class="tc"><a href="WithdrawalBankBindingValidation-test-report.html">Withdrawal bank binding validation test</a><div class="id">org.sengmean.tests.payment.WithdrawalBankBindingValidationTest</div></td>

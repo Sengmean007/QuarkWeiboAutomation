@@ -1153,25 +1153,45 @@
   "group" : "",
   "displayName" : "TRANSFER-011: a funded game wallet transfers its balance back to the main wallet",
   "tags" : [ "creates-data" ],
-  "status" : "Skipped",
-  "message" : "Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one.",
-  "detail" : "org.opentest4j.TestAbortedException: Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one.\r\n\tat org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)\r\n\tat org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.aGameWalletTransfersBackToTheMainWallet(ManualTransferNewUiTest.java:391)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
-  "seconds" : 4.3254816,
-  "ranAt" : "2026-10-24 17:40",
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 19.2514385,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1884,
+    "millis" : 1746,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 4314,
+    "millis" : 6178,
     "kind" : "STEP",
-    "text" : "Case aborted by a failed assumption; no closing screenshot is taken."
+    "text" : "Choosing 'WOW Gaming USDT2.00'"
   }, {
-    "millis" : 4314,
+    "millis" : 7445,
     "kind" : "STEP",
-    "text" : "SKIP: Assumption failed: No game wallet holds at least 1, so there is nothing to transfer back - this normally runs right after TRANSFER-010 funded one."
+    "text" : "Choosing 'Main wallet USDT177.00'"
+  }, {
+    "millis" : 8359,
+    "kind" : "DATA",
+    "text" : "amount typed = 1.0"
+  }, {
+    "millis" : 8359,
+    "kind" : "STEP",
+    "text" : "Submitting the transfer"
+  }, {
+    "millis" : 9720,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 19246,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 19247,
+    "kind" : "STEP",
+    "text" : "PASS"
   } ],
-  "shots" : [ ]
+  "shots" : [ "screenshots/ManualTransferNewUiTest.aGameWalletTransfersBackToTheMainWallet.png" ]
 }, {
   "key" : "ManualTransferNewUiTest#amountAboveTheMainWalletIsRefused",
   "suite" : "ManualTransferNewUiTest",
@@ -1181,34 +1201,34 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 10.0786993,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 7.7311466,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1802,
+    "millis" : 1699,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 4917,
+    "millis" : 4573,
     "kind" : "STEP",
     "text" : "Choosing 'WOW Gaming USDT0.00'"
   }, {
-    "millis" : 5928,
+    "millis" : 5474,
     "kind" : "DATA",
     "text" : "amount typed = 1"
   }, {
-    "millis" : 6411,
+    "millis" : 5862,
     "kind" : "DATA",
-    "text" : "amount typed = 1160"
+    "text" : "amount typed = 1178"
   }, {
-    "millis" : 6461,
+    "millis" : 5883,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 10076,
+    "millis" : 7726,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 10076,
+    "millis" : 7726,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1222,22 +1242,22 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 12.4957204,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 12.4735145,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1916,
+    "millis" : 1743,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 2950,
+    "millis" : 2789,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 12410,
+    "millis" : 12433,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 12411,
+    "millis" : 12434,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1251,22 +1271,22 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 9.3146964,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 7.3034502,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1769,
+    "millis" : 1676,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 2812,
+    "millis" : 2700,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 9308,
+    "millis" : 7260,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 9308,
+    "millis" : 7260,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1277,27 +1297,27 @@
   "group" : "",
   "displayName" : "TRANSFER-002: the \"From\" list leads with the main wallet, then the other wallets",
   "tags" : [ ],
-  "status" : "Pass",
-  "message" : "",
-  "detail" : "",
-  "seconds" : 13.3781226,
-  "ranAt" : "2026-10-24 17:40",
+  "status" : "Error",
+  "message" : "Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n-     - locator resolved to <div class=\"!py-0 ContentTemplate_input-item__vV0A2 Wallet_transfer-label__AwBmW\">…</div>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n-     - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-   2 × retrying click action\n-       - waiting 100ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   9 × retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   - retrying click action\n-     - waiting 500ms\n",
+  "detail" : "com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n-     - locator resolved to <div class=\"!py-0 ContentTemplate_input-item__vV0A2 Wallet_transfer-label__AwBmW\">…</div>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n-     - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-   2 × retrying click action\n-       - waiting 100ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   9 × retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   - retrying click action\n-     - waiting 500ms\n\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)\r\n\tat com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)\r\n\tat com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)\r\n\tat com.microsoft.playwright.Locator.click(Locator.java:2543)\r\n\tat org.sengmean.page.payment.TransferPage.openOptions(TransferPage.java:308)\r\n\tat org.sengmean.page.payment.TransferPage.openFromOptions(TransferPage.java:298)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.fromListLeadsWithTheMainWallet(ManualTransferNewUiTest.java:174)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n-     - locator resolved to <div class=\"!py-0 ContentTemplate_input-item__vV0A2 Wallet_transfer-label__AwBmW\">…</div>\n-   - attempting click action\n-     2 × waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-     - waiting 20ms\n-     - waiting for element to be visible, enabled and stable\n-     - element is visible, enabled and stable\n-     - scrolling into view if needed\n-     - done scrolling\n-     - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-   2 × retrying click action\n-       - waiting 100ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   9 × retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-     - retrying click action\n-       - waiting 500ms\n-       - waiting for element to be visible, enabled and stable\n-       - element is visible, enabled and stable\n-       - scrolling into view if needed\n-       - done scrolling\n-       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events\n-   - retrying click action\n-     - waiting 500ms\n\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)\r\n\t... 11 more\r\n",
+  "seconds" : 24.6821121,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1853,
+    "millis" : 1664,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5031,
+    "millis" : 22699,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 13371,
+    "millis" : 24658,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 13372,
+    "millis" : 24658,
     "kind" : "STEP",
-    "text" : "PASS"
+    "text" : "ERROR: Error {   message='Timeout 20000ms exceeded.   name='TimeoutError   stack='TimeoutError: Timeout 20000ms exceeded.     at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\progress.js:86:28)     at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)     at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-17961200608968947041\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39) } Call log: -   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first() -     - locator resolved to <div class=\"!py-0 ContentTemplate_input-item__vV0A2 Wallet_transfer-label__AwBmW\">…</div> -   - attempting click action -     2 × waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events -     - retrying click action -     - waiting 20ms -     - waiting for element to be visible, enabled and stable -     - element is visible, enabled and stable -     - scrolling into view if needed -     - done scrolling -     - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events -   2 × retrying click action -       - waiting 100ms -       - waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events -   9 × retrying click action -       - waiting 500ms -       - waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events -     - retrying click action -       - waiting 500ms -       - waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_container__MrMVA\">…</div> from <div class=\"DailyMission_box__8HaMA\">…</div> subtree intercepts pointer events -     - retrying click action -       - waiting 500ms -       - waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events -     - retrying click action -       - waiting 500ms -       - waiting for element to be visible, enabled and stable -       - element is visible, enabled and stable -       - scrolling into view if needed -       - done scrolling -       - <div class=\"DailyMission_box__8HaMA\">…</div> intercepts pointer events -   - retrying click action -     - waiting 500ms"
   } ],
   "shots" : [ "screenshots/ManualTransferNewUiTest.fromListLeadsWithTheMainWallet.png" ]
 }, {
@@ -1306,43 +1326,39 @@
   "group" : "",
   "displayName" : "TRANSFER-010: a nominal amount from the main wallet into a game wallet succeeds",
   "tags" : [ "creates-data" ],
-  "status" : "Fail",
-  "message" : "TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>",
-  "detail" : "org.opentest4j.AssertionFailedError: TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\r\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\r\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\r\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.mainWalletToAGameWalletTransfers(ManualTransferNewUiTest.java:373)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
-  "seconds" : 34.9167716,
-  "ranAt" : "2026-10-24 17:40",
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 17.5833918,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1772,
+    "millis" : 1691,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5256,
+    "millis" : 4642,
     "kind" : "STEP",
     "text" : "Choosing 'WOW Gaming USDT0.00'"
   }, {
-    "millis" : 6246,
+    "millis" : 5599,
     "kind" : "DATA",
     "text" : "amount typed = 1"
   }, {
-    "millis" : 6271,
+    "millis" : 5644,
     "kind" : "STEP",
     "text" : "Submitting the transfer"
   }, {
-    "millis" : 22758,
+    "millis" : 7329,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 32850,
-    "kind" : "STEP",
-    "text" : "A loading indicator was still showing after 10s; capturing the page as it is."
-  }, {
-    "millis" : 34888,
+    "millis" : 17576,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 34888,
+    "millis" : 17576,
     "kind" : "STEP",
-    "text" : "FAIL: TRANSFER-010: transferring 1 into 'WOW Gaming' should report success or an explicit refusal, never silence. The page showed: <the page showed no message at all> ==> expected: <true> but was: <false>"
+    "text" : "PASS"
   } ],
   "shots" : [ "screenshots/ManualTransferNewUiTest.mainWalletToAGameWalletTransfers.png" ]
 }, {
@@ -1351,53 +1367,813 @@
   "group" : "",
   "displayName" : "TRANSFER-014: a nominal amount from the main wallet into every offered game wallet is either accepted or refused, never stuck",
   "tags" : [ "creates-data" ],
-  "status" : "Error",
-  "message" : "Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n",
-  "detail" : "com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerTextImpl(FrameImpl.java:495)\r\n\tat com.microsoft.playwright.impl.FrameImpl.innerText(FrameImpl.java:486)\r\n\tat com.microsoft.playwright.impl.LocatorImpl.innerText(LocatorImpl.java:391)\r\n\tat com.microsoft.playwright.Locator.innerText(Locator.java:3934)\r\n\tat org.sengmean.page.payment.TransferPage.mainBalance(TransferPage.java:671)\r\n\tat org.sengmean.page.payment.TransferPage.mainBalanceValue(TransferPage.java:677)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferNewUiTest.java:561)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\nCaused by: com.microsoft.playwright.TimeoutError: Error {\n  message='Timeout 20000ms exceeded.\n  name='TimeoutError\n  stack='TimeoutError: Timeout 20000ms exceeded.\n    at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)\n    at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)\n    at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39)\n}\nCall log:\n-   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()\n\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:257)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)\r\n\t... 12 more\r\n",
-  "seconds" : 40.3072596,
-  "ranAt" : "2026-10-24 17:40",
+  "status" : "Fail",
+  "message" : "TRANSFER-014: [WOW Gaming: neither a success nor a 'fail' refusal was shown, and its balance (0.0) doesn't show the transfer landed either - <the page showed no message at all>, Just Do The Best: Submit never became enabled for a nominal amount, TFGAMING: Submit never became enabled for a nominal amount, PRAGMATIC: Submit never became enabled for a nominal amount, VG CARD GAME: Submit never became enabled for a nominal amount, LIVE22 SLOTMAKER: Submit never became enabled for a nominal amount, YLGAMING en: Submit never became enabled for a nominal amount, WM CASINO: Submit never became enabled for a nominal amount, WBET: Submit never became enabled for a nominal amount, SBO: Submit never became enabled for a nominal amount, Pretty Gaming: Submit never became enabled for a nominal amount, JOKER: Submit never became enabled for a nominal amount, IA ESPORT: Submit never became enabled for a nominal amount, EVOPLAY: Submit never became enabled for a nominal amount, DG EN: Submit never became enabled for a nominal amount, 3SING: Submit never became enabled for a nominal amount, BOLE GAMING: Submit never became enabled for a nominal amount, BBIN: Submit never became enabled for a nominal amount, AWC RCB988 Horse Racing: Submit never became enabled for a nominal amount, AWC68 SEXY b: Submit never became enabled for a nominal amount, AWC SEXY BACCARAT: Submit never became enabled for a nominal amount, Ai Live Casino: Submit never became enabled for a nominal amount, PGSOFT: Submit never became enabled for a nominal amount, FUNKYGAME: Submit never became enabled for a nominal amount, LE GAMING: Submit never became enabled for a nominal amount, Baison: Submit never became enabled for a nominal amount, CQ9: Submit never became enabled for a nominal amount, On Casino: Submit never became enabled for a nominal amount, Dragon Soft: Submit never became enabled for a nominal amount, Red Tiger: Submit never became enabled for a nominal amount, WORLD ENTERTAINMENT: Submit never became enabled for a nominal amount, AFB CASINO: Submit never became enabled for a nominal amount, SPADE GAMING: Submit never became enabled for a nominal amount, CMD SPORTSBOOK: Submit never became enabled for a nominal amount, ROYAL SLOT GAMING: Submit never became enabled for a nominal amount, BNG: Submit never became enabled for a nominal amount, JILI: Submit never became enabled for a nominal amount, RICH88: Submit never became enabled for a nominal amount, KAIYUAN: Submit never became enabled for a nominal amount, BIG GAMING: Submit never became enabled for a nominal amount, IBC SPORT: Submit never became enabled for a nominal amount, GAMEPLAY: Submit never became enabled for a nominal amount, GIT SLOT: Submit never became enabled for a nominal amount, QQ KENO: Submit never became enabled for a nominal amount, ACE333: Submit never became enabled for a nominal amount, YGR: Submit never became enabled for a nominal amount, T9: Submit never became enabled for a nominal amount, CMD WB: Submit never became enabled for a nominal amount] ==> expected: <true> but was: <false>",
+  "detail" : "org.opentest4j.AssertionFailedError: TRANSFER-014: [WOW Gaming: neither a success nor a 'fail' refusal was shown, and its balance (0.0) doesn't show the transfer landed either - <the page showed no message at all>, Just Do The Best: Submit never became enabled for a nominal amount, TFGAMING: Submit never became enabled for a nominal amount, PRAGMATIC: Submit never became enabled for a nominal amount, VG CARD GAME: Submit never became enabled for a nominal amount, LIVE22 SLOTMAKER: Submit never became enabled for a nominal amount, YLGAMING en: Submit never became enabled for a nominal amount, WM CASINO: Submit never became enabled for a nominal amount, WBET: Submit never became enabled for a nominal amount, SBO: Submit never became enabled for a nominal amount, Pretty Gaming: Submit never became enabled for a nominal amount, JOKER: Submit never became enabled for a nominal amount, IA ESPORT: Submit never became enabled for a nominal amount, EVOPLAY: Submit never became enabled for a nominal amount, DG EN: Submit never became enabled for a nominal amount, 3SING: Submit never became enabled for a nominal amount, BOLE GAMING: Submit never became enabled for a nominal amount, BBIN: Submit never became enabled for a nominal amount, AWC RCB988 Horse Racing: Submit never became enabled for a nominal amount, AWC68 SEXY b: Submit never became enabled for a nominal amount, AWC SEXY BACCARAT: Submit never became enabled for a nominal amount, Ai Live Casino: Submit never became enabled for a nominal amount, PGSOFT: Submit never became enabled for a nominal amount, FUNKYGAME: Submit never became enabled for a nominal amount, LE GAMING: Submit never became enabled for a nominal amount, Baison: Submit never became enabled for a nominal amount, CQ9: Submit never became enabled for a nominal amount, On Casino: Submit never became enabled for a nominal amount, Dragon Soft: Submit never became enabled for a nominal amount, Red Tiger: Submit never became enabled for a nominal amount, WORLD ENTERTAINMENT: Submit never became enabled for a nominal amount, AFB CASINO: Submit never became enabled for a nominal amount, SPADE GAMING: Submit never became enabled for a nominal amount, CMD SPORTSBOOK: Submit never became enabled for a nominal amount, ROYAL SLOT GAMING: Submit never became enabled for a nominal amount, BNG: Submit never became enabled for a nominal amount, JILI: Submit never became enabled for a nominal amount, RICH88: Submit never became enabled for a nominal amount, KAIYUAN: Submit never became enabled for a nominal amount, BIG GAMING: Submit never became enabled for a nominal amount, IBC SPORT: Submit never became enabled for a nominal amount, GAMEPLAY: Submit never became enabled for a nominal amount, GIT SLOT: Submit never became enabled for a nominal amount, QQ KENO: Submit never became enabled for a nominal amount, ACE333: Submit never became enabled for a nominal amount, YGR: Submit never became enabled for a nominal amount, T9: Submit never became enabled for a nominal amount, CMD WB: Submit never became enabled for a nominal amount] ==> expected: <true> but was: <false>\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)\r\n\tat org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)\r\n\tat org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)\r\n\tat org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)\r\n\tat org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers(ManualTransferNewUiTest.java:619)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
+  "seconds" : 197.0766349,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 2157,
+    "millis" : 1696,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 6375,
+    "millis" : 5457,
     "kind" : "STEP",
     "text" : "Choosing 'WOW Gaming USDT0.00'"
   }, {
-    "millis" : 7323,
+    "millis" : 6368,
     "kind" : "DATA",
     "text" : "amount typed = 1"
   }, {
-    "millis" : 7345,
+    "millis" : 6427,
     "kind" : "STEP",
     "text" : "Submitting the transfer"
   }, {
-    "millis" : 10805,
+    "millis" : 59160,
+    "kind" : "CHECK",
+    "text" : "FAIL - WOW Gaming: neither a success nor a 'fail' refusal was shown, and its balance (0.0) doesn't show the transfer landed either - <the page showed no message at all>"
+  }, {
+    "millis" : 59587,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 1: FAIL - WOW Gaming: neither a success nor a 'fail' refusal was shown, and its balance (0.0) doesn't show the transfer landed either - <the page showed no message at all>"
+  }, {
+    "millis" : 60277,
     "kind" : "STEP",
     "text" : "Choosing 'Just Do The Best USDT0.00'"
   }, {
-    "millis" : 11781,
+    "millis" : 61202,
     "kind" : "DATA",
     "text" : "amount typed = 1"
   }, {
-    "millis" : 11824,
-    "kind" : "STEP",
-    "text" : "Submitting the transfer"
+    "millis" : 61231,
+    "kind" : "CHECK",
+    "text" : "FAIL - Just Do The Best: Submit never became enabled for a nominal amount"
   }, {
-    "millis" : 37830,
-    "kind" : "STEP",
-    "text" : "Case ended on https://test-v2.138hk.vip/en/"
+    "millis" : 61641,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 2: FAIL - Just Do The Best: Submit never became enabled for a nominal amount"
   }, {
-    "millis" : 40297,
+    "millis" : 62344,
+    "kind" : "STEP",
+    "text" : "Choosing 'TFGAMING USDT0.00'"
+  }, {
+    "millis" : 63254,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 63281,
+    "kind" : "CHECK",
+    "text" : "FAIL - TFGAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 63677,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 3: FAIL - TFGAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 64387,
+    "kind" : "STEP",
+    "text" : "Choosing 'PRAGMATIC USDT0.00'"
+  }, {
+    "millis" : 65329,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 65347,
+    "kind" : "CHECK",
+    "text" : "FAIL - PRAGMATIC: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 65828,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 4: FAIL - PRAGMATIC: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 66547,
+    "kind" : "STEP",
+    "text" : "Choosing 'VG CARD GAME USDT0.00'"
+  }, {
+    "millis" : 67508,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 67535,
+    "kind" : "CHECK",
+    "text" : "FAIL - VG CARD GAME: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 67958,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 5: FAIL - VG CARD GAME: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 68675,
+    "kind" : "STEP",
+    "text" : "Choosing 'LIVE22 SLOTMAKER USDT0.00'"
+  }, {
+    "millis" : 69607,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 69627,
+    "kind" : "CHECK",
+    "text" : "FAIL - LIVE22 SLOTMAKER: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 70011,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 6: FAIL - LIVE22 SLOTMAKER: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 70712,
+    "kind" : "STEP",
+    "text" : "Choosing 'YLGAMING en USDT0.00'"
+  }, {
+    "millis" : 71630,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 71645,
+    "kind" : "CHECK",
+    "text" : "FAIL - YLGAMING en: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 72035,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 7: FAIL - YLGAMING en: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 72746,
+    "kind" : "STEP",
+    "text" : "Choosing 'WM CASINO USDT0.00'"
+  }, {
+    "millis" : 73658,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 73683,
+    "kind" : "CHECK",
+    "text" : "FAIL - WM CASINO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 74075,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 8: FAIL - WM CASINO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 74792,
+    "kind" : "STEP",
+    "text" : "Choosing 'WBET USDT0.00'"
+  }, {
+    "millis" : 75700,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 75721,
+    "kind" : "CHECK",
+    "text" : "FAIL - WBET: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 76142,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 9: FAIL - WBET: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 76919,
+    "kind" : "STEP",
+    "text" : "Choosing 'SBO USDT0.00'"
+  }, {
+    "millis" : 77855,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 77881,
+    "kind" : "CHECK",
+    "text" : "FAIL - SBO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 78306,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 10: FAIL - SBO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 79032,
+    "kind" : "STEP",
+    "text" : "Choosing 'Pretty Gaming USDT0.00'"
+  }, {
+    "millis" : 79935,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 79959,
+    "kind" : "CHECK",
+    "text" : "FAIL - Pretty Gaming: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 80375,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 11: FAIL - Pretty Gaming: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 81091,
+    "kind" : "STEP",
+    "text" : "Choosing 'JOKER USDT0.00'"
+  }, {
+    "millis" : 82045,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 82060,
+    "kind" : "CHECK",
+    "text" : "FAIL - JOKER: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 82546,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 12: FAIL - JOKER: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 83272,
+    "kind" : "STEP",
+    "text" : "Choosing 'IA ESPORT USDT0.00'"
+  }, {
+    "millis" : 84201,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 84225,
+    "kind" : "CHECK",
+    "text" : "FAIL - IA ESPORT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 84625,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 13: FAIL - IA ESPORT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 85403,
+    "kind" : "STEP",
+    "text" : "Choosing 'EVOPLAY USDT0.00'"
+  }, {
+    "millis" : 86324,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 86350,
+    "kind" : "CHECK",
+    "text" : "FAIL - EVOPLAY: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 86730,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 14: FAIL - EVOPLAY: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 87464,
+    "kind" : "STEP",
+    "text" : "Choosing 'DG EN USDT0.00'"
+  }, {
+    "millis" : 88403,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 88436,
+    "kind" : "CHECK",
+    "text" : "FAIL - DG EN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 88831,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 15: FAIL - DG EN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 89587,
+    "kind" : "STEP",
+    "text" : "Choosing '3SING USDT0.00'"
+  }, {
+    "millis" : 90516,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 90555,
+    "kind" : "CHECK",
+    "text" : "FAIL - 3SING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 90974,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 16: FAIL - 3SING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 91742,
+    "kind" : "STEP",
+    "text" : "Choosing 'BOLE GAMING USDT0.00'"
+  }, {
+    "millis" : 92657,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 92673,
+    "kind" : "CHECK",
+    "text" : "FAIL - BOLE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 93065,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 17: FAIL - BOLE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 93828,
+    "kind" : "STEP",
+    "text" : "Choosing 'BBIN USDT0.00'"
+  }, {
+    "millis" : 94765,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 94793,
+    "kind" : "CHECK",
+    "text" : "FAIL - BBIN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 95247,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 18: FAIL - BBIN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 96072,
+    "kind" : "STEP",
+    "text" : "Choosing 'AWC RCB988 Horse Racing USDT0.00'"
+  }, {
+    "millis" : 97052,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 97085,
+    "kind" : "CHECK",
+    "text" : "FAIL - AWC RCB988 Horse Racing: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 97549,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 19: FAIL - AWC RCB988 Horse Racing: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 98285,
+    "kind" : "STEP",
+    "text" : "Choosing 'AWC68 SEXY b USDT0.00'"
+  }, {
+    "millis" : 99203,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 99219,
+    "kind" : "CHECK",
+    "text" : "FAIL - AWC68 SEXY b: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 99684,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 20: FAIL - AWC68 SEXY b: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 100459,
+    "kind" : "STEP",
+    "text" : "Choosing 'AWC SEXY BACCARAT USDT0.00'"
+  }, {
+    "millis" : 101378,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 101398,
+    "kind" : "CHECK",
+    "text" : "FAIL - AWC SEXY BACCARAT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 101777,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 21: FAIL - AWC SEXY BACCARAT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 103496,
+    "kind" : "STEP",
+    "text" : "Choosing 'Ai Live Casino USDT0.00'"
+  }, {
+    "millis" : 104397,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 104422,
+    "kind" : "CHECK",
+    "text" : "FAIL - Ai Live Casino: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 104779,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 22: FAIL - Ai Live Casino: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 106481,
+    "kind" : "STEP",
+    "text" : "Choosing 'PGSOFT USDT0.00'"
+  }, {
+    "millis" : 107425,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 107447,
+    "kind" : "CHECK",
+    "text" : "FAIL - PGSOFT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 107833,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 23: FAIL - PGSOFT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 109521,
+    "kind" : "STEP",
+    "text" : "Choosing 'FUNKYGAME USDT0.00'"
+  }, {
+    "millis" : 110426,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 110449,
+    "kind" : "CHECK",
+    "text" : "FAIL - FUNKYGAME: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 110858,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 24: FAIL - FUNKYGAME: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 112663,
+    "kind" : "STEP",
+    "text" : "Choosing 'LE GAMING USDT0.00'"
+  }, {
+    "millis" : 113572,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 113590,
+    "kind" : "CHECK",
+    "text" : "FAIL - LE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 113944,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 25: FAIL - LE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 115620,
+    "kind" : "STEP",
+    "text" : "Choosing 'Baison USDT0.00'"
+  }, {
+    "millis" : 116539,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 116553,
+    "kind" : "CHECK",
+    "text" : "FAIL - Baison: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 117069,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 26: FAIL - Baison: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 118762,
+    "kind" : "STEP",
+    "text" : "Choosing 'CQ9 USDT0.00'"
+  }, {
+    "millis" : 119678,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 119714,
+    "kind" : "CHECK",
+    "text" : "FAIL - CQ9: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 120099,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 27: FAIL - CQ9: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 121839,
+    "kind" : "STEP",
+    "text" : "Choosing 'On Casino USDT0.00'"
+  }, {
+    "millis" : 122759,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 122781,
+    "kind" : "CHECK",
+    "text" : "FAIL - On Casino: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 123154,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 28: FAIL - On Casino: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 124869,
+    "kind" : "STEP",
+    "text" : "Choosing 'Dragon Soft USDT0.00'"
+  }, {
+    "millis" : 125808,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 125824,
+    "kind" : "CHECK",
+    "text" : "FAIL - Dragon Soft: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 126219,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 29: FAIL - Dragon Soft: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 128068,
+    "kind" : "STEP",
+    "text" : "Choosing 'Red Tiger USDT0.00'"
+  }, {
+    "millis" : 128993,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 129021,
+    "kind" : "CHECK",
+    "text" : "FAIL - Red Tiger: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 129399,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 30: FAIL - Red Tiger: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 131108,
+    "kind" : "STEP",
+    "text" : "Choosing 'WORLD ENTERTAINMENT USDT0.00'"
+  }, {
+    "millis" : 132046,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 132077,
+    "kind" : "CHECK",
+    "text" : "FAIL - WORLD ENTERTAINMENT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 132436,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 31: FAIL - WORLD ENTERTAINMENT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 134162,
+    "kind" : "STEP",
+    "text" : "Choosing 'AFB CASINO USDT0.00'"
+  }, {
+    "millis" : 135087,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 135100,
+    "kind" : "CHECK",
+    "text" : "FAIL - AFB CASINO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 135491,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 32: FAIL - AFB CASINO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 137242,
+    "kind" : "STEP",
+    "text" : "Choosing 'SPADE GAMING USDT0.00'"
+  }, {
+    "millis" : 138146,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 138163,
+    "kind" : "CHECK",
+    "text" : "FAIL - SPADE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 138507,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 33: FAIL - SPADE GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 140211,
+    "kind" : "STEP",
+    "text" : "Choosing 'CMD SPORTSBOOK USDT0.00'"
+  }, {
+    "millis" : 141170,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 141185,
+    "kind" : "CHECK",
+    "text" : "FAIL - CMD SPORTSBOOK: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 141619,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 34: FAIL - CMD SPORTSBOOK: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 143393,
+    "kind" : "STEP",
+    "text" : "Choosing 'ROYAL SLOT GAMING USDT0.00'"
+  }, {
+    "millis" : 144307,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 144327,
+    "kind" : "CHECK",
+    "text" : "FAIL - ROYAL SLOT GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 144650,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 35: FAIL - ROYAL SLOT GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 146371,
+    "kind" : "STEP",
+    "text" : "Choosing 'BNG USDT0.00'"
+  }, {
+    "millis" : 147285,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 147298,
+    "kind" : "CHECK",
+    "text" : "FAIL - BNG: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 147697,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 36: FAIL - BNG: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 149428,
+    "kind" : "STEP",
+    "text" : "Choosing 'JILI USDT0.00'"
+  }, {
+    "millis" : 150327,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 150354,
+    "kind" : "CHECK",
+    "text" : "FAIL - JILI: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 150721,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 37: FAIL - JILI: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 152447,
+    "kind" : "STEP",
+    "text" : "Choosing 'RICH88 USDT0.00'"
+  }, {
+    "millis" : 153363,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 153394,
+    "kind" : "CHECK",
+    "text" : "FAIL - RICH88: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 153771,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 38: FAIL - RICH88: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 155516,
+    "kind" : "STEP",
+    "text" : "Choosing 'KAIYUAN USDT0.00'"
+  }, {
+    "millis" : 156454,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 156482,
+    "kind" : "CHECK",
+    "text" : "FAIL - KAIYUAN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 157274,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 39: FAIL - KAIYUAN: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 159001,
+    "kind" : "STEP",
+    "text" : "Choosing 'BIG GAMING USDT0.00'"
+  }, {
+    "millis" : 159917,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 159945,
+    "kind" : "CHECK",
+    "text" : "FAIL - BIG GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 160291,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 40: FAIL - BIG GAMING: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 162051,
+    "kind" : "STEP",
+    "text" : "Choosing 'IBC SPORT USDT0.00'"
+  }, {
+    "millis" : 162976,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 163004,
+    "kind" : "CHECK",
+    "text" : "FAIL - IBC SPORT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 163361,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 41: FAIL - IBC SPORT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 165115,
+    "kind" : "STEP",
+    "text" : "Choosing 'GAMEPLAY USDT0.00'"
+  }, {
+    "millis" : 166022,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 166051,
+    "kind" : "CHECK",
+    "text" : "FAIL - GAMEPLAY: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 166400,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 42: FAIL - GAMEPLAY: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 168152,
+    "kind" : "STEP",
+    "text" : "Choosing 'GIT SLOT USDT0.00'"
+  }, {
+    "millis" : 169069,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 169097,
+    "kind" : "CHECK",
+    "text" : "FAIL - GIT SLOT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 169437,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 43: FAIL - GIT SLOT: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 171178,
+    "kind" : "STEP",
+    "text" : "Choosing 'QQ KENO USDT0.00'"
+  }, {
+    "millis" : 172148,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 172217,
+    "kind" : "CHECK",
+    "text" : "FAIL - QQ KENO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 172801,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 44: FAIL - QQ KENO: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 174618,
+    "kind" : "STEP",
+    "text" : "Choosing 'ACE333 USDT0.00'"
+  }, {
+    "millis" : 175532,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 175558,
+    "kind" : "CHECK",
+    "text" : "FAIL - ACE333: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 175918,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 45: FAIL - ACE333: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 177659,
+    "kind" : "STEP",
+    "text" : "Choosing 'YGR USDT0.00'"
+  }, {
+    "millis" : 178599,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 178625,
+    "kind" : "CHECK",
+    "text" : "FAIL - YGR: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 178982,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 46: FAIL - YGR: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 180753,
+    "kind" : "STEP",
+    "text" : "Choosing 'T9 USDT0.00'"
+  }, {
+    "millis" : 181664,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 181691,
+    "kind" : "CHECK",
+    "text" : "FAIL - T9: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 182063,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 47: FAIL - T9: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 183847,
+    "kind" : "STEP",
+    "text" : "Choosing 'CMD WB USDT0.00'"
+  }, {
+    "millis" : 184771,
+    "kind" : "DATA",
+    "text" : "amount typed = 1"
+  }, {
+    "millis" : 184793,
+    "kind" : "CHECK",
+    "text" : "FAIL - CMD WB: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 185123,
+    "kind" : "EVIDENCE",
+    "text" : "Screenshot 48: FAIL - CMD WB: Submit never became enabled for a nominal amount"
+  }, {
+    "millis" : 185123,
+    "kind" : "DATA",
+    "text" : "Succeeded = 0: []"
+  }, {
+    "millis" : 185123,
+    "kind" : "DATA",
+    "text" : "Refused (e.g. a wallet under maintenance) = 0: []"
+  }, {
+    "millis" : 185125,
+    "kind" : "STEP",
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 195198,
+    "kind" : "STEP",
+    "text" : "A loading indicator was still showing after 10s; capturing the page as it is."
+  }, {
+    "millis" : 197067,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 40297,
+    "millis" : 197067,
     "kind" : "STEP",
-    "text" : "ERROR: Error {   message='Timeout 20000ms exceeded.   name='TimeoutError   stack='TimeoutError: Timeout 20000ms exceeded.     at ProgressController.run (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\progress.js:86:28)     at FrameDispatcher._runCommand (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:91:31)     at DispatcherConnection.dispatch (C:\\Users\\Acer\\AppData\\Local\\Temp\\playwright-java-4068269363639452001\\package\\lib\\server\\dispatchers\\dispatcher.js:325:39) } Call log: -   - waiting for locator(\"[class*='Wallet_transfer-label' i]\").first()"
+    "text" : "FAIL: TRANSFER-014: [WOW Gaming: neither a success nor a 'fail' refusal was shown, and its balance (0.0) doesn't show the transfer landed either - <the page showed no message at all>, Just Do The Best: Submit never became enabled for a nominal amount, TFGAMING: Submit never became enabled for a nominal amount, PRAGMATIC: Submit never became enabled for a nominal amount, VG CARD GAME: Submit never became enabled for a nominal amount, LIVE22 SLOTMAKER: Submit never became enabled for a nominal amount, YLGAMING en: Submit never became enabled for a nominal amount, WM CASINO: Submit never became enabled for a nominal amount, WBET: Submit never became enabled for a nominal amount, SBO: Submit never became enabled for a nominal amount, Pretty Gaming: Submit never became enabled for a nominal amount, JOKER: Submit never became enabled for a nominal amount, IA ESPORT: Submit never became enabled for a nominal amount, EVOPLAY: Submit never became enabled for a nominal amount, DG EN: Submit never became enabled for a nominal amount, 3SING: Submit never became enabled for a nominal amount, BOLE GAMING: Submit never became enabled for a nominal amount, BBIN: Submit never became enabled for a nominal amount, AWC RCB988 Horse Racing: Submit never became enabled for a nominal amount, AWC68 SEXY b: Submit never became enabled for a nominal amount, AWC SEXY BACCARAT: Submit never became enabled for a nominal amount, Ai Live Casino: Submit never became enabled for a nominal amount, PGSOFT: Submit never became enabled for a nominal amount, FUNKYGAME: Submit never became enabled for a nominal amount, LE GAMING: Submit never became enabled for a nominal amount, Baison: Submit never became enabled for a nominal amount, CQ9: Submit never became enabled for a nominal amount, On Casino: Submit never became enabled for a nominal amount, Dragon Soft: Submit never became enabled for a nominal amount, Red Tiger: Submit never became enabled for a nominal amount, WORLD ENTERTAINMENT: Submit never became enabled for a nominal amount, AFB CASINO: Submit never became enabled for a nominal amount, SPADE GAMING: Submit never became enabled for a nominal amount, CMD SPORTSBOOK: Submit never became enabled for a nominal amount, ROYAL SLOT GAMING: Submit never became enabled for a nominal amount, BNG: Submit never became enabled for a nominal amount, JILI: Submit never became enabled for a nominal amount, RICH88: Submit never became enabled for a nominal amount, KAIYUAN: Submit never became enabled for a nominal amount, BIG GAMING: Submit never became enabled for a nominal amount, IBC SPORT: Submit never became enabled for a nominal amount, GAMEPLAY: Submit never became enabled for a nominal amount, GIT SLOT: Submit never became enabled for a nominal amount, QQ KENO: Submit never became enabled for a nominal amount, ACE333: Submit never became enabled for a nominal amount, YGR: Submit never became enabled for a nominal amount, T9: Submit never became enabled for a nominal amount, CMD WB: Submit never became enabled for a nominal amount] ==> expected: <true> but was: <false>"
   } ],
-  "shots" : [ "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers.png" ]
+  "shots" : [ "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-001.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-002.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-003.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-004.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-005.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-006.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-007.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-008.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-009.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-010.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-011.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-012.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-013.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-014.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-015.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-016.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-017.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-018.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-019.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-020.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-021.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-022.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-023.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-024.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-025.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-026.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-027.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-028.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-029.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-030.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-031.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-032.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-033.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-034.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-035.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-036.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-037.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-038.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-039.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-040.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-041.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-042.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-043.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-044.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-045.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-046.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-047.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers-048.png", "screenshots/ManualTransferNewUiTest.mainWalletToEveryGameWalletTransfers.png" ]
 }, {
   "key" : "ManualTransferNewUiTest#moreThanTheWalletBalanceIsRefused",
   "suite" : "ManualTransferNewUiTest",
@@ -1407,34 +2183,34 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 11.7398501,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 9.7698638,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1765,
+    "millis" : 1753,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 6289,
+    "millis" : 5778,
     "kind" : "STEP",
-    "text" : "Choosing 'WOW Gaming USDT0.00'"
+    "text" : "Choosing 'WOW Gaming USDT1.00'"
   }, {
-    "millis" : 7612,
+    "millis" : 6972,
     "kind" : "STEP",
-    "text" : "Choosing 'Main wallet USDT160.00'"
+    "text" : "Choosing 'Main wallet USDT178.00'"
   }, {
-    "millis" : 8635,
+    "millis" : 7914,
     "kind" : "DATA",
-    "text" : "amount typed = 1000"
+    "text" : "amount typed = 1001"
   }, {
-    "millis" : 8720,
+    "millis" : 7944,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 11734,
+    "millis" : 9765,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 11734,
+    "millis" : 9765,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1448,30 +2224,30 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 12.3177484,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 11.7501599,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1976,
+    "millis" : 1675,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 4973,
+    "millis" : 4614,
     "kind" : "STEP",
-    "text" : "Choosing 'WOW Gaming USDT0.00'"
+    "text" : "Choosing 'WOW Gaming USDT1.00'"
   }, {
-    "millis" : 6078,
+    "millis" : 5624,
     "kind" : "DATA",
     "text" : "amount typed = 1.3949"
   }, {
-    "millis" : 6161,
+    "millis" : 5643,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 12310,
+    "millis" : 11745,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 12310,
+    "millis" : 11745,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1485,30 +2261,30 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 11.5747482,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 11.3150779,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1872,
+    "millis" : 1657,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5984,
+    "millis" : 4568,
     "kind" : "STEP",
-    "text" : "Choosing 'WOW Gaming USDT0.00'"
+    "text" : "Choosing 'WOW Gaming USDT1.00'"
   }, {
-    "millis" : 7042,
+    "millis" : 5544,
     "kind" : "DATA",
     "text" : "amount typed = -10"
   }, {
-    "millis" : 7054,
+    "millis" : 5558,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 11571,
+    "millis" : 11311,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 11571,
+    "millis" : 11311,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1522,26 +2298,26 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 8.5341568,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 7.8389821,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1933,
+    "millis" : 1844,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5086,
+    "millis" : 4707,
     "kind" : "STEP",
     "text" : "Choosing 'WOW Gaming USDT0.00'"
   }, {
-    "millis" : 6435,
+    "millis" : 5984,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 8530,
+    "millis" : 7835,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 8530,
+    "millis" : 7835,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1555,22 +2331,22 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 7.7823644,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 11.8273745,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1748,
+    "millis" : 1666,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5333,
+    "millis" : 7634,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 7777,
+    "millis" : 11822,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 7777,
+    "millis" : 11822,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
@@ -1581,29 +2357,33 @@
   "group" : "",
   "displayName" : "TRANSFER-013: a \"Transfer All Out\" sweep, if present, empties every game wallet back to the main wallet",
   "tags" : [ "creates-data" ],
-  "status" : "Skipped",
-  "message" : "Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc.",
-  "detail" : "org.opentest4j.TestAbortedException: Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc.\r\n\tat org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)\r\n\tat org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)\r\n\tat org.sengmean.tests.payment.ManualTransferNewUiTest.transferAllOutSweepsEveryWallet(ManualTransferNewUiTest.java:471)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n\tat java.base/java.util.ArrayList.forEach(ArrayList.java:1511)\r\n",
-  "seconds" : 18.699735,
-  "ranAt" : "2026-10-24 17:40",
+  "status" : "Pass",
+  "message" : "",
+  "detail" : "",
+  "seconds" : 31.1646946,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 17656,
-    "kind" : "STEP",
-    "text" : "No amount field appeared at /en/member/wallet/ within 15s - this page, or this whole feature, may not exist on Quark. See TransferPage's class Javadoc."
-  }, {
-    "millis" : 17664,
+    "millis" : 1933,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 18693,
+    "millis" : 4377,
     "kind" : "STEP",
-    "text" : "Case aborted by a failed assumption; no closing screenshot is taken."
+    "text" : "Pressing 'Transfer All Out'"
   }, {
-    "millis" : 18693,
+    "millis" : 29323,
     "kind" : "STEP",
-    "text" : "SKIP: Assumption failed: No control resembling \"Transfer All Out\" was found on this page - whether Quark has a sweep control at all is unconfirmed; see TransferPage's class Javadoc."
+    "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
+  }, {
+    "millis" : 31161,
+    "kind" : "EVIDENCE",
+    "text" : "Captured the closing screenshot."
+  }, {
+    "millis" : 31161,
+    "kind" : "STEP",
+    "text" : "PASS"
   } ],
-  "shots" : [ ]
+  "shots" : [ "screenshots/ManualTransferNewUiTest.transferAllOutSweepsEveryWallet.png" ]
 }, {
   "key" : "ManualTransferNewUiTest#zeroAmountIsRefused",
   "suite" : "ManualTransferNewUiTest",
@@ -1613,34 +2393,34 @@
   "status" : "Pass",
   "message" : "",
   "detail" : "",
-  "seconds" : 11.7411671,
-  "ranAt" : "2026-10-24 17:40",
+  "seconds" : 8.6726345,
+  "ranAt" : "2026-10-26 08:37",
   "trail" : [ {
-    "millis" : 1722,
+    "millis" : 1678,
     "kind" : "STEP",
     "text" : "Welcome banner: none on the page."
   }, {
-    "millis" : 5031,
+    "millis" : 4543,
     "kind" : "STEP",
     "text" : "Choosing 'WOW Gaming USDT0.00'"
   }, {
-    "millis" : 5986,
+    "millis" : 5449,
     "kind" : "DATA",
     "text" : "amount typed = 0"
   }, {
-    "millis" : 6022,
+    "millis" : 5470,
     "kind" : "STEP",
     "text" : "Submitting the transfer"
   }, {
-    "millis" : 7429,
+    "millis" : 6748,
     "kind" : "STEP",
     "text" : "Case ended on https://test-v2.138hk.vip/en/member/wallet/"
   }, {
-    "millis" : 11737,
+    "millis" : 8668,
     "kind" : "EVIDENCE",
     "text" : "Captured the closing screenshot."
   }, {
-    "millis" : 11737,
+    "millis" : 8668,
     "kind" : "STEP",
     "text" : "PASS"
   } ],
